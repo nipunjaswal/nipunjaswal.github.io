@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>landline phonelock bypass on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/landline-phonelock-bypass/</link>
+    <description>Recent content in landline phonelock bypass on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 19 Nov 2014 00:42:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/landline-phonelock-bypass/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android Keypad Tones, A Perfect BlueBox!</title>
+      <link>/posts/2014/11/android-keypad-tones-a-perfect-bluebox/</link>
+      <pubDate>Wed, 19 Nov 2014 00:42:00 +0530</pubDate>
+      
+      <guid>/posts/2014/11/android-keypad-tones-a-perfect-bluebox/</guid>
+      <description>Hi, I recently found that keypad tones from android devices can act as a perfect phone phreaking blue box.  In Simple Terms: Feed in Equivalent Calling tones to the Mic of the Land Line from Android, this will allow you to call the number for whom the tones are generated for
+However, for some devices like Samsung and others, may not generate the same tones. However, for those devices, we can simply install ToneDef Application from Google Playstore for free.</description>
+    </item>
+    
+  </channel>
+</rss>

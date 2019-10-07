@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Nipun Jaswal">
+<meta name="description"
+    content="Today we will discuss how we can easily capture network SSIDs from the various devices around you.  This will help you find previously connected networks from various devices due to the fact that any wireless enabled device will keep looking for previously connected network after a certain period of time.
+To keep it simple we will simply use tshark the command line sequel for wireshark.
+The first step is to put your wireless card in monitor mode-" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/2014/09/simplest-command-to-fetch-ssids-around-you/" />
+
+
+<title>
+    
+    Simplest Command to Fetch SSIDs Around You :: VAPT.IO - Home of the Next Gen Cyber Ninja  — Learn Vulnerability Assessment and Penetration Testing
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.7bfbbe12786fa0ded4b4c0d792cbb36a5bd0bdb0b856dde57aa7b1f6fe0f2b87.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Simplest Command to Fetch SSIDs Around You">
+<meta itemprop="description" content="Today we will discuss how we can easily capture network SSIDs from the various devices around you.  This will help you find previously connected networks from various devices due to the fact that any wireless enabled device will keep looking for previously connected network after a certain period of time.
+To keep it simple we will simply use tshark the command line sequel for wireshark.
+The first step is to put your wireless card in monitor mode-">
+
+
+<meta itemprop="datePublished" content="2014-09-26T19:26:00&#43;05:30" />
+<meta itemprop="dateModified" content="2014-09-26T19:26:00&#43;05:30" />
+<meta itemprop="wordCount" content="243">
+
+
+
+<meta itemprop="keywords" content="ssid sniffing,finding previously connected networks,wireless sniffing," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Simplest Command to Fetch SSIDs Around You"/>
+<meta name="twitter:description" content="Today we will discuss how we can easily capture network SSIDs from the various devices around you.  This will help you find previously connected networks from various devices due to the fact that any wireless enabled device will keep looking for previously connected network after a certain period of time.
+To keep it simple we will simply use tshark the command line sequel for wireshark.
+The first step is to put your wireless card in monitor mode-"/>
+
+
+
+
+<meta property="article:published_time" content="2014-09-26 19:26:00.001 &#43;0530 IST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">ap3x@vapt.io:~# ./hack</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="/posts/2014/09/simplest-command-to-fetch-ssids-around-you/">Simplest Command to Fetch SSIDs Around You</a></h1>
+
+            
+
+            <div class="post-content">
+                <p>Today we will discuss how we can easily capture network SSIDs from the
+various devices around you.
+<p align="center">
+<a href="/images/2014-09-26-simplest-command-to-fetch-ssids-around-you-sniffer_1455727c.jpg"><img src="/images/thumbnails/2014-09-26-simplest-command-to-fetch-ssids-around-you-sniffer_1455727c.jpg" alt="" /></a>
+</p></p>
+
+<p>This will help you find previously connected networks from various devices due to the fact that any wireless enabled device will keep looking for
+previously connected network after a certain period of time.</p>
+
+<p>To keep it simple we will simply use <code>tshark</code> the command line sequel
+for wireshark.</p>
+
+<p>The first step is to put your wireless card in monitor mode-</p>
+
+<pre><code>airmon-ng start wlan0
+</code></pre>
+
+<p> </p>
+
+<p>Next, issue the following command-</p>
+
+<pre><code>tshark -i mon0 -R wlan.fc.type_subtype==0x04 -T fields -E separator=- -e wlan.sa -e wlan_mgt.ssid
+</code></pre>
+
+<p>Lets understand this command, <code>-i</code> denotes the interface to capture
+packets from and since we have put our wireless card in monitor mode, we
+will use <strong>mon0</strong>.</p>
+
+<p>The <code>-R</code> denotes the filter to use, <code>wlan.fc.type_subtype==0x04</code> denotes
+the <code>Probe Request</code> packet which is used for seeking a network
+actively, by the device. We used Hex notation of probe packet that is
+<code>0x04</code>.</p>
+
+<p>Next, to list only the information which we require rather than
+the entire packet we use <code>-T fields</code>. The <code>-E</code> separator denotes the
+character separator between two fields. <code>-e</code> denotes the actual
+fields which we want to display.</p>
+
+<p>Therefore, our command should display something like:</p>
+
+<pre><code>XX:XX:XX:XX:XX:XX-[Network Name]
+</code></pre>
+
+<p>Running this command will output something similar to the following-
+<p align="center">
+<a href="/images/2014-09-26-simplest-command-to-fetch-ssids-around-you-Simple.png"><img src="/images/thumbnails/2014-09-26-simplest-command-to-fetch-ssids-around-you-Simple.png" alt="" /></a>
+</p></p>
+
+<p>This was a simple tutorial but i thought it will be helpful for few
+people who wants to get information about previously connected networks
+from certain devices.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/ssid-sniffing">ssid sniffing</a></span><span class="tag"><a href="/tags/finding-previously-connected-networks">finding previously connected networks</a></span><span class="tag"><a href="/tags/wireless-sniffing">wireless sniffing</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>243 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2014-09-26 19:26 &#43;0530</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/posts/2014/09/fixing-sickfuzz-for-kali-linux/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Fixing SickFuzz for Kali Linux</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/posts/2014/06/using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap/">
+                                <span class="button__text">Using Decoys but not only decoys in scanning networks using Nmap</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+                <span><a href="/">Apex Predator</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

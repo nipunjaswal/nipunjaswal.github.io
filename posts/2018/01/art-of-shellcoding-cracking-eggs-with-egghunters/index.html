@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Nipun Jaswal">
+<meta name="description"
+    content="Dear Readers, thank you for your overwhelming response to the previous post on reverse TCP shellcode. Last time, we wrote one of the smallest reverse TCP shellcodes of all time. This post advances onto an interesting concept called the Egg Hunter Shellcode. So, what is an egg hunter shellcode? For those interested in exploit development, they often come across a problem of limited space for the shellcode to execute. I remember the first exploit i wrote was a POC for SamSpade tool." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/2018/01/art-of-shellcoding-cracking-eggs-with-egghunters/" />
+
+
+<title>
+    
+    Art of Shellcoding: Cracking Eggs with EggHunters :: VAPT.IO - Home of the Next Gen Cyber Ninja  — Learn Vulnerability Assessment and Penetration Testing
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.7bfbbe12786fa0ded4b4c0d792cbb36a5bd0bdb0b856dde57aa7b1f6fe0f2b87.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Art of Shellcoding: Cracking Eggs with EggHunters">
+<meta itemprop="description" content="Dear Readers, thank you for your overwhelming response to the previous post on reverse TCP shellcode. Last time, we wrote one of the smallest reverse TCP shellcodes of all time. This post advances onto an interesting concept called the Egg Hunter Shellcode. So, what is an egg hunter shellcode? For those interested in exploit development, they often come across a problem of limited space for the shellcode to execute. I remember the first exploit i wrote was a POC for SamSpade tool.">
+
+
+<meta itemprop="datePublished" content="2018-01-16T08:00:00&#43;05:30" />
+<meta itemprop="dateModified" content="2018-01-16T08:00:00&#43;05:30" />
+<meta itemprop="wordCount" content="778">
+
+
+
+<meta itemprop="keywords" content="slae,egghunter shellcode,slae assignment 3," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Art of Shellcoding: Cracking Eggs with EggHunters"/>
+<meta name="twitter:description" content="Dear Readers, thank you for your overwhelming response to the previous post on reverse TCP shellcode. Last time, we wrote one of the smallest reverse TCP shellcodes of all time. This post advances onto an interesting concept called the Egg Hunter Shellcode. So, what is an egg hunter shellcode? For those interested in exploit development, they often come across a problem of limited space for the shellcode to execute. I remember the first exploit i wrote was a POC for SamSpade tool."/>
+
+
+
+
+<meta property="article:published_time" content="2018-01-16 08:00:00 &#43;0530 IST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">ap3x@vapt.io:~# ./hack</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>4 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="/posts/2018/01/art-of-shellcoding-cracking-eggs-with-egghunters/">Art of Shellcoding: Cracking Eggs with EggHunters</a></h1>
+
+            
+
+            <div class="post-content">
+                <p><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-easter-egg-hunt-ideas-you-havent-thought-about.jpeg"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-easter-egg-hunt-ideas-you-havent-thought-about.jpeg" alt="" /></a></p>
+
+<p>Dear Readers, thank you for your overwhelming response to the previous
+post on reverse TCP shellcode. Last time, we wrote one of the smallest
+reverse TCP shellcodes of all time. This post advances onto an
+interesting concept called the Egg Hunter Shellcode. So, what is an egg
+hunter shellcode? For those interested in exploit development, they
+often come across a problem of limited space for the shellcode to
+execute. I remember the first exploit i wrote was a POC for
+<a href="https://www.exploit-db.com/exploits/38687/" target="_blank">SamSpade</a> tool. Yeap, the
+good old samspade which allows us to fingerprint the targets. I wanted
+to exploit the same, but space was limited. It was only 7-8 bytes of
+space, and no shellcode would fit into it. The same sort of problems is
+addressed by egg hunter shellcodes. This means small shellcodes would
+allow jumping to the more substantial shellcodes in memory. However, 7-8
+bytes is still something which is always tough.</p>
+
+<p><span style="color: red;">Note: I created one of the smallest egghunter
+shellcode after i wrote this post and is published on
+exploit-db.com: <a href="https://www.exploit-db.com/exploits/43910/" target="_blank">https://www.exploit-db.com/exploits/43910/</a></span></p>
+
+<p>The beauty of an egghunter shellcode lies in the fact that you don&rsquo;t
+need to hardcode any addresses or calculate an exact offset to make a
+jump while executing the staged payload. In fact, its just a small
+program which will scan through the entire address space of the program
+and find a specific keyword, once the keyword is found, it directly
+jumps right next to it(start of the shellcode). We call this keyword an
+&ldquo;egg.&rdquo; So let&rsquo;s get started with our egghunter shellcode as follows:</p>
+
+<p>As we can see that the first line of code is the for the page alignment
+in case, invalid regions of memory are encountered. Next, we just
+increment the value of ECX and validate this address using sigaction
+syscall, denoted by 0x43. We now issue the interrupt and compare the
+value returned by sigaction syscall in EAX to 0xf2 which is the lower
+bytes of EFAULT (Denotes Bad Addresses/ Invalid Addresses). This means
+that on every EFAULT, page alignment will happen since the Zero Flag
+gets set by the CMP instruction. However, if the memory region is valid,
+the jump to page alignment is not taken, and our EGG value which is
+0x50905090 is moved to EAX register while our valid address is
+transferred to EDI from ECX. But why did we move from ECX to EDI? This
+is because we will be using  SCASD instruction which compares the string
+held at the address pointed to by the EDI register with the contents of
+EAX register [This is precisely where our egghunter hits the WORD
+version of the EGG if it finds it for the first time]. However, if it
+doesn&rsquo;t hit the egg[Denoted by ZF flag],  it jumps to increment the
+address and perform the same steps of the next valid memory region.</p>
+
+<p>In cases where the first SCASD instruction sets the ZF flag, another
+SCASD instruction is followed, but why?</p>
+
+<p>This is because we have an 8-byte version of the EGG which means when
+the EGG 0x50905090 is compared, a correct match will occur on the
+following sequence of bytes which is
+&ldquo;\x90\x50\x90\x50\x90\x50\x90\x50&rdquo;. We use the 8-byte version of
+the EGG to provide a real uniqueness to the EGG. Coming back to why we
+used SCASD again, we used it because on the very first SCASD
+instruction, the SCASD instruction along with the comparison also
+increments the value of EDI by four and the next four bytes at EDI are
+nothing but the next half of the 8-byte EGG. The memory address in ECX
+completing both the SCASD operations successfully will yet again
+increment EDI by four which will bring us to the start of the shellcode.
+We merely have to jump to this address to execute our shellcode
+successfully.</p>
+
+<p>Let&rsquo;s see some action as follows:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.48.33.png"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.48.33.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Just Before Jumping to EDI</td>
+</tr>
+</tbody>
+</table>
+
+<p>As we can see from the above screenshot, right before jumping to the
+address pointed by EDI, Zero Flag was set (Due to SCASD and it also
+increments EDI by 4) and we are led to the shellcode by EDI. Examining
+the address in EDI, we have the following output:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.51.29.png"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.51.29.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">116 Bytes starting at the address pointed to by EDI</td>
+</tr>
+</tbody>
+</table>
+
+<p>This is nothing but our shellcode ;) which will get executed and provide
+us with a beautiful looking bind shell when connected.</p>
+
+<p>Let&rsquo;s see the program in action as follows:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.19.36.png"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.19.36.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Egg Hunter in Action</td>
+</tr>
+</tbody>
+</table>
+
+<p>The Final code for the demo implementation of the shellcode is as
+follows:</p>
+
+<p><span
+style="background-color: white; color: #222222; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; text-align: left;">Files
+for this tutorial can be found at:</span></p>
+
+<p><span
+style="color: #222222; font-family: &quot;open sans&quot; , sans-serif;"><span
+style="font-size: 15px;"><a href="https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-3" target="_blank">https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-3</a></span></span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;">This
+blog post has been created for completing the requirements of the
+SecurityTube Linux Assembly Expert certification:</span><br />
+<span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"></span><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span><br />
+<span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"></span><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;">Student-ID:
+SLAE-1080</span></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/slae">slae</a></span><span class="tag"><a href="/tags/egghunter-shellcode">egghunter shellcode</a></span><span class="tag"><a href="/tags/slae-assignment-3">slae assignment 3</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>778 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2018-01-16 08:00 &#43;0530</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/posts/2018/02/art-of-shellcoding-the-multiencoder-shellcode/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Art of Shellcoding: The MultiEncoder Shellcode</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/posts/2018/01/art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode/">
+                                <span class="button__text">Art of Shellcoding:  Tale of the Smallest Reverse TCP Shellcode</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+                <span><a href="/">Apex Predator</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

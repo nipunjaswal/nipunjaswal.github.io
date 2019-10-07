@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/tags/b.tech-cyber-security-courses/</loc>
+    <lastmod>2018-08-26T16:53:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cyber-security-in-india/</loc>
+    <lastmod>2018-08-26T16:53:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cyber-security-subjects-in-bca/</loc>
+    <lastmod>2018-08-26T16:53:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2018-08-26T16:53:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2018/08/subjects-that-help-building-cyber-security-skills-while-you-are-studying/</loc>
+    <lastmod>2018-08-26T16:53:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2018-08-26T16:53:00+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-08-26T16:53:00+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/posts/2018/02/art-of-shellcoding-basic-aes-shellcode-crypter/</loc>
+    <lastmod>2018-02-28T17:37:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shellcode-encrypt/</loc>
+    <lastmod>2018-02-28T17:37:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/slae/</loc>
+    <lastmod>2018-02-28T17:37:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/slae-assignment-7/</loc>
+    <lastmod>2018-02-28T17:37:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2018/02/art-of-shellcoding-polymorphic-shellcodes/</loc>
+    <lastmod>2018-02-28T15:01:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/polymorphic-shellcode/</loc>
+    <lastmod>2018-02-28T15:01:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/slae-assignment-6/</loc>
+    <lastmod>2018-02-28T15:01:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2018/02/art-of-shellcoding-metasploit-read-file-payload-analysis/</loc>
+    <lastmod>2018-02-24T02:16:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/slae-assignment-5/</loc>
+    <lastmod>2018-02-24T02:16:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2018/02/art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis/</loc>
+    <lastmod>2018-02-23T00:24:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ipv6-shellcode/</loc>
+    <lastmod>2018-02-23T00:24:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/metasploit/</loc>
+    <lastmod>2018-02-23T00:24:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2018/02/art-of-shellcoding-metasploit-add-user-payload-analysis/</loc>
+    <lastmod>2018-02-10T01:15:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2018/02/art-of-shellcoding-the-multiencoder-shellcode/</loc>
+    <lastmod>2018-02-06T17:10:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/multiencoder-shellcode/</loc>
+    <lastmod>2018-02-06T17:10:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shellcoding/</loc>
+    <lastmod>2018-02-06T17:10:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/slae-assignment-4/</loc>
+    <lastmod>2018-02-06T17:10:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2018/01/art-of-shellcoding-cracking-eggs-with-egghunters/</loc>
+    <lastmod>2018-01-16T08:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/egghunter-shellcode/</loc>
+    <lastmod>2018-01-16T08:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/slae-assignment-3/</loc>
+    <lastmod>2018-01-16T08:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2018/01/art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode/</loc>
+    <lastmod>2018-01-05T20:25:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/slae-assignment-2/</loc>
+    <lastmod>2018-01-05T20:25:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2018/01/art-of-shellcoding-the-saga-of-bind-tcp-shell/</loc>
+    <lastmod>2018-01-02T14:24:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/slae-assignment-1/</loc>
+    <lastmod>2018-01-02T14:24:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/antivirus-evasion/</loc>
+    <lastmod>2017-11-30T23:46:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bypassing-antivirus/</loc>
+    <lastmod>2017-11-30T23:46:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dll-hijacking/</loc>
+    <lastmod>2017-11-30T23:46:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dll-search-order-hijacking/</loc>
+    <lastmod>2017-11-30T23:46:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2017/11/postpone-your-marriage-plans-and-deal-with-the-hack-first/</loc>
+    <lastmod>2017-11-30T23:46:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/the-backdoor-factory/</loc>
+    <lastmod>2017-11-30T23:46:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2017/08/antivirus-evasion-for-dummies/</loc>
+    <lastmod>2017-08-14T00:08:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/clamav/</loc>
+    <lastmod>2017-08-14T00:08:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/arduino-pro-micro-hack/</loc>
+    <lastmod>2016-09-24T00:30:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/duckuino-attacks/</loc>
+    <lastmod>2016-09-24T00:30:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/evading-windows-7-firewall/</loc>
+    <lastmod>2016-09-24T00:30:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016/09/recreating-a-usb-rubber-ducky-under-4-in-india/</loc>
+    <lastmod>2016-09-24T00:30:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/usb-rubber-ducky-in-india/</loc>
+    <lastmod>2016-09-24T00:30:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/isd-1820/</loc>
+    <lastmod>2014-12-03T18:16:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/isd1820/</loc>
+    <lastmod>2014-12-03T18:16:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014/12/keep-spying-with-a-low-cost-voice-recorder/</loc>
+    <lastmod>2014-12-03T18:16:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/spy-recorder/</loc>
+    <lastmod>2014-12-03T18:16:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/voice-recoding-devices-in-india/</loc>
+    <lastmod>2014-12-03T18:16:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014/11/android-keypad-tones-a-perfect-bluebox/</loc>
+    <lastmod>2014-11-19T00:42:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bluebox-android/</loc>
+    <lastmod>2014-11-19T00:42:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bypassing-dialer-lock/</loc>
+    <lastmod>2014-11-19T00:42:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dtmf-apps/</loc>
+    <lastmod>2014-11-19T00:42:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/landline-phonelock-bypass/</loc>
+    <lastmod>2014-11-19T00:42:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/phreaking-android/</loc>
+    <lastmod>2014-11-19T00:42:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/exploit-writing/</loc>
+    <lastmod>2014-10-27T21:05:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/exploit-writing-part-1/</loc>
+    <lastmod>2014-10-27T21:05:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014/10/exploit-writing-series-tutorial-1-buffer-overflow-on-linux/</loc>
+    <lastmod>2014-10-27T21:05:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/learn-exploit-development/</loc>
+    <lastmod>2014-10-27T21:05:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/linux-exploit-writing/</loc>
+    <lastmod>2014-10-27T21:05:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014/09/fixing-sickfuzz-for-kali-linux/</loc>
+    <lastmod>2014-09-27T15:05:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sickfuzz-fix/</loc>
+    <lastmod>2014-09-27T15:05:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sickfuzz-not-working/</loc>
+    <lastmod>2014-09-27T15:05:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sickfuzz-on-kali-linux/</loc>
+    <lastmod>2014-09-27T15:05:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/finding-previously-connected-networks/</loc>
+    <lastmod>2014-09-26T19:26:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014/09/simplest-command-to-fetch-ssids-around-you/</loc>
+    <lastmod>2014-09-26T19:26:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ssid-sniffing/</loc>
+    <lastmod>2014-09-26T19:26:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wireless-sniffing/</loc>
+    <lastmod>2014-09-26T19:26:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bypassing-ids-detection/</loc>
+    <lastmod>2014-06-29T18:41:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bypassing-snort/</loc>
+    <lastmod>2014-06-29T18:41:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/decoy-scanning/</loc>
+    <lastmod>2014-06-29T18:41:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/evading-snort-detection/</loc>
+    <lastmod>2014-06-29T18:41:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/port-scanning-through-ids/</loc>
+    <lastmod>2014-06-29T18:41:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/port-scanning-through-ips/</loc>
+    <lastmod>2014-06-29T18:41:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/snort-evasion-techniques/</loc>
+    <lastmod>2014-06-29T18:41:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014/06/using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap/</loc>
+    <lastmod>2014-06-29T18:41:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014/06/evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap/</loc>
+    <lastmod>2014-06-27T03:19:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/firewall-bypassing/</loc>
+    <lastmod>2014-06-27T03:19:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ninja-scanning/</loc>
+    <lastmod>2014-06-27T03:19:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/port-scanning-through-firewall/</loc>
+    <lastmod>2014-06-27T03:19:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windows-7-firewall-unblocking-scans/</loc>
+    <lastmod>2014-06-27T03:19:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014/03/what-was-western-union-private-exploit/</loc>
+    <lastmod>2014-03-31T19:24:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ceh/</loc>
+    <lastmod>2014-03-30T22:45:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/certified-ethical-hacker/</loc>
+    <lastmod>2014-03-30T22:45:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ethical-hacking-certifications/</loc>
+    <lastmod>2014-03-30T22:45:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/how-to-become-a-hacker/</loc>
+    <lastmod>2014-03-30T22:45:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014/03/why-to-get-a-ceh-certification/</loc>
+    <lastmod>2014-03-30T22:45:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014/01/coding-a-simple-wordpress-version-scanner-in-metasploit/</loc>
+    <lastmod>2014-01-02T04:24:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/coding-metasploit/</loc>
+    <lastmod>2014-01-02T04:24:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/coding-modules-in-metasploit/</loc>
+    <lastmod>2014-01-02T04:24:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013/12/4-great-metasploit-variables-and-commands/</loc>
+    <lastmod>2013-12-29T02:54:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013/12/blind-date-with-your-girlfriend/</loc>
+    <lastmod>2013-12-23T18:34:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hacking-webcam-with-metasploit/</loc>
+    <lastmod>2013-12-23T18:34:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+  </url>
+  
+</urlset>

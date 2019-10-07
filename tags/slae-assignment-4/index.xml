@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>slae assignment 4 on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/slae-assignment-4/</link>
+    <description>Recent content in slae assignment 4 on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 06 Feb 2018 17:10:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/slae-assignment-4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art of Shellcoding: The MultiEncoder Shellcode</title>
+      <link>/posts/2018/02/art-of-shellcoding-the-multiencoder-shellcode/</link>
+      <pubDate>Tue, 06 Feb 2018 17:10:00 +0530</pubDate>
+      
+      <guid>/posts/2018/02/art-of-shellcoding-the-multiencoder-shellcode/</guid>
+      <description>Dear Readers, Hope you all are doing great. In the previous post, we saw how we could create a shellcode for egghunting and ended up creating one of the shortest egghunter shellcode with just under 12 bytes. In this post, we will only work on encoding the shellcode by combining 3 different encoding schemes. The shellcode we will choose to demo our custom encoder will be a simple /bin/sh shell invoking shellcode.</description>
+    </item>
+    
+  </channel>
+</rss>

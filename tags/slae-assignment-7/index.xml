@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>slae assignment 7 on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/slae-assignment-7/</link>
+    <description>Recent content in slae assignment 7 on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 28 Feb 2018 17:37:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/slae-assignment-7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art of Shellcoding: Basic AES Shellcode Crypter</title>
+      <link>/posts/2018/02/art-of-shellcoding-basic-aes-shellcode-crypter/</link>
+      <pubDate>Wed, 28 Feb 2018 17:37:00 +0530</pubDate>
+      
+      <guid>/posts/2018/02/art-of-shellcoding-basic-aes-shellcode-crypter/</guid>
+      <description>In this post, we will design a shellcode crypter which will encrypt the shellcode and then decrypt the encrypted shellcode and run it dynamically. The libraries we will be using for encryption will be mcrypt, and the shellcode encryption schema is Rijndael-128(AES).  We will design the crypter in C programming language. The shellcode we will be using for this exercise will be an execve stack based shellcode. Following is the code of the crypter:</description>
+    </item>
+    
+  </channel>
+</rss>

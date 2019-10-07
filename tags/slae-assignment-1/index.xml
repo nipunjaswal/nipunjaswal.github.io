@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>slae assignment 1 on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/slae-assignment-1/</link>
+    <description>Recent content in slae assignment 1 on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 02 Jan 2018 14:24:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/slae-assignment-1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art of Shellcoding: The Saga of Bind TCP Shell</title>
+      <link>/posts/2018/01/art-of-shellcoding-the-saga-of-bind-tcp-shell/</link>
+      <pubDate>Tue, 02 Jan 2018 14:24:00 +0530</pubDate>
+      
+      <guid>/posts/2018/01/art-of-shellcoding-the-saga-of-bind-tcp-shell/</guid>
+      <description>Dear Readers, we all in the infosec community use bind TCP shell almost on a daily basis. I too have seen many people copying shellcodes blindly from the internet and just pasting them into the exploits without knowing what those shellcodes might be carrying.
+
+Today, we will uncover the working of bind TCP shell and based on the analysis, we will try to develop one ourselves. If you are not familiar with the assembly, Enroll yourself into SLAE course from SecurityTube, its one of the best classes available out there and i am able to write this post based on the advanced knowledge i gained from the course itself.</description>
+    </item>
+    
+  </channel>
+</rss>

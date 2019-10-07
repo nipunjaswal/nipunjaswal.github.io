@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssid sniffing on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/ssid-sniffing/</link>
+    <description>Recent content in ssid sniffing on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 26 Sep 2014 19:26:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/ssid-sniffing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simplest Command to Fetch SSIDs Around You</title>
+      <link>/posts/2014/09/simplest-command-to-fetch-ssids-around-you/</link>
+      <pubDate>Fri, 26 Sep 2014 19:26:00 +0530</pubDate>
+      
+      <guid>/posts/2014/09/simplest-command-to-fetch-ssids-around-you/</guid>
+      <description>Today we will discuss how we can easily capture network SSIDs from the various devices around you.  This will help you find previously connected networks from various devices due to the fact that any wireless enabled device will keep looking for previously connected network after a certain period of time.
+To keep it simple we will simply use tshark the command line sequel for wireshark.
+The first step is to put your wireless card in monitor mode-</description>
+    </item>
+    
+  </channel>
+</rss>

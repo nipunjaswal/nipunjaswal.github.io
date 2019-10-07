@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bypassing ids detection on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/bypassing-ids-detection/</link>
+    <description>Recent content in bypassing ids detection on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 29 Jun 2014 18:41:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/bypassing-ids-detection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Decoys but not only decoys in scanning networks using Nmap</title>
+      <link>/posts/2014/06/using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap/</link>
+      <pubDate>Sun, 29 Jun 2014 18:41:00 +0530</pubDate>
+      
+      <guid>/posts/2014/06/using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap/</guid>
+      <description>In the Previous tutorial, we discussed about evading windows 7 firewall rules. Today, let us discuss about another great capability of Nmap that is decoys.  To evade detection and network presence, Nmap decoys can be used effectively to lessen the chances of being caught. Decoys are those fake IP bots which pretends to be scanning the network and hence, confusing the security administrators to find the real culprit. So, today let us see how we can scan a target using Decoys in Nmap.</description>
+    </item>
+    
+  </channel>
+</rss>

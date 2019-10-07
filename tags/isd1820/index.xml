@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ISD1820 on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/isd1820/</link>
+    <description>Recent content in ISD1820 on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 03 Dec 2014 18:16:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/isd1820/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Keep Spying with a Low Cost Voice Recorder</title>
+      <link>/posts/2014/12/keep-spying-with-a-low-cost-voice-recorder/</link>
+      <pubDate>Wed, 03 Dec 2014 18:16:00 +0530</pubDate>
+      
+      <guid>/posts/2014/12/keep-spying-with-a-low-cost-voice-recorder/</guid>
+      <description>Voice Recording is one of the primary aspects when it comes to Spying. Today let us discuss about ISD 1820 Voice Recording Module.  This Module works both independently as well as with Arduino, Pi Boards etc. it is quite small, say a few centimeters bigger than the SD card adapter. This module operates on 3V-5V. Starting to record, playing back can both be controlled using hardware switches as well as Boards like Arduino, Pi etc.</description>
+    </item>
+    
+  </channel>
+</rss>

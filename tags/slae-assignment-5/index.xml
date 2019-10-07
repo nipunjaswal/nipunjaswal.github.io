@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>slae assignment 5 on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/slae-assignment-5/</link>
+    <description>Recent content in slae assignment 5 on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 24 Feb 2018 02:16:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/slae-assignment-5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art of Shellcoding: Metasploit Read File Payload Analysis</title>
+      <link>/posts/2018/02/art-of-shellcoding-metasploit-read-file-payload-analysis/</link>
+      <pubDate>Sat, 24 Feb 2018 02:16:00 +0530</pubDate>
+      
+      <guid>/posts/2018/02/art-of-shellcoding-metasploit-read-file-payload-analysis/</guid>
+      <description>Today, we will be looking at Metasploit&amp;rsquo;s linux/x86/read_file payload. In this post, we will uncover how this payload works internally when it tries to read the /etc/passwd file. We will use GDB-Peda for our analysis. Using msfvenom, i created a file, i.e., read. Elf and while i was generating the file i used PATH value as /etc/passwd.  Therefore, when the file is made to execute, it will read the contents of the /etc/passwd and will display it on the screen as shown in the following image:</description>
+    </item>
+    
+    <item>
+      <title>Art of ShellCoding: Metasploit IPv6 Reverse TCP Shellcode Analysis</title>
+      <link>/posts/2018/02/art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis/</link>
+      <pubDate>Fri, 23 Feb 2018 00:24:00 +0530</pubDate>
+      
+      <guid>/posts/2018/02/art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis/</guid>
+      <description>Most of us have worked a lot with IPv4 payloads and shellcodes. Let us see how different is Metasploit IPv6 Shellcode and how does it work. In this post, we will make use of libemu to conduct out our analysis on the IPV6 Reverse TCP shellcode. We will also use strace to aid our analysis. Throughout the analysis, our agenda is to figure out the key differences between an IPv4 and IPv6 shellcode.</description>
+    </item>
+    
+    <item>
+      <title>Art of ShellCoding: Metasploit Add User Payload Analysis</title>
+      <link>/posts/2018/02/art-of-shellcoding-metasploit-add-user-payload-analysis/</link>
+      <pubDate>Sat, 10 Feb 2018 01:15:00 +0530</pubDate>
+      
+      <guid>/posts/2018/02/art-of-shellcoding-metasploit-add-user-payload-analysis/</guid>
+      <description>In the previous post, we saw how we can encode the shellcode with our customized encoding schemes. In this post, we will see how some of the famous shellcodes from the metasploit framework work. We will analyze three different shellcodes using different techniques and tools in this mini shellcode analysis series. In this post, we will examine linux/x86/adduser shellcode with ndisasm and will see how the stuff works behind the scene.</description>
+    </item>
+    
+  </channel>
+</rss>

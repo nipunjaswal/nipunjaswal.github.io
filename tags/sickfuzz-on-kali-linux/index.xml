@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sickfuzz on kali linux on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/sickfuzz-on-kali-linux/</link>
+    <description>Recent content in sickfuzz on kali linux on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 27 Sep 2014 15:05:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/sickfuzz-on-kali-linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fixing SickFuzz for Kali Linux</title>
+      <link>/posts/2014/09/fixing-sickfuzz-for-kali-linux/</link>
+      <pubDate>Sat, 27 Sep 2014 15:05:00 +0530</pubDate>
+      
+      <guid>/posts/2014/09/fixing-sickfuzz-for-kali-linux/</guid>
+      <description>SickFuzz is a fuzzer for web applications and has always been a script which i miss the most on Kali linux. Let us see how we can fix it to run on Kali Systems-
+Download the script from this Link and try to execute it. The First Error would be:  And probably the second one would be:  To Fix these errors, we need to make the following changes in the spike and the fpath variables.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ipv6 shellcode on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/ipv6-shellcode/</link>
+    <description>Recent content in ipv6 shellcode on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 23 Feb 2018 00:24:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/ipv6-shellcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art of ShellCoding: Metasploit IPv6 Reverse TCP Shellcode Analysis</title>
+      <link>/posts/2018/02/art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis/</link>
+      <pubDate>Fri, 23 Feb 2018 00:24:00 +0530</pubDate>
+      
+      <guid>/posts/2018/02/art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis/</guid>
+      <description>Most of us have worked a lot with IPv4 payloads and shellcodes. Let us see how different is Metasploit IPv6 Shellcode and how does it work. In this post, we will make use of libemu to conduct out our analysis on the IPV6 Reverse TCP shellcode. We will also use strace to aid our analysis. Throughout the analysis, our agenda is to figure out the key differences between an IPv4 and IPv6 shellcode.</description>
+    </item>
+    
+  </channel>
+</rss>

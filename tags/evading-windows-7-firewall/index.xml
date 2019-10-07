@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>evading windows 7 firewall on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/evading-windows-7-firewall/</link>
+    <description>Recent content in evading windows 7 firewall on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 24 Sep 2016 00:30:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/evading-windows-7-firewall/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recreating a USB Rubber Ducky under $4 in India</title>
+      <link>/posts/2016/09/recreating-a-usb-rubber-ducky-under-4-in-india/</link>
+      <pubDate>Sat, 24 Sep 2016 00:30:00 +0530</pubDate>
+      
+      <guid>/posts/2016/09/recreating-a-usb-rubber-ducky-under-4-in-india/</guid>
+      <description>Holla Guys, It&amp;rsquo;s been a while I have been on my very own domain :P Anyways, today I would like to show you guys few things I have done in the past few years. I have been playing around with a lot of Arduino chips and ended up creating a clone of the USB Rubber Ducky using the keyboard libraries.  By using cheap Arduino chips I was not only able to run commands on my computer system but was able to bypass Android 4-Digit lock in less than 2 hours.</description>
+    </item>
+    
+    <item>
+      <title>Using Decoys but not only decoys in scanning networks using Nmap</title>
+      <link>/posts/2014/06/using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap/</link>
+      <pubDate>Sun, 29 Jun 2014 18:41:00 +0530</pubDate>
+      
+      <guid>/posts/2014/06/using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap/</guid>
+      <description>In the Previous tutorial, we discussed about evading windows 7 firewall rules. Today, let us discuss about another great capability of Nmap that is decoys.  To evade detection and network presence, Nmap decoys can be used effectively to lessen the chances of being caught. Decoys are those fake IP bots which pretends to be scanning the network and hence, confusing the security administrators to find the real culprit. So, today let us see how we can scan a target using Decoys in Nmap.</description>
+    </item>
+    
+    <item>
+      <title>Evading Windows 7 Firewall rules with Basic Ninja Scanning using Nmap</title>
+      <link>/posts/2014/06/evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap/</link>
+      <pubDate>Fri, 27 Jun 2014 03:19:00 +0530</pubDate>
+      
+      <guid>/posts/2014/06/evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap/</guid>
+      <description>Today, let us talk about Firewall rules and how we can evade them. However, i will be producing more advanced and complex tutorials for ninja scanning as well. OK, let us talk about a basic ninja scan which is required in the following scenario-
+Target is a colleague in the neighborhood who is running on Windows 7, Runs a Version of an FTP server on port 21 and 990(secured) and lastly has blocked our IP address as well.</description>
+    </item>
+    
+  </channel>
+</rss>

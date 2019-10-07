@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Nipun Jaswal">
+<meta name="description"
+    content="Most of us have worked a lot with IPv4 payloads and shellcodes. Let us see how different is Metasploit IPv6 Shellcode and how does it work. In this post, we will make use of libemu to conduct out our analysis on the IPV6 Reverse TCP shellcode. We will also use strace to aid our analysis. Throughout the analysis, our agenda is to figure out the key differences between an IPv4 and IPv6 shellcode." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/2018/02/art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis/" />
+
+
+<title>
+    
+    Art of ShellCoding: Metasploit IPv6 Reverse TCP Shellcode Analysis :: VAPT.IO - Home of the Next Gen Cyber Ninja  — Learn Vulnerability Assessment and Penetration Testing
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.7bfbbe12786fa0ded4b4c0d792cbb36a5bd0bdb0b856dde57aa7b1f6fe0f2b87.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Art of ShellCoding: Metasploit IPv6 Reverse TCP Shellcode Analysis">
+<meta itemprop="description" content="Most of us have worked a lot with IPv4 payloads and shellcodes. Let us see how different is Metasploit IPv6 Shellcode and how does it work. In this post, we will make use of libemu to conduct out our analysis on the IPV6 Reverse TCP shellcode. We will also use strace to aid our analysis. Throughout the analysis, our agenda is to figure out the key differences between an IPv4 and IPv6 shellcode.">
+
+
+<meta itemprop="datePublished" content="2018-02-23T00:24:00&#43;05:30" />
+<meta itemprop="dateModified" content="2018-02-23T00:24:00&#43;05:30" />
+<meta itemprop="wordCount" content="741">
+
+
+
+<meta itemprop="keywords" content="ipv6 shellcode,slae,slae assignment 5,metasploit," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Art of ShellCoding: Metasploit IPv6 Reverse TCP Shellcode Analysis"/>
+<meta name="twitter:description" content="Most of us have worked a lot with IPv4 payloads and shellcodes. Let us see how different is Metasploit IPv6 Shellcode and how does it work. In this post, we will make use of libemu to conduct out our analysis on the IPV6 Reverse TCP shellcode. We will also use strace to aid our analysis. Throughout the analysis, our agenda is to figure out the key differences between an IPv4 and IPv6 shellcode."/>
+
+
+
+
+<meta property="article:published_time" content="2018-02-23 00:24:00.001 &#43;0530 IST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">ap3x@vapt.io:~# ./hack</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>4 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="/posts/2018/02/art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis/">Art of ShellCoding: Metasploit IPv6 Reverse TCP Shellcode Analysis</a></h1>
+
+            
+
+            <div class="post-content">
+                <p><a href="../images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-back-door-300x199.jpg"><img src="../images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-back-door-300x199.jpg" alt="" /></a></p>
+
+<p>Most of us have worked a lot with IPv4 payloads and shellcodes. Let us
+see how different is Metasploit IPv6 Shellcode and how does it work. In
+this post, we will make use of libemu to conduct out our analysis on the
+IPV6 Reverse TCP shellcode. We will also use strace to aid our analysis.
+Throughout the analysis, our agenda is to figure out the key differences
+between an IPv4 and IPv6 shellcode. We will try to figure out the
+differences between the two. So let&rsquo;s get started. Let&rsquo;s Generate the
+shellcode with msfvenom using the following command in conjunction with
+sctests from libemu:</p>
+
+<blockquote>
+<p>msfvenom -p linux/x86/shell/reverse_ipv6_tcp LHOST=::1 LPORT=4444 -f
+raw | /opt/libemu/bin/sctest -vvv -Ss 10000</p>
+</blockquote>
+
+<p>We will have the following output:</p>
+
+<p><a href="../images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-Screenshot%2B2018-02-10%2B01.41.55.png"><img src="../images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-Screenshot%2B2018-02-10%2B01.41.55.png" alt="" /></a></p>
+
+<p>We can see that we have two systems calls in this shellcode. The first
+is the socket setup and the next one is connect. We can use libemu with
+the -G option to create a dot based graphics file which simplifies
+things for us. The dot graph file can then be converted into a PNG image
+using the dot utility in linux. Let us see the obtained PNG as follows:</p>
+
+<p><a href="../images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-ipv6.png"><img src="../images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-ipv6.png" alt="" /></a></p>
+
+<p>Let&rsquo;s analyze the above flow diagram. In the very first block, We start
+by clearing out EBX register which means that now EBX contains 0. We
+push this value onto the stack. Next, we increment EBX register making
+its value as 1 and push it again to the stack. Next, we push 10 onto the
+stack. Hence the stack (from the top) becomes a structure like {10,1,0}.
+In the next step, we simply point this structure to ECX. Hence ECX now
+contains the address of the structure we created above. The structure
+consists of very similar values as in the first screenshot. This means 0
+points to the protocol(0), 1 to the type and 10 as the domain, i.e.,
+AF_INET6(IPv6). Type 1 denotes SOCK_STREAM. Next, we simply perform a
+push-pop to EAX with the syscall number 0x66 that denotes socketcall.</p>
+
+<p>Hence, we have EAX: 0x66 , EBX: 0x1, ECX:{10,1,0} and we issue the
+interrupt. The arrangement will issue a socketcall of type SYS_SOCKET
+with the domain as 10 (IPV6) and type as SOCK_STREAM.</p>
+
+<p>The result of the above syscall will be stored to EAX. Hence, we perform
+an XCHG operation to move the value to ESI. Next, we issue a CWD
+(Convert to DWORD) which will extend EAX to EDX. Hence clearing out
+values in EDX as well.</p>
+
+<p>Next, we will setup connect system call. For the connect system call to
+work, we require 0x66 in EAX register denoting the socketcall, 0x3 in
+EBX register and ECX pointing to the stack structure.</p>
+
+<p>Talking about the structure, we will require the following structure
+pointed to by the ECX register( I found the following structure using
+strace): </p>
+
+<blockquote>
+<p>{sa_family=AF_INET6, sin6_port=htons(4444), inet_pton(AF_INET6,
+&ldquo;::1&rdquo;, &amp;sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}</p>
+</blockquote>
+
+<p>Hence, the first part is to set up the inet_pton structure and then
+embed it as a part of the full structure. We start by setting up the
+values for sin6_addr to 0 using push dword 0 and similarly setting up
+::1 address and AF_INET6 as 0x5c11000a. Setting up this structure, We
+move the stack pointer to ECX and begin setting up rest of the remaining
+values.</p>
+
+<p>Next three push operations will make the new structure as {Result from
+the previous system call, Current Pointer in ECX, 28}. Hence, we push
+ECX after pushing 28(length) and ESI register, since it holds the result
+sockfd from the previous call. Next, we just need to point this current
+structure in ECX, Increment EBX to 3(Connect syscall), 0x66(socketcall)
+in EAX and issue the interrupt.</p>
+
+<p>The last part of the image is nothing but sys_read system call. The
+read system call should be called in the following manner:</p>
+
+<blockquote>
+<p>ssize_t read(int fd, void *buf, size_t count);</p>
+</blockquote>
+
+<p>Therefore, in the shellcode, we have EAX with 0x3(sys_read), EBX with
+file descriptor by moving it to EBX from ESI. Next, We move 0xc to DH
+which will set EDX with a huge value for the length.</p>
+
+<p>Note: ECX register remains unchanged, and we issue the interrupt.</p>
+
+<p>Throughout this exercise, we saw that there isn&rsquo;t much difference
+between IPv4 and IPv6 reverse TCP shellcodes. The only changes are the
+domain value and address of the host. The logic of the connection
+remains the same. Nothing fancy!!</p>
+
+<p><span
+style="background: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">This
+blog post has been created for completing the requirements of the
+SecurityTube Linux Assembly Expert certification:</span></p>
+
+<p><span
+style="background: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span></p>
+
+<p><span id="goog_1275964878"></span><span id="goog_1275964879"></span></p>
+
+<p><span
+style="background: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">Student-ID:
+SLAE-1080</span></p>
+
+<p><span
+style="background: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;"><br />
+</span></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/ipv6-shellcode">ipv6 shellcode</a></span><span class="tag"><a href="/tags/slae">slae</a></span><span class="tag"><a href="/tags/slae-assignment-5">slae assignment 5</a></span><span class="tag"><a href="/tags/metasploit">metasploit</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>741 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2018-02-23 00:24 &#43;0530</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/posts/2018/02/art-of-shellcoding-metasploit-read-file-payload-analysis/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Art of Shellcoding: Metasploit Read File Payload Analysis</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/posts/2018/02/art-of-shellcoding-metasploit-add-user-payload-analysis/">
+                                <span class="button__text">Art of ShellCoding: Metasploit Add User Payload Analysis</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+                <span><a href="/">Apex Predator</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

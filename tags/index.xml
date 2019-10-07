@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 26 Aug 2018 16:53:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>b.tech cyber security courses</title>
+      <link>/tags/b.tech-cyber-security-courses/</link>
+      <pubDate>Sun, 26 Aug 2018 16:53:00 +0530</pubDate>
+      
+      <guid>/tags/b.tech-cyber-security-courses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cyber security in india</title>
+      <link>/tags/cyber-security-in-india/</link>
+      <pubDate>Sun, 26 Aug 2018 16:53:00 +0530</pubDate>
+      
+      <guid>/tags/cyber-security-in-india/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cyber security subjects in bca</title>
+      <link>/tags/cyber-security-subjects-in-bca/</link>
+      <pubDate>Sun, 26 Aug 2018 16:53:00 +0530</pubDate>
+      
+      <guid>/tags/cyber-security-subjects-in-bca/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shellcode encrypt</title>
+      <link>/tags/shellcode-encrypt/</link>
+      <pubDate>Wed, 28 Feb 2018 17:37:00 +0530</pubDate>
+      
+      <guid>/tags/shellcode-encrypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slae</title>
+      <link>/tags/slae/</link>
+      <pubDate>Wed, 28 Feb 2018 17:37:00 +0530</pubDate>
+      
+      <guid>/tags/slae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slae assignment 7</title>
+      <link>/tags/slae-assignment-7/</link>
+      <pubDate>Wed, 28 Feb 2018 17:37:00 +0530</pubDate>
+      
+      <guid>/tags/slae-assignment-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>polymorphic shellcode</title>
+      <link>/tags/polymorphic-shellcode/</link>
+      <pubDate>Wed, 28 Feb 2018 15:01:00 +0530</pubDate>
+      
+      <guid>/tags/polymorphic-shellcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slae assignment 6</title>
+      <link>/tags/slae-assignment-6/</link>
+      <pubDate>Wed, 28 Feb 2018 15:01:00 +0530</pubDate>
+      
+      <guid>/tags/slae-assignment-6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slae assignment 5</title>
+      <link>/tags/slae-assignment-5/</link>
+      <pubDate>Sat, 24 Feb 2018 02:16:00 +0530</pubDate>
+      
+      <guid>/tags/slae-assignment-5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ipv6 shellcode</title>
+      <link>/tags/ipv6-shellcode/</link>
+      <pubDate>Fri, 23 Feb 2018 00:24:00 +0530</pubDate>
+      
+      <guid>/tags/ipv6-shellcode/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

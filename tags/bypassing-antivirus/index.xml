@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bypassing antivirus on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/bypassing-antivirus/</link>
+    <description>Recent content in bypassing antivirus on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 30 Nov 2017 23:46:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/bypassing-antivirus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Postpone your Marriage plans and Deal with the Hack first</title>
+      <link>/posts/2017/11/postpone-your-marriage-plans-and-deal-with-the-hack-first/</link>
+      <pubDate>Thu, 30 Nov 2017 23:46:00 +0530</pubDate>
+      
+      <guid>/posts/2017/11/postpone-your-marriage-plans-and-deal-with-the-hack-first/</guid>
+      <description>If you think i am lazy with my posts, Hell Yeah! you are absolutely correct. Sometimes I feel 24-hours in a day are just not enough. I have ton of things to care about in life, things such as my family and my work, my friends who are like my family. I delivered my last session on 10th (if i remember correctly) in my very own Alma mater i.e. Lovely professional university and it was a great experience as always.</description>
+    </item>
+    
+    <item>
+      <title>Antivirus Evasion for dummies</title>
+      <link>/posts/2017/08/antivirus-evasion-for-dummies/</link>
+      <pubDate>Mon, 14 Aug 2017 00:08:00 +0530</pubDate>
+      
+      <guid>/posts/2017/08/antivirus-evasion-for-dummies/</guid>
+      <description>Long time huh? I just updated my website and i am hoping that you will like the new look and feel. I have been working recently on tons of AV solutions, trying to get the insight of how can one evade detection without using any crypters or obfuscation. Ahh, i know the topic is a bit touchy or you may think why am i discussing AV bypasses at the first place.</description>
+    </item>
+    
+  </channel>
+</rss>

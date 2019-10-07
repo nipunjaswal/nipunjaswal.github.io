@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>egghunter shellcode on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/egghunter-shellcode/</link>
+    <description>Recent content in egghunter shellcode on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 16 Jan 2018 08:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/egghunter-shellcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art of Shellcoding: Cracking Eggs with EggHunters</title>
+      <link>/posts/2018/01/art-of-shellcoding-cracking-eggs-with-egghunters/</link>
+      <pubDate>Tue, 16 Jan 2018 08:00:00 +0530</pubDate>
+      
+      <guid>/posts/2018/01/art-of-shellcoding-cracking-eggs-with-egghunters/</guid>
+      <description>Dear Readers, thank you for your overwhelming response to the previous post on reverse TCP shellcode. Last time, we wrote one of the smallest reverse TCP shellcodes of all time. This post advances onto an interesting concept called the Egg Hunter Shellcode. So, what is an egg hunter shellcode? For those interested in exploit development, they often come across a problem of limited space for the shellcode to execute. I remember the first exploit i wrote was a POC for SamSpade tool.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Nipun Jaswal">
+<meta name="description"
+    content="Dear Readers, Hope you all are doing great. In the previous post, we saw how we could create a shellcode for egghunting and ended up creating one of the shortest egghunter shellcode with just under 12 bytes. In this post, we will only work on encoding the shellcode by combining 3 different encoding schemes. The shellcode we will choose to demo our custom encoder will be a simple /bin/sh shell invoking shellcode." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/2018/02/art-of-shellcoding-the-multiencoder-shellcode/" />
+
+
+<title>
+    
+    Art of Shellcoding: The MultiEncoder Shellcode :: VAPT.IO - Home of the Next Gen Cyber Ninja  — Learn Vulnerability Assessment and Penetration Testing
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.7bfbbe12786fa0ded4b4c0d792cbb36a5bd0bdb0b856dde57aa7b1f6fe0f2b87.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Art of Shellcoding: The MultiEncoder Shellcode">
+<meta itemprop="description" content="Dear Readers, Hope you all are doing great. In the previous post, we saw how we could create a shellcode for egghunting and ended up creating one of the shortest egghunter shellcode with just under 12 bytes. In this post, we will only work on encoding the shellcode by combining 3 different encoding schemes. The shellcode we will choose to demo our custom encoder will be a simple /bin/sh shell invoking shellcode.">
+
+
+<meta itemprop="datePublished" content="2018-02-06T17:10:00&#43;05:30" />
+<meta itemprop="dateModified" content="2018-02-06T17:10:00&#43;05:30" />
+<meta itemprop="wordCount" content="544">
+
+
+
+<meta itemprop="keywords" content="slae,slae assignment 4,shellcoding,multiencoder shellcode," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Art of Shellcoding: The MultiEncoder Shellcode"/>
+<meta name="twitter:description" content="Dear Readers, Hope you all are doing great. In the previous post, we saw how we could create a shellcode for egghunting and ended up creating one of the shortest egghunter shellcode with just under 12 bytes. In this post, we will only work on encoding the shellcode by combining 3 different encoding schemes. The shellcode we will choose to demo our custom encoder will be a simple /bin/sh shell invoking shellcode."/>
+
+
+
+
+<meta property="article:published_time" content="2018-02-06 17:10:00.001 &#43;0530 IST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">ap3x@vapt.io:~# ./hack</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>3 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="/posts/2018/02/art-of-shellcoding-the-multiencoder-shellcode/">Art of Shellcoding: The MultiEncoder Shellcode</a></h1>
+
+            
+
+            <div class="post-content">
+                <p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png" alt="" /></a></p>
+
+<p>Dear Readers, Hope you all are doing great. In the previous post, we saw
+how we could create a shellcode for egghunting and ended up creating one
+of the shortest egghunter shellcode with just under 12 bytes. In this
+post,  we will only work on encoding the shellcode by combining 3
+different encoding schemes. The shellcode we will choose to demo our
+custom encoder will be a simple /bin/sh shell invoking shellcode. You
+can download a copy of this simple shellcode from
+<a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-4/execve-stack.nasm" target="_blank">here</a>. 
+We will write a simple python script which will encode the bytes of the
+/bin/sh shellcode with our custom encoding scheme. Here is the source of
+the python script:</p>
+
+<p>Running the python program, we can see that we have encoded shellcode
+which we can use in decoder stub:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png" alt="" /></a></p>
+
+<p>As we can see this is a pretty straightforward Encoder which encodes
+each byte of the /bin/sh shellcode by XORing it with 0xAA, then XORing
+it again with 0xCF, then performing a NOT operation on the byte and
+finally doing a ROT shift of 131 on the byte. Therefore, to create a
+decoder stub for the shellcode, we will write a simple assembly program
+as follows:</p>
+
+<p>We can see that it&rsquo;s a pretty straightforward decoder stub. The first
+operation it performs is to simply remove the ROT shift of 131 by
+subtracting the byte with 131. Next, it performs a NOT operation and
+then finally do a double XOR operation with 0xCF and 0xAA one after the
+other. After completing these four activities for all the bytes, it
+directly jumps to the Shellcode. Extracting the bytes of Shellcode from
+this program, we can just create a C program and test its functionality
+as follows:</p>
+
+<p>Compiling the C code, we can execute the program and see if works or
+not:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png" alt="" /></a></p>
+
+<p>Works!! Great. We can see that the length of the shellcode is 76 bytes.
+Let&rsquo;s run this program in GDB and analyze the step by step decoding
+process as follows:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png" alt="" /></a></p>
+
+<p>We can see that our original /bin/sh encoded shellcode of 25 bytes is
+visible in the above screenshot. We are currently doing a ROT shift of
+131 by subtracting it from the first byte of our encoded shellcode which
+is 0x2e. This will change the byte 0x2e to 0xab:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png" alt="" /></a></p>
+
+<p>Similarly, the next operation is to perform a NOT of the byte which will
+transform the byte 0xab to 0x54:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png" alt="" /></a></p>
+
+<p>Next are two XOR operations, the first with 0xCF which will change the
+byte to 0x9b and the one with 0xaa will convert the byte to 0x31 which
+is the original byte of our /bin/sh execve shellcode:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png" alt="" /></a></p>
+
+<p>Similarly, all the above operations will happen for rest of the 24 bytes
+of the shellcode, and before jumping to the decoded shellcode, we will
+have the following shell code:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png" alt="" /></a></p>
+
+<p>This is nothing but the original shellcode of /bin/sh program as we can
+see in the python encoder Yeepee! We have successfully decoded the
+entire shellcode with ease. We can name this encoder as RNX2 encoder as
+XOR-XOR-NOT-ROT operations are followed for encoding and ROT-NOT-XOR-XOR
+for decoding.</p>
+
+<p>All the files for this tutorial/ exercise are availiable
+at: <a href="https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-4" target="_blank">https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-4</a></p>
+
+<p><span
+style="background-color: white; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px;">This
+blog post has been created for completing the requirements of the
+SecurityTube Linux Assembly Expert certification:</span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;"></span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">
+</span><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;"></span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">Student-ID:
+SLAE-1080</span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">
+</span></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/slae">slae</a></span><span class="tag"><a href="/tags/slae-assignment-4">slae assignment 4</a></span><span class="tag"><a href="/tags/shellcoding">shellcoding</a></span><span class="tag"><a href="/tags/multiencoder-shellcode">multiencoder shellcode</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>544 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2018-02-06 17:10 &#43;0530</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/posts/2018/02/art-of-shellcoding-metasploit-add-user-payload-analysis/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Art of ShellCoding: Metasploit Add User Payload Analysis</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/posts/2018/01/art-of-shellcoding-cracking-eggs-with-egghunters/">
+                                <span class="button__text">Art of Shellcoding: Cracking Eggs with EggHunters</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+                <span><a href="/">Apex Predator</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

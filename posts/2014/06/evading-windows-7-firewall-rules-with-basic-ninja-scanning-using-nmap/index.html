@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Nipun Jaswal">
+<meta name="description"
+    content="Today, let us talk about Firewall rules and how we can evade them. However, i will be producing more advanced and complex tutorials for ninja scanning as well. OK, let us talk about a basic ninja scan which is required in the following scenario-
+Target is a colleague in the neighborhood who is running on Windows 7, Runs a Version of an FTP server on port 21 and 990(secured) and lastly has blocked our IP address as well." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/2014/06/evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap/" />
+
+
+<title>
+    
+    Evading Windows 7 Firewall rules with Basic Ninja Scanning using Nmap :: VAPT.IO - Home of the Next Gen Cyber Ninja  — Learn Vulnerability Assessment and Penetration Testing
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.7bfbbe12786fa0ded4b4c0d792cbb36a5bd0bdb0b856dde57aa7b1f6fe0f2b87.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Evading Windows 7 Firewall rules with Basic Ninja Scanning using Nmap">
+<meta itemprop="description" content="Today, let us talk about Firewall rules and how we can evade them. However, i will be producing more advanced and complex tutorials for ninja scanning as well. OK, let us talk about a basic ninja scan which is required in the following scenario-
+Target is a colleague in the neighborhood who is running on Windows 7, Runs a Version of an FTP server on port 21 and 990(secured) and lastly has blocked our IP address as well.">
+
+
+<meta itemprop="datePublished" content="2014-06-27T03:19:00&#43;05:30" />
+<meta itemprop="dateModified" content="2014-06-27T03:19:00&#43;05:30" />
+<meta itemprop="wordCount" content="457">
+
+
+
+<meta itemprop="keywords" content="port scanning through firewall,windows 7 firewall unblocking scans,evading windows 7 firewall,firewall bypassing,ninja scanning," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Evading Windows 7 Firewall rules with Basic Ninja Scanning using Nmap"/>
+<meta name="twitter:description" content="Today, let us talk about Firewall rules and how we can evade them. However, i will be producing more advanced and complex tutorials for ninja scanning as well. OK, let us talk about a basic ninja scan which is required in the following scenario-
+Target is a colleague in the neighborhood who is running on Windows 7, Runs a Version of an FTP server on port 21 and 990(secured) and lastly has blocked our IP address as well."/>
+
+
+
+
+<meta property="article:published_time" content="2014-06-27 03:19:00 &#43;0530 IST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">ap3x@vapt.io:~# ./hack</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>3 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="/posts/2014/06/evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap/">Evading Windows 7 Firewall rules with Basic Ninja Scanning using Nmap</a></h1>
+
+            
+
+            <div class="post-content">
+                <p>Today, let us talk about Firewall rules and how we can evade them.
+However, i will be producing more advanced and complex tutorials for
+ninja scanning as well. OK, let us talk about a basic ninja scan which is
+required in the following scenario-</p>
+
+<p><strong><em>Target is a colleague in the neighborhood who is running on Windows 7, Runs a Version of an FTP server on port 21 and 990(secured) and lastly has blocked our IP address as well. Our task is to evade the protection mechanisms that are the Windows 7 firewall based rules.</em></strong></p>
+
+<p>To create a self test environment, you need:</p>
+
+<ul>
+<li>Windows 7 up and running in VMware or on a different machine</li>
+<li>A Firewall rule in &ldquo;Inbound Connections&rdquo; which Blocks our IP address</li>
+<li>Any Linux configured with Nmap</li>
+</ul>
+
+<p>OK! So let us first run a simple Nmap scan without any rule in the
+firewall and check what is the output:-
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithoutfirewall.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithoutfirewall.png" alt="" /></a>
+</p>
+Providing the simple command <em>nmap 192.168.193.128</em> shows the output in
+the above screenshot. Everything seems to be OK! we are able to make a
+connection with ease. let us now create a firewall rule to block the
+remote address <strong>192.168.193.1(Attacker&rsquo;s OS IP/Our IP)</strong> -
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-Firewall+Rule.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-Firewall+Rule.png" alt="" /></a>
+</p></p>
+
+<p>The first rule blocks our IP address which is <strong>192.168.193.1</strong> Let us
+now re-scan the target and see that if the firewall is blocking us now
+or not?
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithfirewall.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithfirewall.png" alt="" /></a>
+</p>
+**
+&ldquo;All 1000 ports are filtered&rdquo;** firewall is working pretty well huh? :P
+let us also check what Wireshark denotes running this scan-
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapnoacknowledgements.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapnoacknowledgements.png" alt="" /></a>
+</p></p>
+
+<p>All SYN packets from the very first packet till the end of the scan&hellip;.
+so what this means? yeah you guessed it right no ACKs. Therefore, Nmap
+shows all ports filtered.</p>
+
+<p>Let us now overcome this situation by using <strong>-S</strong> switch in Nmap which
+helps in spoofing the originating address as follows-
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithfirewallrule.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithfirewallrule.png" alt="" /></a>
+</p></p>
+
+<p>Let us analyze the above command, we used <code>-sS</code> to denote a Stealth
+Scan/Half open Scan. Next, we used <code>-e</code> to denote the interface name
+which in my case was <strong>vmnet8</strong> because I used it in VMware Player(eth0)
+in case of machine being a different one). Next, <code>-S</code> to supply an
+address to spoof and 21,990 using <code>-p</code> switch to denote the port
+numbers. we can see that some error messages are generated but its
+alright, it works fine. let us cross check its functioning using
+Wireshark-
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-wiresharkblockage.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-wiresharkblockage.png" alt="" /></a>
+</p>
+<strong>Bingo!</strong> we were able to spoof the address with ease and we can also see
+the SYN-ACKs sent back from the target to the spoofed address which
+doesn&rsquo;t exist actually :P</p>
+
+<p>This concludes our most basic ninja scanning tutorial to evade a
+firewall rule of Windows 7. Stay tuned for more tutorials. Additionally,
+Refer to my book <a href="http://www.packtpub.com/mastering-metasploit/book" target="_blank">Mastering
+Metasploit</a> to learn
+how to scan a hidden network using a compromised host.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/port-scanning-through-firewall">port scanning through firewall</a></span><span class="tag"><a href="/tags/windows-7-firewall-unblocking-scans">windows 7 firewall unblocking scans</a></span><span class="tag"><a href="/tags/evading-windows-7-firewall">evading windows 7 firewall</a></span><span class="tag"><a href="/tags/firewall-bypassing">firewall bypassing</a></span><span class="tag"><a href="/tags/ninja-scanning">ninja scanning</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>457 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2014-06-27 03:19 &#43;0530</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/posts/2014/06/using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Using Decoys but not only decoys in scanning networks using Nmap</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/posts/2014/03/what-was-western-union-private-exploit/">
+                                <span class="button__text">What was Western Union Private Exploit</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+                <span><a href="/">Apex Predator</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

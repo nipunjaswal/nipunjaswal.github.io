@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hacking webcam with metasploit on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/hacking-webcam-with-metasploit/</link>
+    <description>Recent content in hacking webcam with metasploit on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 23 Dec 2013 18:34:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/hacking-webcam-with-metasploit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blind Date With your Girlfriend</title>
+      <link>/posts/2013/12/blind-date-with-your-girlfriend/</link>
+      <pubDate>Mon, 23 Dec 2013 18:34:00 +0530</pubDate>
+      
+      <guid>/posts/2013/12/blind-date-with-your-girlfriend/</guid>
+      <description>Hey Buddies,
+I have Written this research paper back in 2011-12, this was my first ever research paper. and i presented it in HATCON-LPU chapter. This Research paper focuses on methods that how can a system&amp;rsquo;s webcam can be hacked by the attacker using metasploit.
+You can Download the Entire paper from:- PacketStorm
+I hope you will enjoy reading it.</description>
+    </item>
+    
+  </channel>
+</rss>

