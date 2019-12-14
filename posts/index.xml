@@ -522,24 +522,24 @@ was generating the file i used PATH value as /etc/passwd. 
 of the /etc/passwd and will display it on the screen as shown in the
 following image:</p>
 
-<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.19.10.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.19.10.png" alt="" /></a></p>
+<p><a href="/images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.19.10.png"><img src="/images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.19.10.png" alt="" /></a></p>
 
 <p>Let&rsquo;s load this file into GDB-Peda, set a breakpoint on the
 shellcode(<em>using *&amp;shellcode</em>) and run the program.We are presented
 with the following screen:</p>
 
-<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.39.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.39.png" alt="" /></a></p>
+<p><a href="/images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.39.png"><img src="/images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.39.png" alt="" /></a></p>
 
 <p>   </p>
 
 <p>We can see that the very first instruction is a Jump statement. Taking
 the jump, we have the following instruction:</p>
 
-<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.57.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.57.png" alt="" /></a></p>
+<p><a href="/images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.57.png"><img src="/images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.57.png" alt="" /></a></p>
 
 <p>Taking the call instruction, we are presented with the following screen:</p>
 
-<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.14.04.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.14.04.png" alt="" /></a></p>
+<p><a href="/images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.14.04.png"><img src="/images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.14.04.png" alt="" /></a></p>
 
 <p>Looks like we finally arrived at the shellcode and the previous two
 statements were nothing but a JUMP-CALL sequence which would have pushed
@@ -558,7 +558,7 @@ next instruction, ECX gets cleared out and now have a value 0 in it. A
 successful open should return the file descriptor in EAX register. Let&rsquo;s
 see:</p>
 
-<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.39.03.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.39.03.png" alt="" /></a></p>
+<p><a href="/images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.39.03.png"><img src="/images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.39.03.png" alt="" /></a></p>
 
 <p>We can see the descriptor in EAX. The next statement moves the
 descriptor to EBX. Next, EAX is loaded with 0x3 which is sys_read
@@ -615,7 +615,7 @@ SLAE-1080</span></p>
             
             <guid>/posts/2018/02/art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis/</guid>
             <description>Most of us have worked a lot with IPv4 payloads and shellcodes. Let us see how different is Metasploit IPv6 Shellcode and how does it work. In this post, we will make use of libemu to conduct out our analysis on the IPV6 Reverse TCP shellcode. We will also use strace to aid our analysis. Throughout the analysis, our agenda is to figure out the key differences between an IPv4 and IPv6 shellcode.</description>
-            <content type="html"><![CDATA[<p><a href="../images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-back-door-300x199.jpg"><img src="../images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-back-door-300x199.jpg" alt="" /></a></p>
+            <content type="html"><![CDATA[<p><a href="/images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-back-door-300x199.jpg"><img src="/images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-back-door-300x199.jpg" alt="" /></a></p>
 
 <p>Most of us have worked a lot with IPv4 payloads and shellcodes. Let us
 see how different is Metasploit IPv6 Shellcode and how does it work. In
@@ -634,7 +634,7 @@ raw | /opt/libemu/bin/sctest -vvv -Ss 10000</p>
 
 <p>We will have the following output:</p>
 
-<p><a href="../images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-Screenshot%2B2018-02-10%2B01.41.55.png"><img src="../images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-Screenshot%2B2018-02-10%2B01.41.55.png" alt="" /></a></p>
+<p><a href="/images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-Screenshot%2B2018-02-10%2B01.41.55.png"><img src="/images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-Screenshot%2B2018-02-10%2B01.41.55.png" alt="" /></a></p>
 
 <p>We can see that we have two systems calls in this shellcode. The first
 is the socket setup and the next one is connect. We can use libemu with
@@ -642,7 +642,7 @@ the -G option to create a dot based graphics file which simplifies
 things for us. The dot graph file can then be converted into a PNG image
 using the dot utility in linux. Let us see the obtained PNG as follows:</p>
 
-<p><a href="../images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-ipv6.png"><img src="../images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-ipv6.png" alt="" /></a></p>
+<p><a href="/images/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-ipv6.png"><img src="/images/thumbnails/2018-02-23-art-of-shellcoding-metasploit-ipv6-reverse-tcp-shellcode-analysis-ipv6.png" alt="" /></a></p>
 
 <p>Let&rsquo;s analyze the above flow diagram. In the very first block, We start
 by clearing out EBX register which means that now EBX contains 0. We
@@ -737,7 +737,7 @@ style="background: 0px 0px; border: 0px; color: red; font-family: &quot;open san
             
             <guid>/posts/2018/02/art-of-shellcoding-metasploit-add-user-payload-analysis/</guid>
             <description>In the previous post, we saw how we can encode the shellcode with our customized encoding schemes. In this post, we will see how some of the famous shellcodes from the metasploit framework work. We will analyze three different shellcodes using different techniques and tools in this mini shellcode analysis series. In this post, we will examine linux/x86/adduser shellcode with ndisasm and will see how the stuff works behind the scene.</description>
-            <content type="html"><![CDATA[<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-logo_metasploit_rapid7.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-logo_metasploit_rapid7.png" alt="" /></a></p>
+            <content type="html"><![CDATA[<p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-logo_metasploit_rapid7.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-logo_metasploit_rapid7.png" alt="" /></a></p>
 
 <p>In the previous post, we saw how we can encode the shellcode with our
 customized encoding schemes. In this post, we will see how some of the
@@ -750,12 +750,12 @@ works behind the scene.</p>
 <p>The adduser shellcode adds a specified user to the linux system. Let&rsquo;s
 see how we can create this shellcode using msfvenom:</p>
 
-<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.39.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.39.png" alt="" /></a></p>
+<p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.39.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.39.png" alt="" /></a></p>
 
 <p>    Let&rsquo;s copy the shellcode from the &lsquo;shellcode&rsquo; file and analyze it
 using ndisasm as follows:</p>
 
-<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.10.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.10.png" alt="" /></a></p>
+<p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.10.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.10.png" alt="" /></a></p>
 
 <p>We have the complete disassembly of the code here:</p>
 
@@ -868,11 +868,11 @@ SYS_OPEN<span style="background-color: white;"> </span>call. Coming
 back to the call instruction it will land us at the at the byte 59 (Last
 line) after 0A:</p>
 
-<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.17.27.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.17.27.png" alt="" /></a> </p>
+<p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.17.27.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.17.27.png" alt="" /></a> </p>
 
 <p>We can see the value in EIP which points to byte 59. Let&rsquo;s reconfirm it:</p>
 
-<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.19.18.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.19.18.png" alt="" /></a></p>
+<p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.19.18.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.19.18.png" alt="" /></a></p>
 
 <p>Now, the POP ECX command will put the data to be written into the ECX
 register, and the next instruction puts the length of this data onto the
@@ -888,7 +888,7 @@ EBX: File Descriptor (From the XCHG Operation)<br />
 ECX: The data itself<br />
 EDX: Length of data</strong></span></p>
 
-<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.35.25.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.35.25.png" alt="" /></a></p>
+<p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.35.25.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.35.25.png" alt="" /></a></p>
 
 <p>We simply issue the interrupt, and the data gets written to the
 /etc/passwd file. Next, we just issue an exit system call by putting 0x1
@@ -920,7 +920,7 @@ SLAE-1080</span></p>
             
             <guid>/posts/2018/02/art-of-shellcoding-the-multiencoder-shellcode/</guid>
             <description>Dear Readers, Hope you all are doing great. In the previous post, we saw how we could create a shellcode for egghunting and ended up creating one of the shortest egghunter shellcode with just under 12 bytes. In this post, we will only work on encoding the shellcode by combining 3 different encoding schemes. The shellcode we will choose to demo our custom encoder will be a simple /bin/sh shell invoking shellcode.</description>
-            <content type="html"><![CDATA[<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png" alt="" /></a></p>
+            <content type="html"><![CDATA[<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png" alt="" /></a></p>
 
 <p>Dear Readers, Hope you all are doing great. In the previous post, we saw
 how we could create a shellcode for egghunting and ended up creating one
@@ -937,7 +937,7 @@ the python script:</p>
 <p>Running the python program, we can see that we have encoded shellcode
 which we can use in decoder stub:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png" alt="" /></a></p>
 
 <p>As we can see this is a pretty straightforward Encoder which encodes
 each byte of the /bin/sh shellcode by XORing it with 0xAA, then XORing
@@ -958,37 +958,37 @@ as follows:</p>
 <p>Compiling the C code, we can execute the program and see if works or
 not:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png" alt="" /></a></p>
 
 <p>Works!! Great. We can see that the length of the shellcode is 76 bytes.
 Let&rsquo;s run this program in GDB and analyze the step by step decoding
 process as follows:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png" alt="" /></a></p>
 
 <p>We can see that our original /bin/sh encoded shellcode of 25 bytes is
 visible in the above screenshot. We are currently doing a ROT shift of
 131 by subtracting it from the first byte of our encoded shellcode which
 is 0x2e. This will change the byte 0x2e to 0xab:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png" alt="" /></a></p>
 
 <p>Similarly, the next operation is to perform a NOT of the byte which will
 transform the byte 0xab to 0x54:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png" alt="" /></a></p>
 
 <p>Next are two XOR operations, the first with 0xCF which will change the
 byte to 0x9b and the one with 0xaa will convert the byte to 0x31 which
 is the original byte of our /bin/sh execve shellcode:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png" alt="" /></a></p>
 
 <p>Similarly, all the above operations will happen for rest of the 24 bytes
 of the shellcode, and before jumping to the decoded shellcode, we will
 have the following shell code:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png" alt="" /></a></p>
 
 <p>This is nothing but the original shellcode of /bin/sh program as we can
 see in the python encoder Yeepee! We have successfully decoded the
@@ -1032,7 +1032,7 @@ style="background: 0px 0px rgb(255 , 255 , 255); border: 0px; color: red; font-f
             
             <guid>/posts/2018/01/art-of-shellcoding-cracking-eggs-with-egghunters/</guid>
             <description>Dear Readers, thank you for your overwhelming response to the previous post on reverse TCP shellcode. Last time, we wrote one of the smallest reverse TCP shellcodes of all time. This post advances onto an interesting concept called the Egg Hunter Shellcode. So, what is an egg hunter shellcode? For those interested in exploit development, they often come across a problem of limited space for the shellcode to execute. I remember the first exploit i wrote was a POC for SamSpade tool.</description>
-            <content type="html"><![CDATA[<p><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-easter-egg-hunt-ideas-you-havent-thought-about.jpeg"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-easter-egg-hunt-ideas-you-havent-thought-about.jpeg" alt="" /></a></p>
+            <content type="html"><![CDATA[<p><a href="/images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-easter-egg-hunt-ideas-you-havent-thought-about.jpeg"><img src="/images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-easter-egg-hunt-ideas-you-havent-thought-about.jpeg" alt="" /></a></p>
 
 <p>Dear Readers, thank you for your overwhelming response to the previous
 post on reverse TCP shellcode. Last time, we wrote one of the smallest
@@ -1101,7 +1101,7 @@ successfully.</p>
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.48.33.png"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.48.33.png" /></a></td>
+<td style="text-align: center;"><a href="/images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.48.33.png"><img src="/images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.48.33.png" /></a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Just Before Jumping to EDI</td>
@@ -1117,7 +1117,7 @@ the address in EDI, we have the following output:</p>
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.51.29.png"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.51.29.png" /></a></td>
+<td style="text-align: center;"><a href="/images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.51.29.png"><img src="/images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.51.29.png" /></a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">116 Bytes starting at the address pointed to by EDI</td>
@@ -1133,7 +1133,7 @@ us with a beautiful looking bind shell when connected.</p>
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><a href="../images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.19.36.png"><img src="../images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.19.36.png" /></a></td>
+<td style="text-align: center;"><a href="/images/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.19.36.png"><img src="/images/thumbnails/2018-01-16-art-of-shellcoding-cracking-eggs-with-egghunters-Screenshot%2B2018-01-16%2B01.19.36.png" /></a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Egg Hunter in Action</td>
@@ -1337,7 +1337,7 @@ post. Compiling the code we have:</p>
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.17.34.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.17.34.png" /></a></td>
+<td style="text-align: center;"><a href="/images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.17.34.png"><img src="/images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.17.34.png" /></a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Generating Shellcode</td>
@@ -1351,7 +1351,7 @@ our shellcode works correctly as shown below:</p>
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.20.20.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.20.20.png" /></a></td>
+<td style="text-align: center;"><a href="/images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.20.20.png"><img src="/images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.20.20.png" /></a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Compiling and running shellcode.c program with our shellcode</td>
@@ -1415,7 +1415,7 @@ parameters on the fly:</p>
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><a href="../images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.46.49.png"><img src="../images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.46.49.png" /></a></td>
+<td style="text-align: center;"><a href="/images/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.46.49.png"><img src="/images/thumbnails/2018-01-05-art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode-Screenshot%2B2018-01-05%2B01.46.49.png" /></a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Wrapper &amp; Execution</td>
@@ -1454,7 +1454,7 @@ on a daily basis. I too have seen many people copying shellcodes blindly
 from the internet and just pasting them into the exploits without
 knowing what those shellcodes might be carrying.</p>
 
-<p><a href="../images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png" alt="" /></a></p>
+<p><a href="/images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png"><img src="/images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png" alt="" /></a></p>
 
 <p>Today, we will uncover
 the working of bind TCP shell and based on the analysis, we will try to
@@ -1723,18 +1723,18 @@ call dup2. Next, we issue dup2 call denoted by 63 in a loop till ECX
 becomes 0 and Finally, we push null terminated /bin//sh and point it to
 EBX:</p>
 
-<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png" alt="" /></a></p>
+<p><a href="/images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png"><img src="/images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png" alt="" /></a></p>
 
 <p>Next, we clear out ECX and EDX using 0 from EAX. We move call number
 11(EXECVE) to EAX and issue the interrupt. Let&rsquo;s extract the shellcode
 from the program as follows:</p>
 
-<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png" alt="" /></a></p>
+<p><a href="/images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png"><img src="/images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png" alt="" /></a></p>
 
 <p>Compiling the C program and running the shellcode, we can see that it
 works flawlessly:</p>
 
-<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png" alt="" /></a></p>
+<p><a href="/images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png"><img src="/images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png" alt="" /></a></p>
 
 <p>Everything works flawlessly here. <span
 style="background-color: yellow;"><strong>The final version of the code can be
@@ -1925,7 +1925,7 @@ class="pl-c1">{0}</span><span class="pl-pds">&ldquo;</span></span>.format(nf))</
 
 <p> We can run the generator as shown on the following screen:</p>
 
-<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png" alt="" /></a></p>
+<p><a href="/images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png"><img src="/images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png" alt="" /></a></p>
 
 <p>Following are the links to all the codes used in the exercise:</p>
 

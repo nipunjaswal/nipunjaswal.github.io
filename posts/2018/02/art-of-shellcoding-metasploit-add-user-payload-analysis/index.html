@@ -125,7 +125,7 @@
             
 
             <div class="post-content">
-                <p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-logo_metasploit_rapid7.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-logo_metasploit_rapid7.png" alt="" /></a></p>
+                <p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-logo_metasploit_rapid7.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-logo_metasploit_rapid7.png" alt="" /></a></p>
 
 <p>In the previous post, we saw how we can encode the shellcode with our
 customized encoding schemes. In this post, we will see how some of the
@@ -138,12 +138,12 @@ works behind the scene.</p>
 <p>The adduser shellcode adds a specified user to the linux system. Let&rsquo;s
 see how we can create this shellcode using msfvenom:</p>
 
-<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.39.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.39.png" alt="" /></a></p>
+<p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.39.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.39.png" alt="" /></a></p>
 
 <p>    Let&rsquo;s copy the shellcode from the &lsquo;shellcode&rsquo; file and analyze it
 using ndisasm as follows:</p>
 
-<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.10.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.10.png" alt="" /></a></p>
+<p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.10.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-06%2B21.46.10.png" alt="" /></a></p>
 
 <p>We have the complete disassembly of the code here:</p>
 
@@ -256,11 +256,11 @@ SYS_OPEN<span style="background-color: white;"> </span>call. Coming
 back to the call instruction it will land us at the at the byte 59 (Last
 line) after 0A:</p>
 
-<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.17.27.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.17.27.png" alt="" /></a> </p>
+<p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.17.27.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.17.27.png" alt="" /></a> </p>
 
 <p>We can see the value in EIP which points to byte 59. Let&rsquo;s reconfirm it:</p>
 
-<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.19.18.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.19.18.png" alt="" /></a></p>
+<p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.19.18.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.19.18.png" alt="" /></a></p>
 
 <p>Now, the POP ECX command will put the data to be written into the ECX
 register, and the next instruction puts the length of this data onto the
@@ -276,7 +276,7 @@ EBX: File Descriptor (From the XCHG Operation)<br />
 ECX: The data itself<br />
 EDX: Length of data</strong></span></p>
 
-<p><a href="../images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.35.25.png"><img src="../images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.35.25.png" alt="" /></a></p>
+<p><a href="/images/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.35.25.png"><img src="/images/thumbnails/2018-02-10-art-of-shellcoding-metasploit-add-user-payload-analysis-Screenshot%2B2018-02-10%2B00.35.25.png" alt="" /></a></p>
 
 <p>We simply issue the interrupt, and the data gets written to the
 /etc/passwd file. Next, we just issue an exit system call by putting 0x1

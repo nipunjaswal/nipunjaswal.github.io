@@ -6,10 +6,19 @@
     <description>Recent content on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 26 Aug 2018 16:53:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2019 02:19:08 +0530</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 07 Oct 2019 02:19:08 +0530</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Doom Chiki Chiki</description>
+    </item>
     
     <item>
       <title>Subjects that Help Building Cyber Security Skills while you are Studying</title>
@@ -90,17 +99,6 @@
       
       <guid>/posts/2018/01/art-of-shellcoding-tale-of-the-smallest-reverse-tcp-shellcode/</guid>
       <description>Modern Ninja :)    Hey Folks, Hope you guys are doing great. In the previous article, we saw how we can create a bind TCP shellcode, reduce its enormous length from 108 bytes to merely 80 bytes by making use of strategically placed instructions, register re-use, single byte instructions and much more. We also saw how we can create a wrapper in python which will help us modify the shellcode and make it usable for any port of choice.</description>
-    </item>
-    
-    <item>
-      <title>Art of Shellcoding: The Saga of Bind TCP Shell</title>
-      <link>/posts/2018/01/art-of-shellcoding-the-saga-of-bind-tcp-shell/</link>
-      <pubDate>Tue, 02 Jan 2018 14:24:00 +0530</pubDate>
-      
-      <guid>/posts/2018/01/art-of-shellcoding-the-saga-of-bind-tcp-shell/</guid>
-      <description>Dear Readers, we all in the infosec community use bind TCP shell almost on a daily basis. I too have seen many people copying shellcodes blindly from the internet and just pasting them into the exploits without knowing what those shellcodes might be carrying.
-
-Today, we will uncover the working of bind TCP shell and based on the analysis, we will try to develop one ourselves. If you are not familiar with the assembly, Enroll yourself into SLAE course from SecurityTube, its one of the best classes available out there and i am able to write this post based on the advanced knowledge i gained from the course itself.</description>
     </item>
     
   </channel>

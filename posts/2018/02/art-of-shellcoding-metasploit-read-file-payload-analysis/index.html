@@ -138,24 +138,24 @@ was generating the file i used PATH value as /etc/passwd. 
 of the /etc/passwd and will display it on the screen as shown in the
 following image:</p>
 
-<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.19.10.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.19.10.png" alt="" /></a></p>
+<p><a href="/images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.19.10.png"><img src="/images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.19.10.png" alt="" /></a></p>
 
 <p>Let&rsquo;s load this file into GDB-Peda, set a breakpoint on the
 shellcode(<em>using *&amp;shellcode</em>) and run the program.We are presented
 with the following screen:</p>
 
-<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.39.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.39.png" alt="" /></a></p>
+<p><a href="/images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.39.png"><img src="/images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.39.png" alt="" /></a></p>
 
 <p>   </p>
 
 <p>We can see that the very first instruction is a Jump statement. Taking
 the jump, we have the following instruction:</p>
 
-<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.57.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.57.png" alt="" /></a></p>
+<p><a href="/images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.57.png"><img src="/images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.13.57.png" alt="" /></a></p>
 
 <p>Taking the call instruction, we are presented with the following screen:</p>
 
-<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.14.04.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.14.04.png" alt="" /></a></p>
+<p><a href="/images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.14.04.png"><img src="/images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.14.04.png" alt="" /></a></p>
 
 <p>Looks like we finally arrived at the shellcode and the previous two
 statements were nothing but a JUMP-CALL sequence which would have pushed
@@ -174,7 +174,7 @@ next instruction, ECX gets cleared out and now have a value 0 in it. A
 successful open should return the file descriptor in EAX register. Let&rsquo;s
 see:</p>
 
-<p><a href="../images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.39.03.png"><img src="../images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.39.03.png" alt="" /></a></p>
+<p><a href="/images/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.39.03.png"><img src="/images/thumbnails/2018-02-24-art-of-shellcoding-metasploit-read-file-payload-analysis-Screenshot%2B2018-02-24%2B01.39.03.png" alt="" /></a></p>
 
 <p>We can see the descriptor in EAX. The next statement moves the
 descriptor to EBX. Next, EAX is loaded with 0x3 which is sys_read

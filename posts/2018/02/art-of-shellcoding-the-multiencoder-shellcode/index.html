@@ -125,7 +125,7 @@
             
 
             <div class="post-content">
-                <p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png" alt="" /></a></p>
+                <p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-shellcode-encoder.png" alt="" /></a></p>
 
 <p>Dear Readers, Hope you all are doing great. In the previous post, we saw
 how we could create a shellcode for egghunting and ended up creating one
@@ -142,7 +142,7 @@ the python script:</p>
 <p>Running the python program, we can see that we have encoded shellcode
 which we can use in decoder stub:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.12.12.png" alt="" /></a></p>
 
 <p>As we can see this is a pretty straightforward Encoder which encodes
 each byte of the /bin/sh shellcode by XORing it with 0xAA, then XORing
@@ -163,37 +163,37 @@ as follows:</p>
 <p>Compiling the C code, we can execute the program and see if works or
 not:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.03.15.png" alt="" /></a></p>
 
 <p>Works!! Great. We can see that the length of the shellcode is 76 bytes.
 Let&rsquo;s run this program in GDB and analyze the step by step decoding
 process as follows:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.23.png" alt="" /></a></p>
 
 <p>We can see that our original /bin/sh encoded shellcode of 25 bytes is
 visible in the above screenshot. We are currently doing a ROT shift of
 131 by subtracting it from the first byte of our encoded shellcode which
 is 0x2e. This will change the byte 0x2e to 0xab:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.18.56.png" alt="" /></a></p>
 
 <p>Similarly, the next operation is to perform a NOT of the byte which will
 transform the byte 0xab to 0x54:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.10.png" alt="" /></a></p>
 
 <p>Next are two XOR operations, the first with 0xCF which will change the
 byte to 0x9b and the one with 0xaa will convert the byte to 0x31 which
 is the original byte of our /bin/sh execve shellcode:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.19.37.png" alt="" /></a></p>
 
 <p>Similarly, all the above operations will happen for rest of the 24 bytes
 of the shellcode, and before jumping to the decoded shellcode, we will
 have the following shell code:</p>
 
-<p><a href="../images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png"><img src="../images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png" alt="" /></a></p>
+<p><a href="/images/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png"><img src="/images/thumbnails/2018-02-06-art-of-shellcoding-the-multiencoder-shellcode-Screenshot%2B2018-02-06%2B01.23.26.png" alt="" /></a></p>
 
 <p>This is nothing but the original shellcode of /bin/sh program as we can
 see in the python encoder Yeepee! We have successfully decoded the

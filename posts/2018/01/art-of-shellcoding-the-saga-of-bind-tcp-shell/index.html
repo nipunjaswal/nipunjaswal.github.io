@@ -136,7 +136,7 @@ on a daily basis. I too have seen many people copying shellcodes blindly
 from the internet and just pasting them into the exploits without
 knowing what those shellcodes might be carrying.</p>
 
-<p><a href="../images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png" alt="" /></a></p>
+<p><a href="/images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png"><img src="/images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-shell.png" alt="" /></a></p>
 
 <p>Today, we will uncover
 the working of bind TCP shell and based on the analysis, we will try to
@@ -405,18 +405,18 @@ call dup2. Next, we issue dup2 call denoted by 63 in a loop till ECX
 becomes 0 and Finally, we push null terminated /bin//sh and point it to
 EBX:</p>
 
-<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png" alt="" /></a></p>
+<p><a href="/images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png"><img src="/images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B15.57.48.png" alt="" /></a></p>
 
 <p>Next, we clear out ECX and EDX using 0 from EAX. We move call number
 11(EXECVE) to EAX and issue the interrupt. Let&rsquo;s extract the shellcode
 from the program as follows:</p>
 
-<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png" alt="" /></a></p>
+<p><a href="/images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png"><img src="/images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.05.03.png" alt="" /></a></p>
 
 <p>Compiling the C program and running the shellcode, we can see that it
 works flawlessly:</p>
 
-<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png" alt="" /></a></p>
+<p><a href="/images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png"><img src="/images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-30%2B16.17.24.png" alt="" /></a></p>
 
 <p>Everything works flawlessly here. <span
 style="background-color: yellow;"><strong>The final version of the code can be
@@ -607,7 +607,7 @@ class="pl-c1">{0}</span><span class="pl-pds">&ldquo;</span></span>.format(nf))</
 
 <p> We can run the generator as shown on the following screen:</p>
 
-<p><a href="./images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png"><img src="./images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png" alt="" /></a></p>
+<p><a href="/images/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png"><img src="/images/thumbnails/2018-01-02-art-of-shellcoding-the-saga-of-bind-tcp-shell-Screenshot%2B2017-12-31%2B15.09.23.png" alt="" /></a></p>
 
 <p>Following are the links to all the codes used in the exercise:</p>
 
