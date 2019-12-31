@@ -6,10 +6,19 @@
     <description>Recent content in Tags on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 26 Aug 2018 16:53:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2019 22:31:29 +0530</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>untagged</title>
+      <link>/tags/untagged/</link>
+      <pubDate>Tue, 31 Dec 2019 22:31:29 +0530</pubDate>
+      
+      <guid>/tags/untagged/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>b.tech cyber security courses</title>
@@ -89,15 +98,6 @@
       <pubDate>Sat, 24 Feb 2018 02:16:00 +0530</pubDate>
       
       <guid>/tags/slae-assignment-5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ipv6 shellcode</title>
-      <link>/tags/ipv6-shellcode/</link>
-      <pubDate>Fri, 23 Feb 2018 00:24:00 +0530</pubDate>
-      
-      <guid>/tags/ipv6-shellcode/</guid>
       <description></description>
     </item>
     
