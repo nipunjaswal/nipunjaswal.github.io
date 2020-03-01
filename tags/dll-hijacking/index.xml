@@ -6,19 +6,10 @@
     <description>Recent content in dll hijacking on VAPT.IO - Home of the Next Gen Cyber Ninja</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 31 Dec 2019 22:31:29 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 30 Nov 2017 23:46:00 +0530</lastBuildDate>
     
 	<atom:link href="/tags/dll-hijacking/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Line Messenger Escalation of Privilege Vulnerability</title>
-      <link>/posts/2019/12/line-messenger-escalation-of-privilege-vulnerability/</link>
-      <pubDate>Tue, 31 Dec 2019 22:31:29 +0530</pubDate>
-      
-      <guid>/posts/2019/12/line-messenger-escalation-of-privilege-vulnerability/</guid>
-      <description>Vulnerability Detail Line Ver 5.20.2.2045 when executed, searches for a missing (dxtn.dll) file, which forces the Safe DLL search order to move to directories defined in the PATH variable. A low privileged attacker having write access to any of the directories defined in the PATH variable can put a malicious file (Metasploit Backdoor) with the name dxtn.dll forcing the search order to complete and Escalate privileges when an administrator executes Line.</description>
-    </item>
     
     <item>
       <title>Postpone your Marriage plans and Deal with the Hack first</title>
