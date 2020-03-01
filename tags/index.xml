@@ -12,11 +12,29 @@
     
     
     <item>
-      <title>untagged</title>
-      <link>/tags/untagged/</link>
+      <title>dll hijacking</title>
+      <link>/tags/dll-hijacking/</link>
       <pubDate>Tue, 31 Dec 2019 22:31:29 +0530</pubDate>
       
-      <guid>/tags/untagged/</guid>
+      <guid>/tags/dll-hijacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Line Messenger Exploit</title>
+      <link>/tags/line-messenger-exploit/</link>
+      <pubDate>Tue, 31 Dec 2019 22:31:29 +0530</pubDate>
+      
+      <guid>/tags/line-messenger-exploit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Priv Escalation</title>
+      <link>/tags/priv-escalation/</link>
+      <pubDate>Tue, 31 Dec 2019 22:31:29 +0530</pubDate>
+      
+      <guid>/tags/priv-escalation/</guid>
       <description></description>
     </item>
     
@@ -80,24 +98,6 @@
       <pubDate>Wed, 28 Feb 2018 15:01:00 +0530</pubDate>
       
       <guid>/tags/polymorphic-shellcode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>slae assignment 6</title>
-      <link>/tags/slae-assignment-6/</link>
-      <pubDate>Wed, 28 Feb 2018 15:01:00 +0530</pubDate>
-      
-      <guid>/tags/slae-assignment-6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>slae assignment 5</title>
-      <link>/tags/slae-assignment-5/</link>
-      <pubDate>Sat, 24 Feb 2018 02:16:00 +0530</pubDate>
-      
-      <guid>/tags/slae-assignment-5/</guid>
       <description></description>
     </item>
     

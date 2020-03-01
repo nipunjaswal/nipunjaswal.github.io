@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/dll-hijacking/</loc>
+    <lastmod>2019-12-31T22:31:29+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/2019/12/line-messenger-escalation-of-privilege-vulnerability/</loc>
     <lastmod>2019-12-31T22:31:29+05:30</lastmod>
   </url>
   
   <url>
+    <loc>/tags/line-messenger-exploit/</loc>
+    <lastmod>2019-12-31T22:31:29+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/</loc>
+    <lastmod>2019-12-31T22:31:29+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/priv-escalation/</loc>
     <lastmod>2019-12-31T22:31:29+05:30</lastmod>
   </url>
   
@@ -25,11 +40,6 @@
                 hreflang="en"
                 href="/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>/tags/untagged/</loc>
-    <lastmod>2019-12-31T22:31:29+05:30</lastmod>
   </url>
   
   <url>
@@ -199,11 +209,6 @@
   
   <url>
     <loc>/tags/bypassing-antivirus/</loc>
-    <lastmod>2017-11-30T23:46:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/dll-hijacking/</loc>
     <lastmod>2017-11-30T23:46:00+05:30</lastmod>
   </url>
   
